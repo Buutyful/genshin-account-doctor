@@ -1,0 +1,852 @@
+{
+  "checkedAt": "2026-09-23",
+  "assets": [
+    {
+      "id": "aino",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/09/4e58c851d6c947865026faa168db83bd_3944254802105067377.png",
+      "sha256": "6d0d39fcddf05e7d79ab8225c6117369b951290b43b9d29d7049b93f797fd296",
+      "bytes": 92961,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "albedo",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Albedo.png",
+      "sha256": "4176fc65f9bb638912f1a3badd782cd0ab44c76882397c58c16a9cedb11bfc21",
+      "bytes": 94151,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "alhaitham",
+      "source": "https://enka.network/ui/UI_AvatarIcon_Alhatham.png",
+      "sha256": "a999e73bcf9803b6603643b03545238cd27a8834a597a7c102163a7675bd11cf",
+      "bytes": 83354,
+      "rights": "Genshin Impact artwork belongs to HoYoverse/COGNOSPHERE. Public asset delivery is not a new license grant; review redistribution before public release."
+    },
+    {
+      "id": "aloy",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Aloy.png",
+      "sha256": "0e2b022feed5e6f33866e2774f4d71e8ca0fa5ab99871c67db7df7cf1f635586",
+      "bytes": 89515,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "alyosha",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/07/b866d5fd9adbd2f66874e54208db1107_7133689933484329253.png",
+      "sha256": "3168b1f9634fd28fbfd861db960ed099a0e24aadb2a4897035dd1b886059819d",
+      "bytes": 92907,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "amber",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ambor.png",
+      "sha256": "71869d030fdb0bead8db0e112712cbef14c6e3a53ed40021aaea81d9b9440048",
+      "bytes": 84003,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "arlecchino",
+      "source": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/22/35428890/672e65470bfd14b664596c2a7f7eaaf8_7046130387894981792.png",
+      "sha256": "de0a6c262fb409527ce3fa85494804172e30ad6e7271d783d836cc18d39f944e",
+      "bytes": 138238,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "ayaka",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ayaka.png",
+      "sha256": "ece06c8652a09b7adb31ae794abf463631d8998263668a8cef26de0afda8127a",
+      "bytes": 71738,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "ayato",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ayato.png",
+      "sha256": "e21d9d6b974b4694392a387f529bb1a2831e1df281354e214cd6de38609cb951",
+      "bytes": 94933,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "baizhu",
+      "source": "https://enka.network/ui/UI_AvatarIcon_Baizhuer.png",
+      "sha256": "2108020cb5fe4804128a77ab857652962eeb46543af1dc5e762f3530f32e8faf",
+      "bytes": 35340,
+      "rights": "Genshin Impact artwork belongs to HoYoverse/COGNOSPHERE. Public asset delivery is not a new license grant; review redistribution before public release."
+    },
+    {
+      "id": "barbara",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Barbara.png",
+      "sha256": "108f85261b7a9f0397c61a66479db59a5aced33d11cc501cfa6be6b9de862cf3",
+      "bytes": 97491,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "beidou",
+      "source": "https://enka.network/ui/UI_AvatarIcon_Beidou.png",
+      "sha256": "267eb658c84ca525ac84b44064dc1bbeb0d3d90c38d6e2aee10eb9e1dea823d2",
+      "bytes": 34612,
+      "rights": "Genshin Impact artwork belongs to HoYoverse/COGNOSPHERE. Public asset delivery is not a new license grant; review redistribution before public release."
+    },
+    {
+      "id": "bennett",
+      "source": "https://enka.network/ui/UI_AvatarIcon_Bennett.png",
+      "sha256": "bcca9c1a8f9beac470a29494c522e5f26670970107c5fe77bbfb399dd651a59b",
+      "bytes": 68583,
+      "rights": "Genshin Impact artwork belongs to HoYoverse/COGNOSPHERE. Public asset delivery is not a new license grant; review redistribution before public release."
+    },
+    {
+      "id": "candace",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Candace.png",
+      "sha256": "d06ac69bfd75c2be2e4faa2289a0f67b358302143cbbaaba52b5bfa18307fd0b",
+      "bytes": 90298,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "charlotte",
+      "source": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/06/35428890/7bbbff3f35661a93b5091b1f17fae6c0_6927814687713967999.png",
+      "sha256": "427adb8a20094eb1de339a438d9433f4a5846a7231aa917df42f5b41faafce98",
+      "bytes": 91544,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "chasca",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/abe1192cc7aad45f6b273478dd5fa88a_4799372826012752249.png",
+      "sha256": "19bddaea1337aafae7a0909372f9bea5e8fdfc922424b656658deaaec8fcbc3c",
+      "bytes": 126521,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "chevreuse",
+      "source": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/01/09/35428890/a846729f31f16a987a8696466ebabcc0_6857330048220230431.png",
+      "sha256": "e03666f005b0b87bbcc002634a3320d311c2add2a52b840985bdcd97771811ed",
+      "bytes": 101222,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "chiori",
+      "source": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/11/35428890/5470f90694af13476e49be7b8346e2b1_5366587928381003654.png",
+      "sha256": "6a4ed991e8d43e30f7209b70be711c82458617a0ca955e733e0358075d02f71a",
+      "bytes": 91250,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "chongyun",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Chongyun.png",
+      "sha256": "e021a35f37a4be361b92c3f823a76e22fbbbe594ae1f4ba8180671c79bf1cb66",
+      "bytes": 78484,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "citlali",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/27/c4ab2530bb8bbe3c0e811684f97ec124_6688582217610741079.png",
+      "sha256": "e83fc7fd9f4200d6d43fe7cbbdc918a942e900f7b8f1f40e46ae84a1e0a2aaca",
+      "bytes": 100722,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "clorinde",
+      "source": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/04/35428890/770a66030815971c697ab81bc5436329_1296341861352728851.png",
+      "sha256": "d0de8e1e514a878dc45ff26645a4a111f677f00611b667b8aa92a0ee828bfdf7",
+      "bytes": 102162,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "collei",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Collei.png",
+      "sha256": "d477472b96de7fdf79ca918d0066f927be16f0d970c416ba6c19991ede1b9b77",
+      "bytes": 90957,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "columbina",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/80fa97679c8d1828fdd96c6aa9638632_4327573591148809640.png",
+      "sha256": "bd22310bde257c57d5e0c311c8494eebc5ffd48b7fdcee10c230fd859e28072e",
+      "bytes": 98670,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "cyno",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Cyno.png",
+      "sha256": "b7917fe0161b9880f781f5770efbd05d82dfee487a70529b4cf95e55003c4c3f",
+      "bytes": 91429,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "dahlia",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/255dedc5048565aec2c5af510c6f74a5_7726536808309970424.png",
+      "sha256": "46f6aa0f7b17242cd973bf027e71c71a04d4de5df89aeae61dad8b9e67f34bfb",
+      "bytes": 76296,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "dehya",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Dehya.png",
+      "sha256": "63d8a8e5f9f20421eda3dafaedc62d2b9d7fe2d8e76180070d5140a52fd0d26d",
+      "bytes": 98262,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "diluc",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Diluc.png",
+      "sha256": "87870285f7c5d5488a3be42d03d40cb36b3b3fa80f91ffaa4a74f7260c57e8ca",
+      "bytes": 92811,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "diona",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Diona.png",
+      "sha256": "f21b72181abc173fbaafc1bf33ede655b342c7f7d3b2c214e78f331b083b122d",
+      "bytes": 88931,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "dori",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Dori.png",
+      "sha256": "56861e4d624ed38499cce249a8dbc9671ac1041e6733c4edad281ca9edc02633",
+      "bytes": 94646,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "durin",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/11/28/e3e2b8fcbff2f2f3cdcec6bbf04efa84_3327367670955368711.png",
+      "sha256": "0f8ecbd871ee6f520c9fac3b4321bfe63c038751191c6d93e59553c5e95b5eaa",
+      "bytes": 95723,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "emilie",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/31/87ad30965e0c1b45364fdccc51b3429d_6108610286145583716.png",
+      "sha256": "519d73fb0c1e7114526e7084c608170e4f1916af306b69df57f9b89f26c8c184",
+      "bytes": 110429,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "escoffier",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/30/ddbc128157d69479f61747f0918f9e72_2470321636402108639.png",
+      "sha256": "20fd7e43a73dbfa472f36f8a5a9b913efe7e707f0f2acdec25f3264ce28b6921",
+      "bytes": 95532,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "eula",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Eula.png",
+      "sha256": "24fe2e8b1043f22d56a002716f0b0ce0590a8365f18c297ad8918a49a2585d85",
+      "bytes": 108386,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "faruzan",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Faruzan.png",
+      "sha256": "20974bdc74323e2050e117b174b31149cbd0bb14038144c2723b32f99d57e102",
+      "bytes": 101334,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "fischl",
+      "source": "https://enka.network/ui/UI_AvatarIcon_Fischl.png",
+      "sha256": "ae253a2058e55c9408ce9722b3b7f01d72ec8da8e7f9984841a1132eb797a663",
+      "bytes": 33250,
+      "rights": "Genshin Impact artwork belongs to HoYoverse/COGNOSPHERE. Public asset delivery is not a new license grant; review redistribution before public release."
+    },
+    {
+      "id": "flins",
+      "source": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/09/29/35428890/f6feccecc61d2bf772461f057dfb41cd_5944664216414192017.png",
+      "sha256": "11117060b1e334ac1b297099286488fcd08c039a9cb1569c161cd553f33caf6a",
+      "bytes": 65901,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "freminet",
+      "source": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/03/35428890/8e44111a378f4e5379b8e7444e8c2daa_4713775899437074849.png",
+      "sha256": "e96c220326c70016220d9e4cfed298363378762ca66d44024493a8f27c8b4355",
+      "bytes": 87627,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "furina",
+      "source": "https://enka.network/ui/UI_AvatarIcon_Furina.png",
+      "sha256": "e8197798bf03f3eb3bc3a436133751eab5881d314f785d561db5ca2b3e97ff11",
+      "bytes": 100646,
+      "rights": "Genshin Impact artwork belongs to HoYoverse/COGNOSPHERE. Public asset delivery is not a new license grant; review redistribution before public release."
+    },
+    {
+      "id": "gaming",
+      "source": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/01/29/35428890/b041ad23a9d6245efac952a9379c5114_8939761424130236195.png",
+      "sha256": "c1677779ff382554674637d14c508b241112adc32d72595c5148ad139460f30d",
+      "bytes": 87300,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "ganyu",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ganyu.png",
+      "sha256": "c0c6df9a5335afd248330d99b397c0863f5ff9181bfc45344640aab19d3e7381",
+      "bytes": 93862,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "gorou",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Gorou.png",
+      "sha256": "4e0e98c89c5c2ca7bf33d2c1518199d3d26bd4c0441da3dd4af005021e29f01b",
+      "bytes": 104340,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "heizou",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Heizo.png",
+      "sha256": "2a473abc639d96b4470690939a7392a7a59ed8a724d6b7b98ae88634f0ebfce7",
+      "bytes": 76284,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "hutao",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Hutao.png",
+      "sha256": "63433228b284d259a123455b6592f5c3c629bbb1f80b5ac0bb5debc188973372",
+      "bytes": 103845,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "iansan",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/25/dd9a200a86b792fb1b73ef1ee7de0911_2097378734184941134.png",
+      "sha256": "be1e301a0aaaa5b93acc59e52c2a10434e8ca87eb80d4470b93ee1e6e2e162ab",
+      "bytes": 87930,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "ifa",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/30/ce693d1e36aef5936b2d2db006605fc4_9036718103340803450.png",
+      "sha256": "17b4931649dad29602bcf4017bdc78a4c927e9fbff15d72cd3585755abfbd096",
+      "bytes": 96437,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "illuga",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/d585407867aa47b4d925613cea9f00c2_5864597966579326880.png",
+      "sha256": "ce9c7715e3dacca078420d3e0420a6bcabd223359b3ecab263d8103119b918a7",
+      "bytes": 79170,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "ineffa",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/07/28/7c221918444852e9a3c2ad609ccacea2_8687518447126752117.png",
+      "sha256": "4fc924b7a1852c4a96486f8792ecbed8b903d6067dcb070637926b621b71c38b",
+      "bytes": 86409,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "itto",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Itto.png",
+      "sha256": "1369d607c1079f832fc88abdee5d470b54bd6f8288387d95ed4f82e1f7606d8b",
+      "bytes": 106328,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "jahoda",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/12/01/19708bac6eba4779a70908bf0bee70b1_1653339605275422455.png",
+      "sha256": "543c81c8d3bfefeee2b68c742191a57df39efa0313c484cf00ca43bd02901419",
+      "bytes": 90901,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "jean",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Qin.png",
+      "sha256": "97470a704479e99e59c10cff9bc6a4ea9d33e7911897a45f7a57eb80989eafe5",
+      "bytes": 82384,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "kachina",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/26925adb1092d29c8afdf46d92fad8bd_343637410022641529.png",
+      "sha256": "5a3a5c4f45006faa3776ed2c9283a6c9ea0d34684b37c8a93ad15fd3581509a6",
+      "bytes": 101778,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "kaeya",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Kaeya.png",
+      "sha256": "ffff3010eb68157b58a9feb5f6bc021e5f7e6e813b26219857ef7b670eba94b3",
+      "bytes": 86282,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "kaveh",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Kaveh.png",
+      "sha256": "1d50b4ef778ede39802f47218f854bf92ed116d1503d706719cca90ace53d5b6",
+      "bytes": 96344,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "kazuha",
+      "source": "https://enka.network/ui/UI_AvatarIcon_Kazuha.png",
+      "sha256": "a3d6519f6676ee787477d5745eecb17c5fb6d437d4504e09918e7aced74f8268",
+      "bytes": 72027,
+      "rights": "Genshin Impact artwork belongs to HoYoverse/COGNOSPHERE. Public asset delivery is not a new license grant; review redistribution before public release."
+    },
+    {
+      "id": "keqing",
+      "source": "https://enka.network/ui/UI_AvatarIcon_Keqing.png",
+      "sha256": "40b4a55d6f9497b75c6af95e5d2bca8bcc0ce5328285d2d03bb1cd49487dc5d1",
+      "bytes": 80403,
+      "rights": "Genshin Impact artwork belongs to HoYoverse/COGNOSPHERE. Public asset delivery is not a new license grant; review redistribution before public release."
+    },
+    {
+      "id": "kinich",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/12/0099e74b4d0c919f6feab4bade3ab748_5795733017114624391.png",
+      "sha256": "f1932b438c9079a47a2f00b4f8d05767f70445274b20889e6b4bec8d3a08c8ad",
+      "bytes": 86424,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "kirara",
+      "source": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/23/35428890/d1699810632f8c3bc8c1e8c8beb8250f_3141235252861584883.png",
+      "sha256": "c0dd6d9aee2ac3515fbc20a08a20fdea19ed27cf0e7b8777d0f147fa123985d0",
+      "bytes": 101819,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "klee",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Klee.png",
+      "sha256": "bad65416e0f38c803958cd7281364812be020cf251f96a2d7e527ce693e50ffe",
+      "bytes": 97968,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "kokomi",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Kokomi.png",
+      "sha256": "6187d4fc5cbe950b786f8dfe3d134d3f924609cd30550cd4b2a81687c1601268",
+      "bytes": 82880,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "kuki",
+      "source": "https://enka.network/ui/UI_AvatarIcon_Shinobu.png",
+      "sha256": "f9d9391c39df9e327dcefa2038463104530627232eca203cf624b1188e70a054",
+      "bytes": 90025,
+      "rights": "Genshin Impact artwork belongs to HoYoverse/COGNOSPHERE. Public asset delivery is not a new license grant; review redistribution before public release."
+    },
+    {
+      "id": "lanyan",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/01/17/02a299cec38b4ef4f21952c37a624258_5744396397316809821.png",
+      "sha256": "fbd04d7036826069564d41edfb493d2ba0981afb4ff05708b3708dbf3d119c65",
+      "bytes": 92230,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "lauma",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/08/b06e9ff48d57de4856f1a05b1199aae1_8565150401481594895.png",
+      "sha256": "dc59c234af27d6c387f968c06cbd40263bd34f30ac75bc6b2f045d9cad79c4df",
+      "bytes": 90284,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "layla",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Layla.png",
+      "sha256": "281a53495dc20c3b70597e7bd97afc409b5385e5e2f30e21fda807730fdf84ae",
+      "bytes": 89304,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "linnea",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/04/03/b73622caa3750012312c72437295ace3_6973976776946504804.png",
+      "sha256": "f8f3c5920b5d162324a644634f71d2ea7e67eaed26138a68209587ebcda369f0",
+      "bytes": 105426,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "lisa",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Lisa.png",
+      "sha256": "a4aef00697055c63b213f984ffc89aa19daba22c34e43621108a6e03b2e9d886",
+      "bytes": 106305,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "lohen",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/06/05/7fced903c930ab16fd333755c1aef7e9_9169127423158726160.png",
+      "sha256": "559e0c4b786b5abbc2e87bf91583136a22a59679a0e6eca7569639b0804ad75d",
+      "bytes": 91322,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "lynette",
+      "source": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/14/35428890/436e6f2b9b9006bfe511a98093259daf_7192025380861185061.png",
+      "sha256": "f7e3e4c243d31c320d87533c110b617969e72b6d671900a12b89f9cee365f708",
+      "bytes": 88083,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "lyney",
+      "source": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/11/35428890/e343d4442cc3b8e243f0d528bb715f75_1232011243947476013.png",
+      "sha256": "abf5008949d93017fbed8d07a36f3ad0c8aa357db4b90804bd107e0113b8cc59",
+      "bytes": 81399,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "mavuika",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/30/2f098b1f15854fd9dafc54998795a59e_864981592196815761.png",
+      "sha256": "2997c2cca73ab9aa0cad9e232f1579ae22af4387b3c77eb416b392922c0ad99e",
+      "bytes": 113188,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "mika",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Mika.png",
+      "sha256": "48c7ba68490283074d2fd2070e47e4688235fa0bf0d69884cb94e233bfcc1cd0",
+      "bytes": 90818,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "mizuki",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/11662c12fb353d88bd2b20a2726c9f1c_8013472600677983943.png",
+      "sha256": "9d6cd4802bec363a1670f67686668ba66211b42220bc23e14e46429d742dcb6e",
+      "bytes": 110439,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "mona",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Mona.png",
+      "sha256": "5ced95c2de246e671a88026e21df66e6090ddfd4849a4ae24471c1fc46695e01",
+      "bytes": 106199,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "mualani",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/26/f4c75caad42923eb91ee760aa2eb473a_7439123622315070718.png",
+      "sha256": "6bec3b301975382cecca8461a3d32f7b2e95905fba17db35400dbf4866a61276",
+      "bytes": 86995,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "nahida",
+      "source": "https://enka.network/ui/UI_AvatarIcon_Nahida.png",
+      "sha256": "33095c7bab7519d7f76047537658b86182bdc2ab6d90f89f6262bec6d51723b8",
+      "bytes": 101077,
+      "rights": "Genshin Impact artwork belongs to HoYoverse/COGNOSPHERE. Public asset delivery is not a new license grant; review redistribution before public release."
+    },
+    {
+      "id": "navia",
+      "source": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/18/35428890/3fc7580c01a9e622692402889706c4db_8301615651200775487.png",
+      "sha256": "1f316221a2fb0fb8ce4118fb63adb1a537d2e00dd0cdf0b1bd20299dc1379217",
+      "bytes": 123962,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "nefer",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/10/21/7557acebcb72b4d9912bcb0e6c92306a_3655566527985254987.png",
+      "sha256": "134c9cd3bda3673bd25a084ca226b1118e6139256f39ab2e8f255e530eb66e5d",
+      "bytes": 92825,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "neuvillette",
+      "source": "https://enka.network/ui/UI_AvatarIcon_Neuvillette.png",
+      "sha256": "a790bf334184f695fdcec0da80f517142302667f365cea876bfcc8ad967284ba",
+      "bytes": 85866,
+      "rights": "Genshin Impact artwork belongs to HoYoverse/COGNOSPHERE. Public asset delivery is not a new license grant; review redistribution before public release."
+    },
+    {
+      "id": "nicole",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/05/18/5e875ee63bca70ebeda64e6fa409d31b_5921156294699298125.png",
+      "sha256": "4b3c4f1fc480f3e40280e7d15f671cf1cddd4b0e193b1bf215b2f20bced91c0e",
+      "bytes": 94024,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "nilou",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Nilou.png",
+      "sha256": "e366910045ddd2447e90f92108fc5e30c22de53e970005bd6a8c278cd42952c4",
+      "bytes": 101508,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "ningguang",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ningguang.png",
+      "sha256": "4665778752457f5a75c5faca84eabdab60ab290fb783a5aa0f791c53c0c7e10b",
+      "bytes": 94193,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "noelle",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Noel.png",
+      "sha256": "eeafc449127efcd98fdedf52eae6f5074c8bfdedfe770c52d7029f245eb08325",
+      "bytes": 103984,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "odette",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/07/963982ad49601f7de6a5ab1a364989f7_3689152522029267720.png",
+      "sha256": "3599641cafa7bb97ae4dcffd635dd2eab4c6f9858828ba366a41024232aefd38",
+      "bytes": 89512,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "ororon",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/e4830690f8b6a1ebb02cfbc8ce955671_8091252479018770784.png",
+      "sha256": "06da65f450f282eedb7972bf243e0b913656b89cc3a6f25dd895ad13bc5df046",
+      "bytes": 115283,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "prune",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/05/19/51e83d3537b37acc3f422910fe5bef82_3083259311239382441.png",
+      "sha256": "7ddb2e9c2de7dfe7f4192189a7211e8da56828837a284089841b8223593555fb",
+      "bytes": 96251,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "qiqi",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Qiqi.png",
+      "sha256": "4b454311dc485798b0c9efaef96fbcd042336f07e82f136a505476d90c8fe9e5",
+      "bytes": 87588,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "raiden",
+      "source": "https://enka.network/ui/UI_AvatarIcon_Shougun.png",
+      "sha256": "9c70e4979c98989259d44d2717523610cf5cd6c6d1f049341dac1004c4f8981d",
+      "bytes": 37576,
+      "rights": "Genshin Impact artwork belongs to HoYoverse/COGNOSPHERE. Public asset delivery is not a new license grant; review redistribution before public release."
+    },
+    {
+      "id": "razor",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Razor.png",
+      "sha256": "daae789ab0b07b230a394cefd43235905bdae8cda4e901584d609b4f35cfc060",
+      "bytes": 77623,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "rosaria",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Rosaria.png",
+      "sha256": "6f1bc0acdb5a94a09bb702eda7b1ed32431503aaca7c2ca7d927299bf283ab8a",
+      "bytes": 87347,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "sandrone",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/06/29/4ee285b198b7bb8dba2a0a63aa9ffc9f_7866102664638374858.png",
+      "sha256": "1ab3c4e05cae5db564a174b815ffad7d8d69c5f26d284ce4d10e1b6b6261bba3",
+      "bytes": 89731,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "sara",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Sara.png",
+      "sha256": "de28a3302b92d10618e3e60afa9d7cd56aaf33af2cad7d59ce3d0f98b1a419cd",
+      "bytes": 86146,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "sayu",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Sayu.png",
+      "sha256": "fc3b689f966b04889e8091a8adbcdfb526594a9ab74bb33d569addd35c884c32",
+      "bytes": 94335,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "sethos",
+      "source": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/04/35428890/cdb7abfcb86138e5b618946a5466d442_6414132746291261116.png",
+      "sha256": "d3e779551e7a4b18a7df8f0124a41d1d6240c17f57d924c5534259f8b7614c70",
+      "bytes": 93205,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "shenhe",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Shenhe.png",
+      "sha256": "793a9690eb5a358db8f1e15a2d9c117b6e2177f593902565a512ddd7c9749f74",
+      "bytes": 88452,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "sigewinne",
+      "source": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/26/35428890/2d607aa4d729030ea04f79919257e311_1172370997840232141.png",
+      "sha256": "8ef32b4904c4263544d3683a0f4907b119bd6ebaee737667c2885aad262cf572",
+      "bytes": 101157,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "skirk",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/48dba0c10560a3ef573f17d97408b5a0_2527001828446746987.png",
+      "sha256": "d93cbe0bb923cd197a99a582de5728e84abeb17ca306fffadd16fd4fb3f6c828",
+      "bytes": 96254,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "sucrose",
+      "source": "https://enka.network/ui/UI_AvatarIcon_Sucrose.png",
+      "sha256": "149af23932b1d963122572a9c27bdfc117fa02592f617607788f5d36cab09e97",
+      "bytes": 83281,
+      "rights": "Genshin Impact artwork belongs to HoYoverse/COGNOSPHERE. Public asset delivery is not a new license grant; review redistribution before public release."
+    },
+    {
+      "id": "tartaglia",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Tartaglia.png",
+      "sha256": "46d350dad3ca62ef836968e466c3326dd56c2a2ccb66cda5331b71ae202a7df6",
+      "bytes": 101255,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "thoma",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Tohma.png",
+      "sha256": "fe44ff21dad03003431be0ddec5f9ed69bc5e2f39824dfe1ee5e94ba4ec7c895",
+      "bytes": 81855,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "tighnari",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Tighnari.png",
+      "sha256": "f2b8d70e4528f3663c6ab8a0ac07c83b6c96d2d24ba0bb02efea795cfbe62e12",
+      "bytes": 92193,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "traveler",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_PlayerBoy.png",
+      "sha256": "4cff112eafe563554aab7d82ff6281bba58048792d991381ed3bfcb929834773",
+      "bytes": 81578,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "varesa",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/25/a54efe1bb7e82a589b9af44683a696ca_8635138146175164187.png",
+      "sha256": "167d9a6c15c394ceb8f978b25c95ee9fbff792c1a2332d05d73be30bb99f3527",
+      "bytes": 115278,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "varka",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/02/21/553feb81c3bbc5e3bc69a765e157c33f_8250978205515428490.png",
+      "sha256": "bd6dc5964b1a63f81c12e3717422fa3d4703330974008af6353550ab798e0b89",
+      "bytes": 97667,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "venti",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Venti.png",
+      "sha256": "35bf7f0580b127bb914cfc97a0431a49ffa00d99040bcab7933c3bda39d5cc3a",
+      "bytes": 82380,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "vesna",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/17/623ff6a96cc1c9ebe8c5fcc57eabaf9c_8414553061614722407.png",
+      "sha256": "e6fb00e1e20684ff472eb43c9bb5ce968d1e0f654c4d2942d8e1f17d86661519",
+      "bytes": 222247,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "vodyanitsa",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/18/e106be431d7c8ebbb9607b032fc66e3d_2965794852318237555.png",
+      "sha256": "401347f6f5910f638ee998708f615c6cb6b94f774590b3f4be335f37be7610c8",
+      "bytes": 102033,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "wanderer",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Wanderer.png",
+      "sha256": "108c3ec5128ea25f8bbab7ac49824e0aa509af0e83b569e327c3ac26eb014e4d",
+      "bytes": 88179,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "wriothesley",
+      "source": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/10/15/35428890/31a0eb2dec5d69ca8dd7616572136b8b_8886987124386670150.png",
+      "sha256": "c16eb70d63387cdeb40dd9bf09476c20e3e61b0d45ca5f36ce06399d4c9c4c74",
+      "bytes": 90527,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "xiangling",
+      "source": "https://enka.network/ui/UI_AvatarIcon_Xiangling.png",
+      "sha256": "fb16231a2f447a71cedfa4644fb837bbd92b500e83106a69cf75de0c7fdb8088",
+      "bytes": 59284,
+      "rights": "Genshin Impact artwork belongs to HoYoverse/COGNOSPHERE. Public asset delivery is not a new license grant; review redistribution before public release."
+    },
+    {
+      "id": "xianyun",
+      "source": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/01/29/35428890/2c2be27f8876e9435ab8c8b933b8408c_7973851751945394462.png",
+      "sha256": "5250cd226cec610588e0cc23e79473403abc3e684a7bf1f71ff012339a93119d",
+      "bytes": 91963,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "xiao",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Xiao.png",
+      "sha256": "ff3ffff31654f5e41e724fee6f866df49fff2a7b5b41d1561a6bf50f5cca1ba9",
+      "bytes": 88989,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "xilonen",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/b07074c2b9040516fd240b6b8d65c011_2487211347344319683.png",
+      "sha256": "fe6058b88037265f46b18b703da008910b6278a8a1533e73c6d7374e25fc2ffe",
+      "bytes": 117269,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "xingqiu",
+      "source": "https://enka.network/ui/UI_AvatarIcon_Xingqiu.png",
+      "sha256": "4e976c25669968563c315118b10b41c3ae0ebd6552cb009a5227f14210e5433a",
+      "bytes": 24115,
+      "rights": "Genshin Impact artwork belongs to HoYoverse/COGNOSPHERE. Public asset delivery is not a new license grant; review redistribution before public release."
+    },
+    {
+      "id": "xinyan",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Xinyan.png",
+      "sha256": "e512b3afd252051bfc94893d285d7c9dd364e9dcda2cafed6b7c0638eb074fe9",
+      "bytes": 103667,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "yaemiko",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Yae.png",
+      "sha256": "ac66d3cb871d79add030cd99f5f732f817aa32af0f3a55b8195c9c1b905d126f",
+      "bytes": 100345,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "yanfei",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Feiyan.png",
+      "sha256": "3418a9dfff9b3f72dfae16e78086682620d9b022a4ebdbccaa42e8cb79a3522c",
+      "bytes": 114601,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "yaoyao",
+      "source": "https://enka.network/ui/UI_AvatarIcon_Yaoyao.png",
+      "sha256": "fbfbe8c14406520507db4b56943946309be52e3a24aabb33aa1c7ebfd28b707b",
+      "bytes": 85110,
+      "rights": "Genshin Impact artwork belongs to HoYoverse/COGNOSPHERE. Public asset delivery is not a new license grant; review redistribution before public release."
+    },
+    {
+      "id": "yelan",
+      "source": "https://enka.network/ui/UI_AvatarIcon_Yelan.png",
+      "sha256": "659594db7bd0a39c70b1f2758574296a185f3570b4a495a49fed7be233a46331",
+      "bytes": 29094,
+      "rights": "Genshin Impact artwork belongs to HoYoverse/COGNOSPHERE. Public asset delivery is not a new license grant; review redistribution before public release."
+    },
+    {
+      "id": "yoimiya",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Yoimiya.png",
+      "sha256": "d38d0a482ce135be7f5a665b719f405605f1732fc7a5f084b7fa0b9c77dc7b20",
+      "bytes": 99296,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "yunjin",
+      "source": "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Yunjin.png",
+      "sha256": "6c82a6577a5f3909e3cf96c1ffe9ca2ba211f65f879f058be363fd365b2023cb",
+      "bytes": 86843,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    },
+    {
+      "id": "zhongli",
+      "source": "https://enka.network/ui/UI_AvatarIcon_Zhongli.png",
+      "sha256": "a8d34dc3af28b0404608493908096d38a7db7e8f38fddd072a84ec7c66fa1e51",
+      "bytes": 26806,
+      "rights": "Genshin Impact artwork belongs to HoYoverse/COGNOSPHERE. Public asset delivery is not a new license grant; review redistribution before public release."
+    },
+    {
+      "id": "zibai",
+      "source": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/72161f01ff431c9f099710f92c811454_1654176825175164246.png",
+      "sha256": "1247831177f163bee3a1eb06f3fd4600c7694909ea22226cb4042fa6febf55be",
+      "bytes": 93581,
+      "rights": "Genshin Impact artwork © HoYoverse/COGNOSPHERE; retained for this unofficial fan project with attribution."
+    }
+  ]
+}

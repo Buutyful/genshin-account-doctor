@@ -1,0 +1,13 @@
+{
+  "asOf": "2026-09-23",
+  "gameVersion": "7.1",
+  "sourceVersion": "5.2.14",
+  "scope": "Released Teyvat combat characters, with upcoming characters shown separately. Traveler elements share one account identity.",
+  "excluded": {
+    "manekin": { "reason": "Miliastra avatar; excluded from the endgame team finder.", "source": "https://www.hoyolab.com/article/45088863" },
+    "manekina": { "reason": "Miliastra avatar; excluded from the endgame team finder.", "source": "https://www.hoyolab.com/article/45088863" }
+  },
+  "upcoming": {},
+  "releaseSource": "https://genshin.hoyoverse.com/m/de/news/detail/166383",
+  "travelerElements": ["Anemo", "Geo", "Electro", "Dendro", "Hydro", "Pyro", "Cryo"]
+}
