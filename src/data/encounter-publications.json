@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "reviews": [
+    {
+      "id": "abyss-review-2026-10-03-europe",
+      "path": "challenges/abyss-review-2026-10-03-europe.json",
+      "sha256": "cc9b0891c9c070dcbc1a2b251aa164e83f4e50406b07258507cf9f603b941ff9",
+      "mode": "abyss",
+      "region": "Europe"
+    },
+    {
+      "id": "stygian-review-2026-10-03-europe",
+      "path": "challenges/stygian-review-2026-10-03-europe.json",
+      "sha256": "8db0a48490b974a884c63388b5a63236b7249410c8eabf2ab8a68f7729e0e829",
+      "mode": "stygian",
+      "region": "Europe"
+    },
+    {
+      "id": "abyss-review-2026-10-03-america",
+      "path": "challenges/abyss-review-2026-10-03-america.json",
+      "sha256": "c98a15e4b8c5b9ef4492ee61ef4af4c36563a4d57899efa49793aefdc85e961a",
+      "mode": "abyss",
+      "region": "America"
+    },
+    {
+      "id": "stygian-review-2026-10-03-america",
+      "path": "challenges/stygian-review-2026-10-03-america.json",
+      "sha256": "a7407e76280517fa5eb60faef6e1ab7f134bb72a17136537bdc8b3ea48caee50",
+      "mode": "stygian",
+      "region": "America"
+    },
+    {
+      "id": "abyss-review-2026-10-03-asia",
+      "path": "challenges/abyss-review-2026-10-03-asia.json",
+      "sha256": "dfffd2f2a3627cc3fc12287a87140ab6a3d0317de553382714015101992b4643",
+      "mode": "abyss",
+      "region": "Asia"
+    },
+    {
+      "id": "stygian-review-2026-10-03-asia",
+      "path": "challenges/stygian-review-2026-10-03-asia.json",
+      "sha256": "40646dbe6275ab57a11fca54da39dbe1c8bd906d47f8ab4c19dae3b67feb7c02",
+      "mode": "stygian",
+      "region": "Asia"
+    }
+  ]
+}

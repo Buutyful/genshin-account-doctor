@@ -1,0 +1,22 @@
+{
+  "source": "https://www.prydwen.gg/genshin-impact/tier-list",
+  "checkedAt": "2026-10-03",
+  "publisherUpdatedAt": "2026-10-01",
+  "patch": "7.1",
+  "note": "Expert-execution tags checked on the Overall list alongside the complete 3 October tier review. Conditional ratings retain their execution requirements; the numeric tag is not interpreted as a damage multiplier or evidence of clear performance.",
+  "expertRoles": [
+    { "id": "mavuika", "role": "carry" },
+    { "id": "nefer", "role": "carry" },
+    { "id": "wriothesley", "role": "carry" },
+    { "id": "skirk", "role": "carry" },
+    { "id": "mona", "role": "support" },
+    { "id": "arlecchino", "role": "carry" },
+    { "id": "kinich", "role": "carry" },
+    { "id": "mualani", "role": "carry" },
+    { "id": "gaming", "role": "carry" },
+    { "id": "hutao", "role": "carry" },
+    { "id": "xiao", "role": "carry" },
+    { "id": "sethos", "role": "carry" },
+    { "id": "lisa", "role": "carry" }
+  ]
+}

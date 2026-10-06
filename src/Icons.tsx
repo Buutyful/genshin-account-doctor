@@ -1,5 +1,10 @@
-export type IconName = 'spark' | 'heart' | 'grid' | 'users' | 'graph' | 'book' | 'arrow' | 'chevron' | 'upload' | 'download' | 'search' | 'check' | 'close' | 'shield' | 'leaf' | 'target' | 'flask' | 'plus' | 'clock' | 'external';
+export type IconName = 'spark' | 'heart' | 'grid' | 'users' | 'graph' | 'book' | 'arrow' | 'chevron' | 'upload' | 'download' | 'search' | 'check' | 'close' | 'shield' | 'leaf' | 'target' | 'flask' | 'plus' | 'clock' | 'external' | 'menu' | 'sliders' | 'info' | 'edit' | 'lock';
 const paths: Record<IconName, string> = {
+  info: 'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18ZM12 11v6m0-10v1',
+  edit: 'm16 3 5 5L9 20l-6 1 1-6L16 3Zm-2 2 5 5',
+  lock: 'M6 10h12v11H6V10Zm2 0V7a4 4 0 0 1 8 0v3m-4 5v2',
+  menu: 'M4 6h16M4 12h16M4 18h16',
+  sliders: 'M4 7h8m4 0h4M4 17h3m4 0h9M12 4v6M7 14v6',
   spark: 'm12 2 2.8 7.2L22 12l-7.2 2.8L12 22l-2.8-7.2L2 12l7.2-2.8L12 2Z',
   heart: 'M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z',
   grid: 'M3 3h7v7H3V3Zm11 0h7v7h-7V3ZM3 14h7v7H3v-7Zm11 0h7v7h-7v-7Z',

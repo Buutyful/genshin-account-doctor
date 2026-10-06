@@ -1,0 +1,970 @@
+{
+  "verifiedAt": "2026-10-06T13:02:09.605Z",
+  "publicationCheckedAt": "2026-10-05T11:19:07.642Z",
+  "publicationSha256": "fbe475ba9e8de5817b9e585f3120ad601a556f1d981ba83a61f475a046dd3d8a",
+  "parserVersion": "stygian-public-listings-v2",
+  "records": 914,
+  "checkedSnapshots": 101,
+  "independentlyVerifiedVideos": 0,
+  "scope": "Exact-byte source snapshots and factual field normalization. Source-listed moderation is not independent proof or complete build verification.",
+  "source": {
+    "id": "stygian-moe",
+    "name": "Stygian.moe",
+    "url": "https://www.stygian.moe",
+    "termsUrl": "https://www.stygian.moe/terms-of-service",
+    "guideUrl": "https://www.stygian.moe/guide/submission-guide"
+  },
+  "versions": [
+    {
+      "id": "0daa885d-9ee5-441c-9218-1370f7576062",
+      "label": "7.1",
+      "bossIds": [
+        "e7382e63-d5f7-4262-83c4-94032fbba902",
+        "452686be-856d-45b4-9b6e-664e68b5f5fc",
+        "6e691fe5-fe1b-44eb-aecd-cf76b87fe41c"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "versionId": "0daa885d-9ee5-441c-9218-1370f7576062",
+      "bossId": "452686be-856d-45b4-9b6e-664e68b5f5fc",
+      "difficulty": "Dire",
+      "sourceCount": 153,
+      "indexedCount": 151,
+      "pages": 16,
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Dire"
+    },
+    {
+      "versionId": "0daa885d-9ee5-441c-9218-1370f7576062",
+      "bossId": "e7382e63-d5f7-4262-83c4-94032fbba902",
+      "difficulty": "Dire",
+      "sourceCount": 184,
+      "indexedCount": 184,
+      "pages": 19,
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Dire"
+    },
+    {
+      "versionId": "0daa885d-9ee5-441c-9218-1370f7576062",
+      "bossId": "6e691fe5-fe1b-44eb-aecd-cf76b87fe41c",
+      "difficulty": "Dire",
+      "sourceCount": 215,
+      "indexedCount": 215,
+      "pages": 22,
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Dire"
+    },
+    {
+      "versionId": "0daa885d-9ee5-441c-9218-1370f7576062",
+      "bossId": "452686be-856d-45b4-9b6e-664e68b5f5fc",
+      "difficulty": "Fearless",
+      "sourceCount": 114,
+      "indexedCount": 104,
+      "pages": 12,
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Fearless"
+    },
+    {
+      "versionId": "0daa885d-9ee5-441c-9218-1370f7576062",
+      "bossId": "e7382e63-d5f7-4262-83c4-94032fbba902",
+      "difficulty": "Fearless",
+      "sourceCount": 121,
+      "indexedCount": 113,
+      "pages": 13,
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Fearless"
+    },
+    {
+      "versionId": "0daa885d-9ee5-441c-9218-1370f7576062",
+      "bossId": "6e691fe5-fe1b-44eb-aecd-cf76b87fe41c",
+      "difficulty": "Fearless",
+      "sourceCount": 152,
+      "indexedCount": 147,
+      "pages": 16,
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Fearless"
+    }
+  ],
+  "excluded": [
+    {
+      "id": "c7eeaab3-6fe3-4a27-a772-8cfdd140c24f",
+      "members": 2,
+      "sourceVerified": true,
+      "bossId": "452686be-856d-45b4-9b6e-664e68b5f5fc",
+      "difficulty": "Dire"
+    },
+    {
+      "id": "83a10773-85ed-4704-a4b1-4137caefcbb4",
+      "members": 3,
+      "sourceVerified": true,
+      "bossId": "452686be-856d-45b4-9b6e-664e68b5f5fc",
+      "difficulty": "Dire"
+    },
+    {
+      "id": "c02cee01-f9fb-4462-bf9b-642532087b33",
+      "members": 3,
+      "sourceVerified": true,
+      "bossId": "452686be-856d-45b4-9b6e-664e68b5f5fc",
+      "difficulty": "Fearless"
+    },
+    {
+      "id": "e2f4792c-a436-4141-be45-a0ac51a39e6c",
+      "members": 2,
+      "sourceVerified": true,
+      "bossId": "452686be-856d-45b4-9b6e-664e68b5f5fc",
+      "difficulty": "Fearless"
+    },
+    {
+      "id": "9b0ac59d-3dca-4c89-8739-4adc66a5af7b",
+      "members": 2,
+      "sourceVerified": true,
+      "bossId": "452686be-856d-45b4-9b6e-664e68b5f5fc",
+      "difficulty": "Fearless"
+    },
+    {
+      "id": "08d6073a-f5f0-4637-b0db-208bd470c516",
+      "members": 2,
+      "sourceVerified": true,
+      "bossId": "452686be-856d-45b4-9b6e-664e68b5f5fc",
+      "difficulty": "Fearless"
+    },
+    {
+      "id": "39d4bb9a-a4af-4e67-83d0-971137928ef7",
+      "members": 2,
+      "sourceVerified": true,
+      "bossId": "452686be-856d-45b4-9b6e-664e68b5f5fc",
+      "difficulty": "Fearless"
+    },
+    {
+      "id": "61be2009-2cb6-4474-b956-bf50becffacf",
+      "members": 2,
+      "sourceVerified": true,
+      "bossId": "452686be-856d-45b4-9b6e-664e68b5f5fc",
+      "difficulty": "Fearless"
+    },
+    {
+      "id": "06cd65e5-a269-4cd3-987e-4792bca69311",
+      "members": 3,
+      "sourceVerified": true,
+      "bossId": "452686be-856d-45b4-9b6e-664e68b5f5fc",
+      "difficulty": "Fearless"
+    },
+    {
+      "id": "3836468a-a6c0-46cd-88c7-a4160fe19997",
+      "members": 2,
+      "sourceVerified": true,
+      "bossId": "452686be-856d-45b4-9b6e-664e68b5f5fc",
+      "difficulty": "Fearless"
+    },
+    {
+      "id": "ee7216b0-b728-436a-8402-564c0e96ba8c",
+      "members": 3,
+      "sourceVerified": true,
+      "bossId": "452686be-856d-45b4-9b6e-664e68b5f5fc",
+      "difficulty": "Fearless"
+    },
+    {
+      "id": "82e3757a-67e1-4e2b-a973-5f4f57a4076d",
+      "members": 1,
+      "sourceVerified": true,
+      "bossId": "452686be-856d-45b4-9b6e-664e68b5f5fc",
+      "difficulty": "Fearless"
+    },
+    {
+      "id": "8bea57aa-a291-4bfb-85b5-5858e5eb13ce",
+      "members": 3,
+      "sourceVerified": true,
+      "bossId": "e7382e63-d5f7-4262-83c4-94032fbba902",
+      "difficulty": "Fearless"
+    },
+    {
+      "id": "d778fbe1-0662-43c2-a46e-ddef988dea9d",
+      "members": 3,
+      "sourceVerified": true,
+      "bossId": "e7382e63-d5f7-4262-83c4-94032fbba902",
+      "difficulty": "Fearless"
+    },
+    {
+      "id": "91ccc7c0-88c5-459c-be74-a79196cf7625",
+      "members": 3,
+      "sourceVerified": true,
+      "bossId": "e7382e63-d5f7-4262-83c4-94032fbba902",
+      "difficulty": "Fearless"
+    },
+    {
+      "id": "0a73b27b-dfdc-4254-96cc-f96a3d488031",
+      "members": 2,
+      "sourceVerified": true,
+      "bossId": "e7382e63-d5f7-4262-83c4-94032fbba902",
+      "difficulty": "Fearless"
+    },
+    {
+      "id": "207a28bd-ee5d-4a28-bd82-3b7c8375c4ff",
+      "members": 2,
+      "sourceVerified": true,
+      "bossId": "e7382e63-d5f7-4262-83c4-94032fbba902",
+      "difficulty": "Fearless"
+    },
+    {
+      "id": "4e2ca37f-e6d0-4ed4-b48f-be623979b81e",
+      "members": 2,
+      "sourceVerified": true,
+      "bossId": "e7382e63-d5f7-4262-83c4-94032fbba902",
+      "difficulty": "Fearless"
+    },
+    {
+      "id": "1a7cb35a-5ce1-46af-b067-af7b5620622f",
+      "members": 2,
+      "sourceVerified": true,
+      "bossId": "e7382e63-d5f7-4262-83c4-94032fbba902",
+      "difficulty": "Fearless"
+    },
+    {
+      "id": "82e13f98-301f-49e4-805c-7a6c00508f5c",
+      "members": 2,
+      "sourceVerified": true,
+      "bossId": "e7382e63-d5f7-4262-83c4-94032fbba902",
+      "difficulty": "Fearless"
+    },
+    {
+      "id": "1e09e640-3ef2-4a60-a7f0-bc29105ec253",
+      "members": 3,
+      "sourceVerified": true,
+      "bossId": "6e691fe5-fe1b-44eb-aecd-cf76b87fe41c",
+      "difficulty": "Fearless"
+    },
+    {
+      "id": "01dcdff7-1759-4daa-aee1-2b84081a915e",
+      "members": 2,
+      "sourceVerified": true,
+      "bossId": "6e691fe5-fe1b-44eb-aecd-cf76b87fe41c",
+      "difficulty": "Fearless"
+    },
+    {
+      "id": "1563a5f5-aabe-47f5-9c01-63a6b8ccb5e4",
+      "members": 2,
+      "sourceVerified": true,
+      "bossId": "6e691fe5-fe1b-44eb-aecd-cf76b87fe41c",
+      "difficulty": "Fearless"
+    },
+    {
+      "id": "d93e1cc0-1baa-40b5-89dc-982087a9f0e7",
+      "members": 2,
+      "sourceVerified": true,
+      "bossId": "6e691fe5-fe1b-44eb-aecd-cf76b87fe41c",
+      "difficulty": "Fearless"
+    },
+    {
+      "id": "25448669-24de-40bb-b996-5c68e264e68e",
+      "members": 1,
+      "sourceVerified": true,
+      "bossId": "6e691fe5-fe1b-44eb-aecd-cf76b87fe41c",
+      "difficulty": "Fearless"
+    }
+  ],
+  "snapshots": [
+    {
+      "id": "5b6b183ba1ba52fe448e",
+      "url": "https://www.stygian.moe/team-finder",
+      "sha256": "5b6b183ba1ba52fe448e34ff9921d0d61b284f6acf7f6ff717488a0b89690176",
+      "fetchedAt": "2026-10-05T11:19:08.895Z",
+      "kind": "html"
+    },
+    {
+      "id": "5710cfe8db0eafe1caf7",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Dire",
+      "sha256": "5710cfe8db0eafe1caf797143e7b1522c7044317eb9e0a4d8ea53a56de4b59d4",
+      "fetchedAt": "2026-10-05T11:19:09.600Z",
+      "kind": "html"
+    },
+    {
+      "id": "5866fd504c664d50cee5",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Dire",
+      "sha256": "5866fd504c664d50cee50941a4a38d81cfe877453464fcd34d55faa2b41da870",
+      "fetchedAt": "2026-10-05T11:19:11.668Z",
+      "kind": "json"
+    },
+    {
+      "id": "8518eb587f8471ca72bf",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Dire",
+      "sha256": "8518eb587f8471ca72bfccc562b7c690ffd9c0ab94c5181d1904502f83d231c4",
+      "fetchedAt": "2026-10-05T11:19:12.966Z",
+      "kind": "json"
+    },
+    {
+      "id": "5e61807aa945a7ac6cd9",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Dire",
+      "sha256": "5e61807aa945a7ac6cd916c4754cca60ee4170f7dd0d30d29fa4f0499fa883ef",
+      "fetchedAt": "2026-10-05T11:19:14.266Z",
+      "kind": "json"
+    },
+    {
+      "id": "c0ec78de720af9396f65",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Dire",
+      "sha256": "c0ec78de720af9396f65281c4118cb786779abcde0506291316b72109c5ce077",
+      "fetchedAt": "2026-10-05T11:19:15.577Z",
+      "kind": "json"
+    },
+    {
+      "id": "3edaf115adc9d7f6e00c",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Dire",
+      "sha256": "3edaf115adc9d7f6e00ca30b1f6cd7599a53ea7a094a8e1f0c75319de959efb6",
+      "fetchedAt": "2026-10-05T11:19:16.896Z",
+      "kind": "json"
+    },
+    {
+      "id": "8052bac76183fba9ce9e",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Dire",
+      "sha256": "8052bac76183fba9ce9eafde5f799e0366bec8359097ceed88f4dbae160f0ec1",
+      "fetchedAt": "2026-10-05T11:19:18.207Z",
+      "kind": "json"
+    },
+    {
+      "id": "0e3d22641480c5515aaa",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Dire",
+      "sha256": "0e3d22641480c5515aaaa04b868490bbac78174c874fe5c67414788b5f7605a7",
+      "fetchedAt": "2026-10-05T11:19:19.504Z",
+      "kind": "json"
+    },
+    {
+      "id": "5d81191983fcd52be8be",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Dire",
+      "sha256": "5d81191983fcd52be8be0333cb4f1ddbf2a71595c55a6181c6f6c5da3bc0579d",
+      "fetchedAt": "2026-10-05T11:19:20.793Z",
+      "kind": "json"
+    },
+    {
+      "id": "975384cdf56051c5911a",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Dire",
+      "sha256": "975384cdf56051c5911a0f85851958cb3de60697ec6ebef8450898fac622f5cc",
+      "fetchedAt": "2026-10-05T11:19:22.110Z",
+      "kind": "json"
+    },
+    {
+      "id": "f0cb7dbcdfabb2e55832",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Dire",
+      "sha256": "f0cb7dbcdfabb2e55832dc31c2e408bda16a907407a632f3481cf58061bf6f7d",
+      "fetchedAt": "2026-10-05T11:19:23.400Z",
+      "kind": "json"
+    },
+    {
+      "id": "cf8680f38b8853a7826b",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Dire",
+      "sha256": "cf8680f38b8853a7826b03e1b63064d694c6100e243adbb3a0e19b9a47aa5c03",
+      "fetchedAt": "2026-10-05T11:19:24.687Z",
+      "kind": "json"
+    },
+    {
+      "id": "5b1c148d4924655a7b16",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Dire",
+      "sha256": "5b1c148d4924655a7b16fa341eaef58814b3fd4d45bd9a569a75926273f837bc",
+      "fetchedAt": "2026-10-05T11:19:25.978Z",
+      "kind": "json"
+    },
+    {
+      "id": "005e2ba27a5388c18210",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Dire",
+      "sha256": "005e2ba27a5388c18210c66e57e0b6c701061e4d5b325a69b74cc45f05008a85",
+      "fetchedAt": "2026-10-05T11:19:27.294Z",
+      "kind": "json"
+    },
+    {
+      "id": "d390cb04d29c193d2e98",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Dire",
+      "sha256": "d390cb04d29c193d2e98633ed2b5ec4bc54003e9b9948357ada74e417f858e34",
+      "fetchedAt": "2026-10-05T11:19:28.590Z",
+      "kind": "json"
+    },
+    {
+      "id": "66aa91e2795bc533dc00",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Dire",
+      "sha256": "66aa91e2795bc533dc000f8aaf5caed2f9823533904a4201d9a9eadc0a6a44e1",
+      "fetchedAt": "2026-10-05T11:19:29.892Z",
+      "kind": "json"
+    },
+    {
+      "id": "0f4e25e2a6717c10535e",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Dire",
+      "sha256": "0f4e25e2a6717c10535e0bb3ada5744fc00096d1ee3bfd75223d67d36c81b084",
+      "fetchedAt": "2026-10-05T11:19:31.176Z",
+      "kind": "json"
+    },
+    {
+      "id": "812d9adf50367051a78c",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Dire",
+      "sha256": "812d9adf50367051a78c09d2d89f6cbbb6b56a01886466ecb539284019d893c9",
+      "fetchedAt": "2026-10-05T11:19:31.954Z",
+      "kind": "html"
+    },
+    {
+      "id": "84574edf560af439e5b4",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Dire",
+      "sha256": "84574edf560af439e5b4a059590a75506ebaf10f4f278b887eafad7a1c018a88",
+      "fetchedAt": "2026-10-05T11:19:35.116Z",
+      "kind": "json"
+    },
+    {
+      "id": "7bf534cf0982c37d20a8",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Dire",
+      "sha256": "7bf534cf0982c37d20a8965e93c0b5d186723779036c14a6185339aa53d5d645",
+      "fetchedAt": "2026-10-05T11:19:36.410Z",
+      "kind": "json"
+    },
+    {
+      "id": "14b0c6d72ef7b415a909",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Dire",
+      "sha256": "14b0c6d72ef7b415a909814466f3b244626e9e8ac1f3ee6fbb26dc4b1b18acfd",
+      "fetchedAt": "2026-10-05T11:19:37.711Z",
+      "kind": "json"
+    },
+    {
+      "id": "4355030812566c2747dd",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Dire",
+      "sha256": "4355030812566c2747dd5555516d251a689ddf782c094c8aea942ae4ef4dbfb5",
+      "fetchedAt": "2026-10-05T11:19:39.003Z",
+      "kind": "json"
+    },
+    {
+      "id": "f6bc2a6a7282d0d765bc",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Dire",
+      "sha256": "f6bc2a6a7282d0d765bccf89b1ea5cf3c979f8a61efde771276d1b0906da773e",
+      "fetchedAt": "2026-10-05T11:19:40.296Z",
+      "kind": "json"
+    },
+    {
+      "id": "d979f9501f781165e8a6",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Dire",
+      "sha256": "d979f9501f781165e8a66caf61a14ccf6113bfc57d3645bac7d093d83e29d55d",
+      "fetchedAt": "2026-10-05T11:19:41.583Z",
+      "kind": "json"
+    },
+    {
+      "id": "ee42f327f390f0115481",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Dire",
+      "sha256": "ee42f327f390f0115481c64de9abd9263d009090c608f3a20f50e30fb719c78c",
+      "fetchedAt": "2026-10-05T11:19:42.897Z",
+      "kind": "json"
+    },
+    {
+      "id": "bc846130880659a29112",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Dire",
+      "sha256": "bc846130880659a29112f2544447cacb968a1a98e431b5970220d8f1deb4fd1a",
+      "fetchedAt": "2026-10-05T11:19:44.228Z",
+      "kind": "json"
+    },
+    {
+      "id": "c8cd80420658a7f5e464",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Dire",
+      "sha256": "c8cd80420658a7f5e4645faf8705cdefb3c422a8948e1effbaacf461727f1dc3",
+      "fetchedAt": "2026-10-05T11:19:45.533Z",
+      "kind": "json"
+    },
+    {
+      "id": "d12e7af9c03cb400665d",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Dire",
+      "sha256": "d12e7af9c03cb400665d004213ce5cdf903adbe62e704e89387170ae1a2fb567",
+      "fetchedAt": "2026-10-05T11:19:46.827Z",
+      "kind": "json"
+    },
+    {
+      "id": "5b661c4e4a8759982b5c",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Dire",
+      "sha256": "5b661c4e4a8759982b5c5844c0dc0f1ee5532e0a9faacb9e9396537978345a44",
+      "fetchedAt": "2026-10-05T11:19:48.117Z",
+      "kind": "json"
+    },
+    {
+      "id": "cceec528e2705a79d054",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Dire",
+      "sha256": "cceec528e2705a79d05421c5a478ce75f84d947a8c930f09ec668b885ab05935",
+      "fetchedAt": "2026-10-05T11:19:49.414Z",
+      "kind": "json"
+    },
+    {
+      "id": "1c9270762c248bda2df7",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Dire",
+      "sha256": "1c9270762c248bda2df7b730cbc7be5a2e1e4517c6ff0181fed5b14eabd5aae4",
+      "fetchedAt": "2026-10-05T11:19:50.697Z",
+      "kind": "json"
+    },
+    {
+      "id": "d3fa6b5f9ad7d3f7e21f",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Dire",
+      "sha256": "d3fa6b5f9ad7d3f7e21fe63aaf2d72fd25a911fc457576f8fd9c4938cb0d3d71",
+      "fetchedAt": "2026-10-05T11:19:51.990Z",
+      "kind": "json"
+    },
+    {
+      "id": "50c3a51bc37741509c73",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Dire",
+      "sha256": "50c3a51bc37741509c7331751ec86754819521ad5de231301851e48e087deb03",
+      "fetchedAt": "2026-10-05T11:19:53.291Z",
+      "kind": "json"
+    },
+    {
+      "id": "8b400bafe871c3c542b5",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Dire",
+      "sha256": "8b400bafe871c3c542b5654214a21d50f3d5ad534d4fad143c94db04c9cc672a",
+      "fetchedAt": "2026-10-05T11:19:54.574Z",
+      "kind": "json"
+    },
+    {
+      "id": "291b1735cf6f0e51cf25",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Dire",
+      "sha256": "291b1735cf6f0e51cf251cf58c478d317ab777c949fea8fa9ece3cb5425d8dc0",
+      "fetchedAt": "2026-10-05T11:19:55.863Z",
+      "kind": "json"
+    },
+    {
+      "id": "f3435d415baeba919d9e",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Dire",
+      "sha256": "f3435d415baeba919d9eff5d9386efce90f15130e3c762916c208b5e50df2ade",
+      "fetchedAt": "2026-10-05T11:19:57.140Z",
+      "kind": "json"
+    },
+    {
+      "id": "93e1db930a83a7562f28",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Dire",
+      "sha256": "93e1db930a83a7562f28d0f9654b13b5545a55c94a1638e88ec3ca4af1a4e824",
+      "fetchedAt": "2026-10-05T11:19:57.860Z",
+      "kind": "html"
+    },
+    {
+      "id": "baec003a6415e5261b7a",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Dire",
+      "sha256": "baec003a6415e5261b7aa4e81f9d68757b7dd86406ee2a2e1172535433a72cbd",
+      "fetchedAt": "2026-10-05T11:20:01.040Z",
+      "kind": "json"
+    },
+    {
+      "id": "05e1dfe39aa0ce18df65",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Dire",
+      "sha256": "05e1dfe39aa0ce18df65197133be1dfa6cce39a29cb0d37a67b8989e151bdb8a",
+      "fetchedAt": "2026-10-05T11:20:02.329Z",
+      "kind": "json"
+    },
+    {
+      "id": "d76b5b52c5b485d675e5",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Dire",
+      "sha256": "d76b5b52c5b485d675e54e6a2acb32e1df798f864071cfb356ca89d96a34c868",
+      "fetchedAt": "2026-10-05T11:20:03.625Z",
+      "kind": "json"
+    },
+    {
+      "id": "623a792a236e65a5def9",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Dire",
+      "sha256": "623a792a236e65a5def9abe38bc5e5f0a0c58af7e64220c6f33a92a1aba889de",
+      "fetchedAt": "2026-10-05T11:20:04.910Z",
+      "kind": "json"
+    },
+    {
+      "id": "4a7f177ac25991115034",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Dire",
+      "sha256": "4a7f177ac25991115034bed5e23418ed0eaf9fa50ac82e2a6c93ab920e47f8c6",
+      "fetchedAt": "2026-10-05T11:20:06.208Z",
+      "kind": "json"
+    },
+    {
+      "id": "8ed658defea6536ea257",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Dire",
+      "sha256": "8ed658defea6536ea2574b6cf25c804db958114f68624ca87a4760b0759e1e87",
+      "fetchedAt": "2026-10-05T11:20:07.493Z",
+      "kind": "json"
+    },
+    {
+      "id": "1239f2af51daf393046c",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Dire",
+      "sha256": "1239f2af51daf393046c7ceaf07b91c15b3ac8b5a21f932404253376fe68adc2",
+      "fetchedAt": "2026-10-05T11:20:08.791Z",
+      "kind": "json"
+    },
+    {
+      "id": "f6c988d683ec13120f81",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Dire",
+      "sha256": "f6c988d683ec13120f81fa62bb5a77b3f01ac7f75aa56dadd26f79704231dd54",
+      "fetchedAt": "2026-10-05T11:20:10.092Z",
+      "kind": "json"
+    },
+    {
+      "id": "aa8a83255fd35bba5918",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Dire",
+      "sha256": "aa8a83255fd35bba5918eeb868d0a4b9ec27f8287558d918188d5b060cc25e27",
+      "fetchedAt": "2026-10-05T11:20:11.381Z",
+      "kind": "json"
+    },
+    {
+      "id": "18d96c3be6b4a5b07f64",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Dire",
+      "sha256": "18d96c3be6b4a5b07f64b79ea8de8d9df803e60ee47a70f471c6d30d6715013a",
+      "fetchedAt": "2026-10-05T11:20:12.665Z",
+      "kind": "json"
+    },
+    {
+      "id": "a26df6e42770c603ebe7",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Dire",
+      "sha256": "a26df6e42770c603ebe7335daeea3806c625c22fd9d74a8ab6dd2df5e6f09adb",
+      "fetchedAt": "2026-10-05T11:20:13.953Z",
+      "kind": "json"
+    },
+    {
+      "id": "695eeb09e8fb39eb8773",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Dire",
+      "sha256": "695eeb09e8fb39eb8773ad05d2361e5552f7f39703404a5e92f3bf0d1b1b9ff2",
+      "fetchedAt": "2026-10-05T11:20:15.280Z",
+      "kind": "json"
+    },
+    {
+      "id": "42b0ee57f102e99da812",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Dire",
+      "sha256": "42b0ee57f102e99da8121856532414727765f070d3b3050088fe44b6ed3255a7",
+      "fetchedAt": "2026-10-05T11:20:16.571Z",
+      "kind": "json"
+    },
+    {
+      "id": "a37e981946780e6984a6",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Dire",
+      "sha256": "a37e981946780e6984a667a7a632dceb493b6cbdf2b8f1918847d6edf479e26a",
+      "fetchedAt": "2026-10-05T11:20:17.857Z",
+      "kind": "json"
+    },
+    {
+      "id": "70b75e6cbccd49104d82",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Dire",
+      "sha256": "70b75e6cbccd49104d82b3270efc3ae1e3402afc08664ccb664365072d5fa8a3",
+      "fetchedAt": "2026-10-05T11:20:19.133Z",
+      "kind": "json"
+    },
+    {
+      "id": "6f19dc24dd8a34c46b4b",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Dire",
+      "sha256": "6f19dc24dd8a34c46b4b09d6b2506ff3277b9e1e0df708440dec6d4f9680649f",
+      "fetchedAt": "2026-10-05T11:20:20.462Z",
+      "kind": "json"
+    },
+    {
+      "id": "bc8b01c0eb6d51459d20",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Dire",
+      "sha256": "bc8b01c0eb6d51459d2071cade0af969ec743068b81c96587d0174c346fd4594",
+      "fetchedAt": "2026-10-05T11:20:21.758Z",
+      "kind": "json"
+    },
+    {
+      "id": "5131f3755a100cacf14a",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Dire",
+      "sha256": "5131f3755a100cacf14a618ee2910b62fbd33991e2c40f22db137923f9335673",
+      "fetchedAt": "2026-10-05T11:20:23.032Z",
+      "kind": "json"
+    },
+    {
+      "id": "f7357b1e6b61fead96ce",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Dire",
+      "sha256": "f7357b1e6b61fead96ce8f20a4bd38dc0b5f3ebe3f34fe635c85e5b390059434",
+      "fetchedAt": "2026-10-05T11:20:24.327Z",
+      "kind": "json"
+    },
+    {
+      "id": "57a04dfff4b6d6d57cee",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Dire",
+      "sha256": "57a04dfff4b6d6d57ceee65aab36695af34976eefd6e1ae4679a8eb17bf98a68",
+      "fetchedAt": "2026-10-05T11:20:25.621Z",
+      "kind": "json"
+    },
+    {
+      "id": "14f8f2ee7f9ab829050e",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Dire",
+      "sha256": "14f8f2ee7f9ab829050e9ebdd74dbf3753f37ff3ec7dcdbaf3afd8cd9be80967",
+      "fetchedAt": "2026-10-05T11:20:26.894Z",
+      "kind": "json"
+    },
+    {
+      "id": "de61cf77c9407ac9a04a",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Fearless",
+      "sha256": "de61cf77c9407ac9a04a294dc76005872ace5454ed2290cbd876f88c79f09151",
+      "fetchedAt": "2026-10-05T11:20:27.634Z",
+      "kind": "html"
+    },
+    {
+      "id": "56fb27e9483f5239b483",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Fearless",
+      "sha256": "56fb27e9483f5239b483175cf741023b23652a3149ace319de4a3183c758e295",
+      "fetchedAt": "2026-10-05T11:20:29.993Z",
+      "kind": "json"
+    },
+    {
+      "id": "a9e7c94ed22f1b04ef8f",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Fearless",
+      "sha256": "a9e7c94ed22f1b04ef8fff74507717aa25c52a1e7d51011f68bef726e825b2e5",
+      "fetchedAt": "2026-10-05T11:20:31.280Z",
+      "kind": "json"
+    },
+    {
+      "id": "c9e0ca2d0b04f3fcf590",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Fearless",
+      "sha256": "c9e0ca2d0b04f3fcf590561636103e97f9b5384c0fa74aaa2372305ad60bba83",
+      "fetchedAt": "2026-10-05T11:20:32.604Z",
+      "kind": "json"
+    },
+    {
+      "id": "721d9b767928ae38b64a",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Fearless",
+      "sha256": "721d9b767928ae38b64aae5a366ef20a29281a7759842d954ec7f99ab86a5fe0",
+      "fetchedAt": "2026-10-05T11:20:33.904Z",
+      "kind": "json"
+    },
+    {
+      "id": "a8d6ae7a8bc40151c739",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Fearless",
+      "sha256": "a8d6ae7a8bc40151c73909187428d04b5323d59f1e307428d1e43d52e40bd82a",
+      "fetchedAt": "2026-10-05T11:20:35.207Z",
+      "kind": "json"
+    },
+    {
+      "id": "02d11cb6f134f47045b0",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Fearless",
+      "sha256": "02d11cb6f134f47045b00f29264717dd453c4d59793eae8382bcbe92a9c4f3ce",
+      "fetchedAt": "2026-10-05T11:20:36.495Z",
+      "kind": "json"
+    },
+    {
+      "id": "5832e9f8e8e4b64dfc48",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Fearless",
+      "sha256": "5832e9f8e8e4b64dfc48961d2a209c3a31d8b1bdb80b16b9751eff85361c6f03",
+      "fetchedAt": "2026-10-05T11:20:37.803Z",
+      "kind": "json"
+    },
+    {
+      "id": "18be0da54e487a2db1a4",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Fearless",
+      "sha256": "18be0da54e487a2db1a4409b24c8a01f485cc3feee63b1bb3e5d5573a8b55e6d",
+      "fetchedAt": "2026-10-05T11:20:39.102Z",
+      "kind": "json"
+    },
+    {
+      "id": "2dc52b4bcb2d8b9b6fd3",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Fearless",
+      "sha256": "2dc52b4bcb2d8b9b6fd31b3c77470bae1a3496d8603523454db2063e9eda2da4",
+      "fetchedAt": "2026-10-05T11:20:40.380Z",
+      "kind": "json"
+    },
+    {
+      "id": "007e53bb339502285314",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Fearless",
+      "sha256": "007e53bb339502285314b3b7882af8035890b3cb7d52de25e135d68d2f0f0736",
+      "fetchedAt": "2026-10-05T11:20:41.682Z",
+      "kind": "json"
+    },
+    {
+      "id": "1b8801d4ed8288b6b733",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Fearless",
+      "sha256": "1b8801d4ed8288b6b7330287da95166d4340415decdf28c05b3633316be89bf5",
+      "fetchedAt": "2026-10-05T11:20:43.369Z",
+      "kind": "json"
+    },
+    {
+      "id": "3097e678d815e5899aee",
+      "url": "https://www.stygian.moe/clears?boss=secret-source-automaton&difficulty=Fearless",
+      "sha256": "3097e678d815e5899aeef9114345f3bf2c0a681cfcf0a13c17b94a4934dd2762",
+      "fetchedAt": "2026-10-05T11:20:44.673Z",
+      "kind": "json"
+    },
+    {
+      "id": "7e0c163a02843e7384a0",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Fearless",
+      "sha256": "7e0c163a02843e7384a061353673d5a722ae1538c56d68cd705b9d35f50b2976",
+      "fetchedAt": "2026-10-05T11:20:45.461Z",
+      "kind": "html"
+    },
+    {
+      "id": "3d1e2d946ce6dea4f12a",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Fearless",
+      "sha256": "3d1e2d946ce6dea4f12acc4a27d616571d0a281fc3cf9f2d0533d1807e9582b0",
+      "fetchedAt": "2026-10-05T11:20:48.628Z",
+      "kind": "json"
+    },
+    {
+      "id": "da0f16afef403a7a7128",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Fearless",
+      "sha256": "da0f16afef403a7a7128b0c449fd1f298116a5e20da20d8953b4fcd9e2ca5bc9",
+      "fetchedAt": "2026-10-05T11:20:49.941Z",
+      "kind": "json"
+    },
+    {
+      "id": "8f36f9ca95d83511818b",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Fearless",
+      "sha256": "8f36f9ca95d83511818b10b569904f2cf1d601eb6ae4b224948dc17ac18637e8",
+      "fetchedAt": "2026-10-05T11:20:51.256Z",
+      "kind": "json"
+    },
+    {
+      "id": "2e4a604c2e82a9e411a2",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Fearless",
+      "sha256": "2e4a604c2e82a9e411a28a490394cf60edba6c411e66c2325712c0fbf10223d3",
+      "fetchedAt": "2026-10-05T11:20:52.558Z",
+      "kind": "json"
+    },
+    {
+      "id": "70c95019d2cae8bf67f2",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Fearless",
+      "sha256": "70c95019d2cae8bf67f21036b659355aa00d4ba223a04373b32bd4f05ba4f05a",
+      "fetchedAt": "2026-10-05T11:20:53.869Z",
+      "kind": "json"
+    },
+    {
+      "id": "b83cd50b6d53b9261b89",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Fearless",
+      "sha256": "b83cd50b6d53b9261b899366debad6440d6b88fa00be966a66b53592d917e96e",
+      "fetchedAt": "2026-10-05T11:20:55.171Z",
+      "kind": "json"
+    },
+    {
+      "id": "27669af1c16609691ea2",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Fearless",
+      "sha256": "27669af1c16609691ea2cf84f750904d8799a025da34c37687ca4bd12d21a4a2",
+      "fetchedAt": "2026-10-05T11:20:56.468Z",
+      "kind": "json"
+    },
+    {
+      "id": "2eb4dee9ec58abd530fc",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Fearless",
+      "sha256": "2eb4dee9ec58abd530fc0c79347b10f6a02592bb501edb04f22a625bd796f97d",
+      "fetchedAt": "2026-10-05T11:20:57.760Z",
+      "kind": "json"
+    },
+    {
+      "id": "351c465e7f183e6548a7",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Fearless",
+      "sha256": "351c465e7f183e6548a73fd5723c8859434d5c9c2f65161607e49429e40c73a8",
+      "fetchedAt": "2026-10-05T11:20:59.070Z",
+      "kind": "json"
+    },
+    {
+      "id": "5c2c2d8b8f1b3de9b179",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Fearless",
+      "sha256": "5c2c2d8b8f1b3de9b179c6a171d70421aa869629e25a8bb84688b35555299225",
+      "fetchedAt": "2026-10-05T11:21:00.364Z",
+      "kind": "json"
+    },
+    {
+      "id": "d30a7a19d5401d9b2d1d",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Fearless",
+      "sha256": "d30a7a19d5401d9b2d1d679300c1912816398010ef57d4af58f78779c991200f",
+      "fetchedAt": "2026-10-05T11:21:01.691Z",
+      "kind": "json"
+    },
+    {
+      "id": "7937a0b9ba32d3c7a532",
+      "url": "https://www.stygian.moe/clears?boss=grandpa&difficulty=Fearless",
+      "sha256": "7937a0b9ba32d3c7a532d270a312922e48a823a719e4660498ee19183501b497",
+      "fetchedAt": "2026-10-05T11:21:03.008Z",
+      "kind": "json"
+    },
+    {
+      "id": "bebb821674a264b9b32c",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Fearless",
+      "sha256": "bebb821674a264b9b32cd70d1bff6c07b4f5d06f86cfe2d129ce1797e349f0e0",
+      "fetchedAt": "2026-10-05T11:21:03.804Z",
+      "kind": "html"
+    },
+    {
+      "id": "3a964138a075db82cabc",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Fearless",
+      "sha256": "3a964138a075db82cabcf2012b8f9f93f81f200646e2772441e282d5e06a9f38",
+      "fetchedAt": "2026-10-05T11:21:06.958Z",
+      "kind": "json"
+    },
+    {
+      "id": "ad8e56844120cc1f057c",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Fearless",
+      "sha256": "ad8e56844120cc1f057ca30fde76e7ba3981a94566dff6e85bb618d9d78ab72a",
+      "fetchedAt": "2026-10-05T11:21:08.265Z",
+      "kind": "json"
+    },
+    {
+      "id": "ecedd10ab0fa9144d163",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Fearless",
+      "sha256": "ecedd10ab0fa9144d163678adfae49b9392d214c409029111488638b7493d6a4",
+      "fetchedAt": "2026-10-05T11:21:09.604Z",
+      "kind": "json"
+    },
+    {
+      "id": "f9cd0cdb0c489ab211dd",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Fearless",
+      "sha256": "f9cd0cdb0c489ab211dd2dcf82c8081601fe7c4e34379e7656b857a14d74bb1d",
+      "fetchedAt": "2026-10-05T11:21:10.914Z",
+      "kind": "json"
+    },
+    {
+      "id": "6f146f2e243fbc3ad07d",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Fearless",
+      "sha256": "6f146f2e243fbc3ad07dd3b44716d12dbf7c8067cf1b997b62870ebbb16a58d3",
+      "fetchedAt": "2026-10-05T11:21:12.235Z",
+      "kind": "json"
+    },
+    {
+      "id": "89927631f1fd9473aa5b",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Fearless",
+      "sha256": "89927631f1fd9473aa5b972d9620480b092832728f5040097d4cb4d948ea2044",
+      "fetchedAt": "2026-10-05T11:21:13.526Z",
+      "kind": "json"
+    },
+    {
+      "id": "716f5cf46f14cb2ae4eb",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Fearless",
+      "sha256": "716f5cf46f14cb2ae4eb39f76916e5c4925c98ca1d3c255837726ce223bdb379",
+      "fetchedAt": "2026-10-05T11:21:14.838Z",
+      "kind": "json"
+    },
+    {
+      "id": "b48cea2a07d927e249b0",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Fearless",
+      "sha256": "b48cea2a07d927e249b028effc78bda9779907876ae55c70404df04c137783c0",
+      "fetchedAt": "2026-10-05T11:21:16.136Z",
+      "kind": "json"
+    },
+    {
+      "id": "81123a61db0b224105bf",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Fearless",
+      "sha256": "81123a61db0b224105bf540d61b515922146868c8aa9f5a73c31b606724ec905",
+      "fetchedAt": "2026-10-05T11:21:17.439Z",
+      "kind": "json"
+    },
+    {
+      "id": "5eb5cf42e0323549ea22",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Fearless",
+      "sha256": "5eb5cf42e0323549ea220b4dd9237ca8d49a68db47adb987ecc8d991275d4795",
+      "fetchedAt": "2026-10-05T11:21:18.746Z",
+      "kind": "json"
+    },
+    {
+      "id": "04d569fb577d605185a1",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Fearless",
+      "sha256": "04d569fb577d605185a10d6a27905f1d5099834ea446d4c9b171be816f9bd247",
+      "fetchedAt": "2026-10-05T11:21:20.053Z",
+      "kind": "json"
+    },
+    {
+      "id": "7fd375cda81321408741",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Fearless",
+      "sha256": "7fd375cda8132140874190dfbd984edb9a4cec7a6977565b8bb59d2ce9773685",
+      "fetchedAt": "2026-10-05T11:21:21.342Z",
+      "kind": "json"
+    },
+    {
+      "id": "03bf9c40f92d39a9504d",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Fearless",
+      "sha256": "03bf9c40f92d39a9504d406b57425931e21af404b8235d9cdb458f14ec7d0a8d",
+      "fetchedAt": "2026-10-05T11:21:22.654Z",
+      "kind": "json"
+    },
+    {
+      "id": "81f033befdcfd1615b66",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Fearless",
+      "sha256": "81f033befdcfd1615b66172c59360ffc920b1ca2083f8afe9c51f5d1cca209b1",
+      "fetchedAt": "2026-10-05T11:21:23.974Z",
+      "kind": "json"
+    },
+    {
+      "id": "1b267722069af857b3de",
+      "url": "https://www.stygian.moe/clears?boss=maiden&difficulty=Fearless",
+      "sha256": "1b267722069af857b3dedb70e756cd585a510150613947297e1fca4b826c410a",
+      "fetchedAt": "2026-10-05T11:21:25.280Z",
+      "kind": "json"
+    }
+  ]
+}

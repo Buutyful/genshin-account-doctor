@@ -1,0 +1,230 @@
+{
+  "version": 1,
+  "mode": "abyss",
+  "region": "America",
+  "patch": "7.1",
+  "cycleId": "123",
+  "startsAt": "2026-10-03T09:57:00.023Z",
+  "endsAt": "2026-10-10T00:00:00Z",
+  "fetchedAt": "2026-10-03T09:57:00.023Z",
+  "source": "https://static.nanoka.cc/gi/7.1/tower.json",
+  "sourceHash": "97aa9f2a60a3abdb5cb143409fb18192dfd32f502581ffe4540823d579817da9",
+  "provenance": [
+    {
+      "url": "https://static.nanoka.cc/gi/7.1/tower.json",
+      "sha256": "97aa9f2a60a3abdb5cb143409fb18192dfd32f502581ffe4540823d579817da9"
+    },
+    {
+      "url": "https://timesaver.gg/blog/genshin-spiral-abyss-floor-12-guide",
+      "sha256": "710ff012a3c9d1dce7fbdf7a7b8732059aa1fee26dae6aa8aa5a2c0d8e6dba07"
+    }
+  ],
+  "difficulty": "Floor 12 · all chambers",
+  "encounters": [
+    {
+      "id": "abyss-first",
+      "name": "First half",
+      "preferred": [],
+      "avoid": [],
+      "stages": [
+        {
+          "name": "12-1",
+          "level": 95,
+          "enemies": [
+            {
+              "name": "Battle-Hardened Chimeric Burrowbeast"
+            }
+          ],
+          "notes": [
+            "Single-boss encounter."
+          ]
+        },
+        {
+          "name": "12-2",
+          "level": 98,
+          "enemies": [
+            {
+              "name": "Immortal Construct"
+            }
+          ],
+          "notes": [
+            "Single-boss encounter."
+          ]
+        },
+        {
+          "name": "12-3",
+          "level": 100,
+          "enemies": [
+            {
+              "name": "Battle-Hardened Domovoy Sculptor"
+            }
+          ],
+          "notes": [
+            "Single-boss encounter."
+          ]
+        }
+      ],
+      "requirements": [
+        {
+          "id": "abyss-0-0-disorder",
+          "stage": "12-1",
+          "kind": "modifier",
+          "tags": [
+            "swirl",
+            "stellar-glimmer"
+          ],
+          "interpretation": "The first-half disorder favors Swirl or Stellar Swirl damage.",
+          "source": "https://timesaver.gg/blog/genshin-spiral-abyss-floor-12-guide",
+          "sourceHash": "710ff012a3c9d1dce7fbdf7a7b8732059aa1fee26dae6aa8aa5a2c0d8e6dba07",
+          "reviewedAt": "2026-10-03T09:57:00.023Z"
+        },
+        {
+          "id": "abyss-0-1-disorder",
+          "stage": "12-2",
+          "kind": "modifier",
+          "tags": [
+            "swirl",
+            "stellar-glimmer"
+          ],
+          "interpretation": "The first-half disorder favors Swirl or Stellar Swirl damage.",
+          "source": "https://timesaver.gg/blog/genshin-spiral-abyss-floor-12-guide",
+          "sourceHash": "710ff012a3c9d1dce7fbdf7a7b8732059aa1fee26dae6aa8aa5a2c0d8e6dba07",
+          "reviewedAt": "2026-10-03T09:57:00.023Z"
+        },
+        {
+          "id": "abyss-0-2-disorder",
+          "stage": "12-3",
+          "kind": "modifier",
+          "tags": [
+            "swirl",
+            "stellar-glimmer"
+          ],
+          "interpretation": "The first-half disorder favors Swirl or Stellar Swirl damage.",
+          "source": "https://timesaver.gg/blog/genshin-spiral-abyss-floor-12-guide",
+          "sourceHash": "710ff012a3c9d1dce7fbdf7a7b8732059aa1fee26dae6aa8aa5a2c0d8e6dba07",
+          "reviewedAt": "2026-10-03T09:57:00.023Z"
+        },
+        {
+          "id": "burrowbeast-electro",
+          "stage": "12-1",
+          "kind": "utility",
+          "tags": [
+            "electro"
+          ],
+          "interpretation": "Electro attacks accelerate the Burrowbeast’s state change.",
+          "source": "https://timesaver.gg/blog/genshin-spiral-abyss-floor-12-guide",
+          "sourceHash": "710ff012a3c9d1dce7fbdf7a7b8732059aa1fee26dae6aa8aa5a2c0d8e6dba07",
+          "reviewedAt": "2026-10-03T09:57:00.023Z"
+        }
+      ]
+    },
+    {
+      "id": "abyss-second",
+      "name": "Second half",
+      "preferred": [],
+      "avoid": [],
+      "stages": [
+        {
+          "name": "12-1",
+          "level": 95,
+          "enemies": [
+            {
+              "name": "Wilderness Exile ×9"
+            },
+            {
+              "name": "Battle-Hardened Fireblade Shock Trooper"
+            }
+          ],
+          "notes": [
+            "Multiple waves; preserve application through target changes."
+          ]
+        },
+        {
+          "name": "12-2",
+          "level": 98,
+          "enemies": [
+            {
+              "name": "Fisher of Hidden Depths ×4"
+            },
+            {
+              "name": "Lord of the Hidden Depths: Whisperer of Nightmares"
+            }
+          ],
+          "notes": [
+            "Multiple waves; preserve application through target changes."
+          ]
+        },
+        {
+          "name": "12-3",
+          "level": 100,
+          "enemies": [
+            {
+              "name": "Battle-Hardened Lightkeeper"
+            }
+          ],
+          "notes": [
+            "Multiple waves; preserve application through target changes."
+          ]
+        }
+      ],
+      "requirements": [
+        {
+          "id": "abyss-1-0-disorder",
+          "stage": "12-1",
+          "kind": "modifier",
+          "tags": [
+            "electro-charged",
+            "lunar-charged"
+          ],
+          "interpretation": "The second-half disorder favors Electro-Charged or Lunar-Charged damage.",
+          "source": "https://timesaver.gg/blog/genshin-spiral-abyss-floor-12-guide",
+          "sourceHash": "710ff012a3c9d1dce7fbdf7a7b8732059aa1fee26dae6aa8aa5a2c0d8e6dba07",
+          "reviewedAt": "2026-10-03T09:57:00.023Z"
+        },
+        {
+          "id": "abyss-1-1-disorder",
+          "stage": "12-2",
+          "kind": "modifier",
+          "tags": [
+            "electro-charged",
+            "lunar-charged"
+          ],
+          "interpretation": "The second-half disorder favors Electro-Charged or Lunar-Charged damage.",
+          "source": "https://timesaver.gg/blog/genshin-spiral-abyss-floor-12-guide",
+          "sourceHash": "710ff012a3c9d1dce7fbdf7a7b8732059aa1fee26dae6aa8aa5a2c0d8e6dba07",
+          "reviewedAt": "2026-10-03T09:57:00.023Z"
+        },
+        {
+          "id": "abyss-1-2-disorder",
+          "stage": "12-3",
+          "kind": "modifier",
+          "tags": [
+            "electro-charged",
+            "lunar-charged"
+          ],
+          "interpretation": "The second-half disorder favors Electro-Charged or Lunar-Charged damage.",
+          "source": "https://timesaver.gg/blog/genshin-spiral-abyss-floor-12-guide",
+          "sourceHash": "710ff012a3c9d1dce7fbdf7a7b8732059aa1fee26dae6aa8aa5a2c0d8e6dba07",
+          "reviewedAt": "2026-10-03T09:57:00.023Z"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "September 16 lineup; next reset reported October 16. All three chambers retained."
+  ],
+  "coverage": [
+    "Only the reviewed mechanics listed for each encounter affect ranking; exact damage and application rates are not predicted.",
+    "Publication validity is deliberately shorter than the reported season. Re-review is required after 10 October."
+  ],
+  "publication": {
+    "id": "abyss-review-2026-10-03-america",
+    "reviewedAt": "2026-10-03T09:57:00.023Z",
+    "validUntil": "2026-10-10T00:00:00Z",
+    "sources": [
+      "https://static.nanoka.cc/gi/7.1/tower.json",
+      "https://timesaver.gg/blog/genshin-spiral-abyss-floor-12-guide"
+    ],
+    "dateBasis": "Live September 16–October 16 cycle independently described in the dated guide, cross-checked with provider cycle 123 and the Icy Veins chamber guide. Certified only during this review window."
+  }
+}

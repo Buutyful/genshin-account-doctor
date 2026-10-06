@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "mode": "stygian",
+  "region": "Europe",
+  "patch": "7.1",
+  "cycleId": "5269012",
+  "startsAt": "2026-10-03T09:57:00.023Z",
+  "endsAt": "2026-10-10T00:00:00Z",
+  "fetchedAt": "2026-10-03T09:57:00.023Z",
+  "source": "https://www.stygian.moe/",
+  "sourceHash": "a7b14797873ad5e0354a84731e692340f7d7ae4bb1a8ab53f6ad199c530d7f63",
+  "provenance": [
+    {
+      "url": "https://www.stygian.moe/",
+      "sha256": "a7b14797873ad5e0354a84731e692340f7d7ae4bb1a8ab53f6ad199c530d7f63"
+    },
+    {
+      "url": "https://static.nanoka.cc/gi/7.1/leyline.json",
+      "sha256": "f39a56d5d973444947665da48992d60b66d867581ac3a3c014b1f4cfa7206f0c"
+    },
+    {
+      "url": "https://static.nanoka.cc/gi/7.1/en/leyline/5269012.json",
+      "sha256": "b3a2a42feb9e4c5e761c8e6250f3a5467bb8ea04c144a85e1e4218ab9ae98a72"
+    }
+  ],
+  "difficulty": "Difficulty 6",
+  "encounters": [
+    {
+      "id": "stygian-1001063",
+      "name": "Boss 1",
+      "preferred": [],
+      "avoid": [],
+      "stages": [
+        {
+          "name": "Secret Source Automaton: Overseer Device - Obliterator Panoply",
+          "level": 110,
+          "enemies": [
+            {
+              "name": "Secret Source Automaton: Overseer Device - Obliterator Panoply",
+              "variantId": "1001063"
+            }
+          ],
+          "notes": [
+            "Cryo hits reduce the rotating boss’s momentum. Sustained application matters."
+          ]
+        }
+      ],
+      "requirements": [
+        {
+          "id": "stygian-1001063-mechanic",
+          "stage": "Secret Source Automaton: Overseer Device - Obliterator Panoply",
+          "kind": "utility",
+          "tags": [
+            "cryo"
+          ],
+          "interpretation": "Sustained Cryo application can stop the rotating attacks; hit rate remains a check.",
+          "source": "https://www.stygian.moe/",
+          "sourceHash": "a7b14797873ad5e0354a84731e692340f7d7ae4bb1a8ab53f6ad199c530d7f63",
+          "reviewedAt": "2026-10-03T09:57:00.023Z"
+        }
+      ]
+    },
+    {
+      "id": "stygian-1012061",
+      "name": "Boss 2",
+      "preferred": [],
+      "avoid": [],
+      "stages": [
+        {
+          "name": "Battle-Hardened Domovoy Sculptor: Gale Hewing",
+          "level": 110,
+          "enemies": [
+            {
+              "name": "Battle-Hardened Domovoy Sculptor: Gale Hewing",
+              "variantId": "1012061"
+            }
+          ],
+          "notes": [
+            "Stellar Glimmer interrupts the sculpture and reduces resistance."
+          ]
+        }
+      ],
+      "requirements": [
+        {
+          "id": "stygian-1012061-mechanic",
+          "stage": "Battle-Hardened Domovoy Sculptor: Gale Hewing",
+          "kind": "utility",
+          "tags": [
+            "stellar-glimmer"
+          ],
+          "interpretation": "Trigger Stellar Glimmer during the sculpture window.",
+          "source": "https://www.stygian.moe/",
+          "sourceHash": "a7b14797873ad5e0354a84731e692340f7d7ae4bb1a8ab53f6ad199c530d7f63",
+          "reviewedAt": "2026-10-03T09:57:00.023Z"
+        }
+      ]
+    },
+    {
+      "id": "stygian-1012063",
+      "name": "Boss 3",
+      "preferred": [],
+      "avoid": [],
+      "stages": [
+        {
+          "name": "Guardian Blade of Drifting Snow: Endless Reverberation",
+          "level": 110,
+          "enemies": [
+            {
+              "name": "Guardian Blade of Drifting Snow: Endless Reverberation",
+              "variantId": "1012063"
+            }
+          ],
+          "notes": [
+            "Stellar Glimmer changes the Cryo ward; break the shield before the recovery window."
+          ]
+        }
+      ],
+      "requirements": [
+        {
+          "id": "stygian-1012063-mechanic",
+          "stage": "Guardian Blade of Drifting Snow: Endless Reverberation",
+          "kind": "utility",
+          "tags": [
+            "stellar-glimmer"
+          ],
+          "interpretation": "Use Stellar Glimmer to transform the Cryo ward.",
+          "source": "https://www.stygian.moe/",
+          "sourceHash": "a7b14797873ad5e0354a84731e692340f7d7ae4bb1a8ab53f6ad199c530d7f63",
+          "reviewedAt": "2026-10-03T09:57:00.023Z"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "September 30 lineup confirmed by the provider and Stygian.moe. Its date label and regional countdown disagree on the November endpoint."
+  ],
+  "coverage": [
+    "Only the reviewed mechanics listed for each encounter affect ranking; exact damage and application rates are not predicted.",
+    "Publication validity is deliberately shorter than the reported season. Re-review is required after 10 October."
+  ],
+  "publication": {
+    "id": "stygian-review-2026-10-03-europe",
+    "reviewedAt": "2026-10-03T09:57:00.023Z",
+    "validUntil": "2026-10-10T00:00:00Z",
+    "sources": [
+      "https://www.stygian.moe/",
+      "https://static.nanoka.cc/gi/7.1/leyline.json",
+      "https://static.nanoka.cc/gi/7.1/en/leyline/5269012.json"
+    ],
+    "dateBasis": "Lineup and September 30 opening agree across the provider and current Stygian.moe guide. The certification window ends October 10, before both conflicting November endpoints. No exact season-end claim."
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-10-01T10:51:42.169Z",
+  "scope": "Source label/countdown comparison only, not live certification. Countdown deadlines are inferred from visible UI with about one-second precision.",
+  "responses": [
+    {
+      "url": "https://www.stygian.moe/",
+      "status": 200,
+      "sha256": "2702e55f5070cbf3bfaeb35048cfd0add6b274ac0df9e64fc67c4e82dd6cd451"
+    },
+    {
+      "url": "https://www.stygian.moe/terms-of-service",
+      "status": 200,
+      "sha256": "45fb757b687eac22a2f845af198a22b2d4c090e6b246dbc35c0d9d09441e503a"
+    },
+    {
+      "url": "https://static.nanoka.cc/gi/7.1/leyline.json",
+      "status": 200,
+      "sha256": "f39a56d5d973444947665da48992d60b66d867581ac3a3c014b1f4cfa7206f0c"
+    },
+    {
+      "url": "https://static.nanoka.cc/gi/7.1/en/leyline/5269012.json",
+      "status": 200,
+      "sha256": "b3a2a42feb9e4c5e761c8e6250f3a5467bb8ea04c144a85e1e4218ab9ae98a72"
+    }
+  ],
+  "browser": {
+    "name": "chromium",
+    "url": "https://www.stygian.moe/",
+    "status": 200,
+    "responseHash": "e3dd02883586f6ec275d3a10b88d668cc3a77fe7709df57899f4293f4acd0924"
+  },
+  "regions": [
+    {
+      "region": "Asia",
+      "now": "2026-10-01T10:51:42.155Z",
+      "calendar": "\n7.1\n2026/09/30 - 2026/11/11\nN5/6\n\nStygian Ends in\n\nServer\nAsia\nAsia\nAmerica\nEurope\n39\nDays\n09\nHours\n07\nMinutes\n18\nSeconds\n",
+      "countdownDeadlineEstimate": "2026-11-09T19:59:00.155Z"
+    },
+    {
+      "region": "Europe",
+      "now": "2026-10-01T10:51:42.162Z",
+      "calendar": "\n7.1\n2026/09/30 - 2026/11/11\nN5/6\n\nStygian Ends in\n\nServer\nEurope\nAsia\nAmerica\nEurope\n39\nDays\n16\nHours\n07\nMinutes\n18\nSeconds\n",
+      "countdownDeadlineEstimate": "2026-11-10T02:59:00.162Z"
+    },
+    {
+      "region": "America",
+      "now": "2026-10-01T10:51:42.170Z",
+      "calendar": "\n7.1\n2026/09/30 - 2026/11/11\nN5/6\n\nStygian Ends in\n\nServer\nAmerica\nAsia\nAmerica\nEurope\n39\nDays\n22\nHours\n07\nMinutes\n18\nSeconds\n",
+      "countdownDeadlineEstimate": "2026-11-10T08:59:00.170Z"
+    }
+  ]
+}

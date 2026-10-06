@@ -1,0 +1,607 @@
+{
+  "checkedAt": "2026-10-01T10:30:51.368Z",
+  "purpose": "Source accessibility and shape verification; NOT live-cycle certification",
+  "responses": [
+    {
+      "url": "https://static.nanoka.cc/manifest.json",
+      "status": 200,
+      "sha256": "fb4b056c9c0cf674887a112b7d5e4fcaf719dd1364aa49512c4328a0f0155e82",
+      "bytes": 18937,
+      "cors": "*",
+      "liveVersion": "7.1"
+    },
+    {
+      "url": "https://static.nanoka.cc/gi/7.1/tower.json",
+      "status": 200,
+      "sha256": "97aa9f2a60a3abdb5cb143409fb18192dfd32f502581ffe4540823d579817da9",
+      "bytes": 12239,
+      "cors": "*",
+      "cycles": 26,
+      "withExplicitLiveDates": 0,
+      "genericDateCandidates": [
+        {
+          "id": "123",
+          "begin": "2026-09-16 04:00:00",
+          "end": "2026-10-16 03:59:59"
+        }
+      ]
+    },
+    {
+      "url": "https://static.nanoka.cc/gi/7.1/en/tower/123.json",
+      "status": 200,
+      "sha256": "17dbaad2879a133c61aa19e4721725f29c7c8c6e19d12af95a2d7eb704e3cece",
+      "bytes": 10633,
+      "cors": "*",
+      "keys": [
+        "open",
+        "close",
+        "leyline",
+        "floor"
+      ],
+      "floor12": {
+        "chambers": [
+          "1",
+          "2",
+          "3"
+        ],
+        "names": []
+      }
+    },
+    {
+      "url": "https://static.nanoka.cc/gi/7.1/leyline.json",
+      "status": 200,
+      "sha256": "f39a56d5d973444947665da48992d60b66d867581ac3a3c014b1f4cfa7206f0c",
+      "bytes": 2459,
+      "cors": "*",
+      "cycles": 12,
+      "withExplicitLiveDates": 0,
+      "genericDateCandidates": [
+        {
+          "id": "5269012",
+          "begin": "2026-09-30 10:00:00",
+          "end": "2026-11-11 09:59:59"
+        }
+      ]
+    },
+    {
+      "url": "https://static.nanoka.cc/gi/7.1/en/leyline/5269012.json",
+      "status": 200,
+      "sha256": "b3a2a42feb9e4c5e761c8e6250f3a5467bb8ea04c144a85e1e4218ab9ae98a72",
+      "bytes": 48684,
+      "cors": "*",
+      "keys": [
+        "id",
+        "name",
+        "begin_time",
+        "end_time",
+        "level"
+      ],
+      "difficulty6": {
+        "keys": [
+          "monster_level",
+          "difficulty_config",
+          "level_config"
+        ],
+        "bosses": [
+          {
+            "variantId": "1001063",
+            "name": "Secret Source Automaton: Overseer Device - Obliterator Panoply",
+            "mechanicKeys": [
+              "monster_buff_name_list",
+              "monster_buff_desc_list",
+              "monster_buff_detail_list",
+              "recommend_list"
+            ]
+          },
+          {
+            "variantId": "1012061",
+            "name": "Battle-Hardened Domovoy Sculptor: Gale Hewing",
+            "mechanicKeys": [
+              "monster_buff_name_list",
+              "monster_buff_desc_list",
+              "monster_buff_detail_list",
+              "recommend_list"
+            ]
+          },
+          {
+            "variantId": "1012063",
+            "name": "Guardian Blade of Drifting Snow: Endless Reverberation",
+            "mechanicKeys": [
+              "monster_buff_name_list",
+              "monster_buff_desc_list",
+              "monster_buff_detail_list",
+              "recommend_list"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://www.stygian.moe/",
+      "status": 200,
+      "sha256": "3ec4966445e68db77b3289ff50ecbb42a4038b99bb645fa4a2d9b10b55779dc5",
+      "bytes": 143015,
+      "cors": null,
+      "title": "Stygian.moe | Stygian Onslaught Wiki"
+    },
+    {
+      "url": "https://www.stygian.moe/about",
+      "status": 200,
+      "sha256": "261e8992939d846a46ba161d3e2e9aa0d096d6654e1ea8eba4f1aa00d3eca645",
+      "bytes": 121051,
+      "cors": null,
+      "title": "About | Stygian.moe"
+    },
+    {
+      "url": "https://www.stygian.moe/guide/submission-guide",
+      "status": 200,
+      "sha256": "aa057618ab2992b429389b7d426f0dccba9f41f142e404a2e7534bcd2e5c923e",
+      "bytes": 136486,
+      "cors": null,
+      "title": "Submission Guide | Guide | Stygian.moe"
+    },
+    {
+      "url": "https://www.stygian.moe/policies",
+      "status": 200,
+      "sha256": "71c3c4babfa9c5f94e73ed85fc38f492bca2cd58d0c02c17aa0cd698ce38fe14",
+      "bytes": 108791,
+      "cors": null,
+      "title": "Policies | Stygian Onslaught Wiki"
+    },
+    {
+      "url": "https://www.stygian.moe/terms-of-service",
+      "status": 200,
+      "sha256": "45fb757b687eac22a2f845af198a22b2d4c090e6b246dbc35c0d9d09441e503a",
+      "bytes": 109317,
+      "cors": null,
+      "title": "Terms of Service | Stygian Onslaught Wiki"
+    },
+    {
+      "url": "https://www.stygian.moe/clears",
+      "status": 200,
+      "sha256": "58a7239a6ee993b73b8b25797890f54125fcca361a9f6d035601974136ec6789",
+      "bytes": 297568,
+      "cors": null,
+      "title": "Stygian Onslaught Clears | Stygian.moe"
+    },
+    {
+      "url": "https://www.stygian.moe/guide/pioneer-secret-source-control-array-will-of-the-hive-guide",
+      "status": 200,
+      "sha256": "576c12941e210e60cf1711eeeef8563d0ad823cb71d9aabb689e212f23111388",
+      "bytes": 221337,
+      "cors": null,
+      "title": "Pioneer Secret Source Control Array: Will of the Hive Guide | Guide | Stygian.moe"
+    },
+    {
+      "url": "https://www.stygian.moe/guide/secret-source-automaton-configuration-device-lysis-shears-guide",
+      "status": 200,
+      "sha256": "f31eeaee5959f0b46a924d3ddc9a0cd9c0f84a01582fbdffca1e698a74d675b6",
+      "bytes": 193520,
+      "cors": null,
+      "title": "Secret Source Automaton: Configuration Device - Lysis Shears Guide | Guide | Stygian.moe"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/seriaati/hakushin-py/main/hakushin/models/gi/stygian.py",
+      "status": 200,
+      "sha256": "55260f626249be1008c7b9c784423ab0c7ed8bd2067aaf8dffb5e410119e9e1b",
+      "bytes": 6716,
+      "cors": "*"
+    },
+    {
+      "url": "https://keqingmains.com/q/nahida-quickguide/",
+      "status": 200,
+      "sha256": "ed18f8f56e27163cf15380e47f53c605627fa2cce4e8e3ac72c066c05eee3975",
+      "bytes": 334382,
+      "cors": "*",
+      "title": "Nahida Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/shinobu-quickguide/",
+      "status": 200,
+      "sha256": "0f8884f49fa35fe2e443e45d1833697ce3af4797b850c1a4fb4de4e694b557b4",
+      "bytes": 282289,
+      "cors": "*",
+      "title": "Kuki Shinobu Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/raiden-quickguide/",
+      "status": 200,
+      "sha256": "555f27b0ed96eebda47fc63941770bed6cac2258d5a19b62e017223e90640338",
+      "bytes": 316135,
+      "cors": "*",
+      "title": "Raiden Shogun Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/xingqiu-quickguide/",
+      "status": 200,
+      "sha256": "86d598b286dc89ec0f7cba3066efba2643d48cd0263d0c25217435fbffd4e953",
+      "bytes": 337149,
+      "cors": "*",
+      "title": "Xingqiu Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/yelan-quickguide/",
+      "status": 200,
+      "sha256": "6eb6c9899aa16733469eea82dc913216f8445c49cc0404538fd3df1d2167c716",
+      "bytes": 267309,
+      "cors": "*",
+      "title": "Yelan Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/barbara-quickguide/",
+      "status": 200,
+      "sha256": "4eca8a13650ae5c6e70d0e5789384218f7bac0072cd3b338f8dbbb3ee6266531",
+      "bytes": 236951,
+      "cors": "*",
+      "title": "Barbara Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/sucrose-quickguide/",
+      "status": 200,
+      "sha256": "1e80079d5e4dca9aaabcd6a9346936f3a4832c2d1c044c06bd89d2936c718620",
+      "bytes": 300858,
+      "cors": "*",
+      "title": "Sucrose Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/fischl-quickguide/",
+      "status": 200,
+      "sha256": "7ccac90a3c1a85171c037f357995ade55b277fa9729ea111b72b265017e650b1",
+      "bytes": 236712,
+      "cors": "*",
+      "title": "Fischl Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/beidou-quickguide/",
+      "status": 200,
+      "sha256": "6da167f34f9b02d4724cd35aafe8fc016623767d33f0c9024481bf05979d8e9d",
+      "bytes": 269377,
+      "cors": "*",
+      "title": "Beidou Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/neuvillette-quickguide/",
+      "status": 200,
+      "sha256": "00d01fecf0e0661f5a6eb95ded4ac19a344dd055132bb014de8369c0097f5d38",
+      "bytes": 350380,
+      "cors": "*",
+      "title": "Neuvillette Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/furina-quickguide/",
+      "status": 200,
+      "sha256": "1a85cb8a856a51be0b086fcdde712a0d4edff22941f9ddbc8a5a4d15a69bba99",
+      "bytes": 314973,
+      "cors": "*",
+      "title": "Furina Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/bennett-quickguide/",
+      "status": 200,
+      "sha256": "dfd4e30f55b1f358e00dc9311c8b354d72259dc9242ca2b754c5359bb43c9786",
+      "bytes": 376620,
+      "cors": "*",
+      "title": "Bennett Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/xiangling-quickguide/",
+      "status": 200,
+      "sha256": "63dfa45ac1d82748b3b5ad1cf84da278229e914534977b8215c4a2a848b3fe67",
+      "bytes": 273458,
+      "cors": "*",
+      "title": "Xiangling Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/kazuha-quickguide/",
+      "status": 200,
+      "sha256": "cf1d24c729fff13ff42e67e70846ed54641ee7ebf14f64d073569ef77934eb98",
+      "bytes": 332379,
+      "cors": "*",
+      "title": "Kazuha Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/zhongli-quickguide/",
+      "status": 200,
+      "sha256": "41050e0b8452a8a1af211e215313ab5f8ecbc9f51ea69879d370968e7da8c488",
+      "bytes": 219869,
+      "cors": "*",
+      "title": "Zhongli Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/nilou-quickguide/",
+      "status": 200,
+      "sha256": "523d8910a43c670722f34d715e3b5d76a3a4d68d394da48b0e7bd223f047645e",
+      "bytes": 222555,
+      "cors": "*",
+      "title": "Nilou Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/chevreuse-quickguide/",
+      "status": 200,
+      "sha256": "eab011b9328de92c5dfa58661837ac57639365d92997ec882f9e087270daac27",
+      "bytes": 274909,
+      "cors": "*",
+      "title": "Chevreuse Quick Guide - KQM"
+    }
+  ],
+  "browser": [
+    {
+      "name": "chromium",
+      "checkedAt": "2026-10-01T11:35:28.051Z",
+      "origin": "http://127.0.0.1:4184/doctor/",
+      "requests": [
+        {
+          "url": "https://static.nanoka.cc/manifest.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/tower.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/manifest.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/tower.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/en/tower/123.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/manifest.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/leyline.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/manifest.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/leyline.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/en/leyline/5269012.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/en/tower/123.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/en/leyline/5269012.json",
+          "status": 200
+        }
+      ],
+      "abyss": "Build against the challenge\n\nGeneral preparation · current cycle unavailable\n\nRefresh challenges\nGame server\nEurope\nAmerica\nAsia\n\nNo unambiguous live cycle is published for this server. General team planning remains available.\n\nNo verified current lineup is available. Open the data provider ↗",
+      "stygian": "Build against the challenge\n\nGeneral preparation · current cycle unavailable\n\nRefresh challenges\nGame server\nEurope\nAmerica\nAsia\n\nNo unambiguous live cycle is published for this server. General team planning remains available.\n\nNo verified current lineup is available. Open the data provider ↗",
+      "detailAccess": [
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/en/tower/123.json",
+          "status": 200,
+          "keys": [
+            "open",
+            "close",
+            "leyline",
+            "floor"
+          ]
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/en/leyline/5269012.json",
+          "status": 200,
+          "keys": [
+            "id",
+            "name",
+            "begin_time",
+            "end_time",
+            "level"
+          ]
+        }
+      ],
+      "mainTabSelected": "true",
+      "initialGeneralTeams": 2,
+      "unavailableCurrentTeams": 0,
+      "generalTeams": 3,
+      "referenceTargets": [
+        "Boss 1Secret Source Automaton: Overseer Device - Obliterator PanoplyPyroHydroElectroCryoDendroAnemoGeohealingshieldgroupingbow",
+        "Boss 2Battle-Hardened Domovoy Sculptor: Gale HewingPyroHydroElectroCryoDendroAnemoGeohealingshieldgroupingbow",
+        "Boss 3Guardian Blade of Drifting Snow: Endless ReverberationPyroHydroElectroCryoDendroAnemoGeohealingshieldgroupingbow"
+      ],
+      "preparationTeams": 3,
+      "pageErrors": []
+    },
+    {
+      "name": "firefox",
+      "checkedAt": "2026-10-01T11:35:30.490Z",
+      "origin": "http://127.0.0.1:4184/doctor/",
+      "requests": [
+        {
+          "url": "https://static.nanoka.cc/manifest.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/tower.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/manifest.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/tower.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/en/tower/123.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/manifest.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/leyline.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/manifest.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/leyline.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/en/leyline/5269012.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/en/tower/123.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/en/leyline/5269012.json",
+          "status": 200
+        }
+      ],
+      "abyss": "Build against the challenge\n\nGeneral preparation · current cycle unavailable\n\nRefresh challenges\nGame server\n\nNo unambiguous live cycle is published for this server. General team planning remains available.\n\nNo verified current lineup is available. Open the data provider ↗",
+      "stygian": "Build against the challenge\n\nGeneral preparation · current cycle unavailable\n\nRefresh challenges\nGame server\n\nNo unambiguous live cycle is published for this server. General team planning remains available.\n\nNo verified current lineup is available. Open the data provider ↗",
+      "detailAccess": [
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/en/tower/123.json",
+          "status": 200,
+          "keys": [
+            "open",
+            "close",
+            "leyline",
+            "floor"
+          ]
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/en/leyline/5269012.json",
+          "status": 200,
+          "keys": [
+            "id",
+            "name",
+            "begin_time",
+            "end_time",
+            "level"
+          ]
+        }
+      ],
+      "mainTabSelected": "true",
+      "initialGeneralTeams": 2,
+      "unavailableCurrentTeams": 0,
+      "generalTeams": 3,
+      "referenceTargets": [
+        "Boss 1Secret Source Automaton: Overseer Device - Obliterator PanoplyPyroHydroElectroCryoDendroAnemoGeohealingshieldgroupingbow",
+        "Boss 2Battle-Hardened Domovoy Sculptor: Gale HewingPyroHydroElectroCryoDendroAnemoGeohealingshieldgroupingbow",
+        "Boss 3Guardian Blade of Drifting Snow: Endless ReverberationPyroHydroElectroCryoDendroAnemoGeohealingshieldgroupingbow"
+      ],
+      "preparationTeams": 3,
+      "pageErrors": []
+    },
+    {
+      "name": "webkit",
+      "checkedAt": "2026-10-01T11:35:32.761Z",
+      "origin": "http://127.0.0.1:4184/doctor/",
+      "requests": [
+        {
+          "url": "https://static.nanoka.cc/manifest.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/tower.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/manifest.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/tower.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/en/tower/123.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/manifest.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/leyline.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/manifest.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/leyline.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/en/leyline/5269012.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/en/tower/123.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/en/leyline/5269012.json",
+          "status": 200
+        }
+      ],
+      "abyss": "Build against the challenge\n\nGeneral preparation · current cycle unavailable\n\nRefresh challenges\nGame server\n\nNo unambiguous live cycle is published for this server. General team planning remains available.\n\nNo verified current lineup is available. Open the data provider ↗",
+      "stygian": "Build against the challenge\n\nGeneral preparation · current cycle unavailable\n\nRefresh challenges\nGame server\n\nNo unambiguous live cycle is published for this server. General team planning remains available.\n\nNo verified current lineup is available. Open the data provider ↗",
+      "detailAccess": [
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/en/tower/123.json",
+          "status": 200,
+          "keys": [
+            "open",
+            "close",
+            "leyline",
+            "floor"
+          ]
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/en/leyline/5269012.json",
+          "status": 200,
+          "keys": [
+            "id",
+            "name",
+            "begin_time",
+            "end_time",
+            "level"
+          ]
+        }
+      ],
+      "mainTabSelected": "true",
+      "initialGeneralTeams": 2,
+      "unavailableCurrentTeams": 0,
+      "generalTeams": 3,
+      "referenceTargets": [
+        "Boss 1Secret Source Automaton: Overseer Device - Obliterator PanoplyPyroHydroElectroCryoDendroAnemoGeohealingshieldgroupingbow",
+        "Boss 2Battle-Hardened Domovoy Sculptor: Gale HewingPyroHydroElectroCryoDendroAnemoGeohealingshieldgroupingbow",
+        "Boss 3Guardian Blade of Drifting Snow: Endless ReverberationPyroHydroElectroCryoDendroAnemoGeohealingshieldgroupingbow"
+      ],
+      "preparationTeams": 3,
+      "pageErrors": []
+    }
+  ],
+  "gates": {
+    "liveCycle": false,
+    "stygianDataset": false,
+    "learnedModel": false
+  }
+}

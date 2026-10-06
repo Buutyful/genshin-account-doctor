@@ -1,0 +1,306 @@
+[
+  {
+    "id": "nefer-lunar-bloom",
+    "name": "Nefer Lunar-Bloom",
+    "anchor": "nefer",
+    "slots": [
+      [
+        "nefer"
+      ],
+      [
+        "lauma"
+      ],
+      [
+        "columbina"
+      ],
+      [
+        "sucrose"
+      ]
+    ],
+    "roles": [
+      "On-field carry",
+      "Lunar-Bloom support",
+      "Hydro & damage",
+      "EM support"
+    ],
+    "source": "https://www.prydwen.gg/genshin-impact/characters/nefer",
+    "checkedAt": "2026-09-29",
+    "why": "A complete team example supported by the linked guide. The role-based meta prior is separate from its unmeasured team performance.",
+    "caution": "Lauma is a core partner. Sucrose supports EM; do not assume Viridescent Venerer buffs Lunar-Bloom. This composition has no published engine measurement.",
+    "encounterTags": [
+      "lunar-bloom"
+    ],
+    "rotationOutline": "Lauma Burst and held Skill → Columbina Burst and Skill → Sucrose Skill → Nefer Skill and charged-attack sequences; Burst every other loop. Finish with Columbina’s charged attack.",
+    "buildNotes": {
+      "sucrose": "EM support with Instructor or Deepwood; Viridescent Venerer does not buff Lunar-Bloom.",
+      "nefer": "Prioritize the Lunar-Bloom charged-attack sequence. Check ER against the guide’s every-other-loop Burst."
+    }
+  },
+  {
+    "id": "sandrone-stellar",
+    "name": "Sandrone Stellar",
+    "anchor": "sandrone",
+    "slots": [
+      [
+        "sandrone"
+      ],
+      [
+        "yaemiko"
+      ],
+      [
+        "odette"
+      ],
+      [
+        "escoffier"
+      ]
+    ],
+    "roles": [
+      "On-field carry",
+      "Electro damage",
+      "Stellar support",
+      "Cryo & healing"
+    ],
+    "source": "https://www.prydwen.gg/genshin-impact/characters/sandrone",
+    "checkedAt": "2026-09-29",
+    "why": "A complete team example supported by the linked guide. The role-based meta prior is separate from its unmeasured team performance.",
+    "caution": "The published example uses Yae Miko C1. Check its Stellar and Cryo/Electro team conditions. Engine coverage is missing.",
+    "encounterTags": [
+      "stellar-glimmer"
+    ],
+    "minimumConstellations": {
+      "yaemiko": 1
+    }
+  },
+  {
+    "id": "vesna-cryo",
+    "name": "Vesna Cryo core",
+    "anchor": "vesna",
+    "slots": [
+      [
+        "vesna"
+      ],
+      [
+        "faruzan",
+        "vodyanitsa"
+      ],
+      [
+        "odette"
+      ],
+      [
+        "travelercryo"
+      ]
+    ],
+    "roles": [
+      "On-field carry",
+      "Buff support",
+      "Cryo & Stellar",
+      "Cryo damage"
+    ],
+    "source": "https://www.prydwen.gg/genshin-impact/characters/vesna",
+    "checkedAt": "2026-09-29",
+    "why": "A complete team example supported by the linked guide. The role-based meta prior is separate from its unmeasured team performance.",
+    "caution": "Guide examples use Faruzan C6 or Vodyanitsa C0, plus Cryo Traveler C2. Off-field Cryo supports Vesna’s damage window. Engine coverage is missing.",
+    "encounterTags": [
+      "stellar-glimmer",
+      "swirl"
+    ],
+    "minimumConstellations": {
+      "travelercryo": 2
+    }
+  },
+  {
+    "id": "flins-lunar",
+    "name": "Flins Lunar-Charged",
+    "anchor": "flins",
+    "slots": [
+      [
+        "flins"
+      ],
+      [
+        "ineffa"
+      ],
+      [
+        "columbina"
+      ],
+      [
+        "sucrose"
+      ]
+    ],
+    "roles": [
+      "On-field carry",
+      "Lunar damage & shield",
+      "Hydro & buffs",
+      "EM & resistance shred"
+    ],
+    "source": "https://keqingmains.com/q/flins-quickguide/",
+    "checkedAt": "2026-09-29",
+    "why": "A complete team example supported by the linked guide. The role-based meta prior is separate from its unmeasured team performance.",
+    "caution": "Flins needs two special Skill → short Burst sequences per C0 field window. A generic Skill/Burst/normal loop is insufficient. Benchmark builds and rotations require separate validation.",
+    "encounterTags": [
+      "lunar-charged"
+    ],
+    "rotationOutline": "Set up Ineffa and Columbina, then Sucrose’s support. Flins uses two special Skill into short-Burst sequences per C0 field window; follow the full guide combo."
+  },
+  {
+    "id": "sandrone-stellar-alyosha",
+    "name": "Sandrone Stellar",
+    "anchor": "sandrone",
+    "slots": [
+      [
+        "sandrone"
+      ],
+      [
+        "yaemiko"
+      ],
+      [
+        "odette"
+      ],
+      [
+        "alyosha"
+      ]
+    ],
+    "roles": [
+      "On-field carry",
+      "Damage support",
+      "Reaction support",
+      "Team support"
+    ],
+    "source": "https://www.icy-veins.com/genshin-impact/spiral-abyss-floor-12-guide",
+    "checkedAt": "2026-10-03",
+    "encounterTags": [
+      "stellar-glimmer"
+    ],
+    "why": "Complete current encounter-guide example with its reaction core retained.",
+    "caution": "Follow the linked build and rotation; check constellation assumptions."
+  },
+  {
+    "id": "mizuki-stellar",
+    "name": "Mizuki Stellar Swirl",
+    "anchor": "mizuki",
+    "slots": [
+      [
+        "mizuki"
+      ],
+      [
+        "odette"
+      ],
+      [
+        "faruzan"
+      ],
+      [
+        "travelercryo"
+      ]
+    ],
+    "roles": [
+      "On-field carry",
+      "Damage support",
+      "Reaction support",
+      "Team support"
+    ],
+    "source": "https://www.icy-veins.com/genshin-impact/spiral-abyss-floor-12-guide",
+    "checkedAt": "2026-10-03",
+    "encounterTags": [
+      "stellar-glimmer",
+      "swirl"
+    ],
+    "why": "Complete current encounter-guide example with its reaction core retained.",
+    "caution": "Follow the linked build and rotation; check constellation assumptions."
+  },
+  {
+    "id": "vesna-stellar-vodyanitsa",
+    "name": "Vesna Stellar Swirl",
+    "anchor": "vesna",
+    "slots": [
+      [
+        "vesna"
+      ],
+      [
+        "odette"
+      ],
+      [
+        "faruzan"
+      ],
+      [
+        "vodyanitsa"
+      ]
+    ],
+    "roles": [
+      "On-field carry",
+      "Damage support",
+      "Reaction support",
+      "Team support"
+    ],
+    "source": "https://www.icy-veins.com/genshin-impact/spiral-abyss-floor-12-guide",
+    "checkedAt": "2026-10-03",
+    "encounterTags": [
+      "stellar-glimmer",
+      "swirl"
+    ],
+    "why": "Complete current encounter-guide example with its reaction core retained.",
+    "caution": "Follow the linked build and rotation; check constellation assumptions."
+  },
+  {
+    "id": "nefer-lunar-nahida",
+    "name": "Nefer Lunar-Bloom",
+    "anchor": "nefer",
+    "slots": [
+      [
+        "nefer"
+      ],
+      [
+        "lauma"
+      ],
+      [
+        "columbina"
+      ],
+      [
+        "nahida"
+      ]
+    ],
+    "roles": [
+      "On-field carry",
+      "Damage support",
+      "Reaction support",
+      "Team support"
+    ],
+    "source": "https://www.icy-veins.com/genshin-impact/spiral-abyss-floor-12-guide",
+    "checkedAt": "2026-10-03",
+    "encounterTags": [
+      "lunar-bloom"
+    ],
+    "why": "Complete current encounter-guide example with its reaction core retained.",
+    "caution": "Follow the linked build and rotation; check constellation assumptions."
+  },
+  {
+    "id": "zibai-lunar",
+    "name": "Zibai Lunar-Crystallize",
+    "anchor": "zibai",
+    "slots": [
+      [
+        "zibai"
+      ],
+      [
+        "linnea"
+      ],
+      [
+        "columbina"
+      ],
+      [
+        "illuga"
+      ]
+    ],
+    "roles": [
+      "On-field carry",
+      "Damage support",
+      "Reaction support",
+      "Team support"
+    ],
+    "source": "https://www.icy-veins.com/genshin-impact/spiral-abyss-floor-12-guide",
+    "checkedAt": "2026-10-03",
+    "encounterTags": [
+      "lunar-crystallize"
+    ],
+    "why": "Complete current encounter-guide example with its reaction core retained.",
+    "caution": "Follow the linked build and rotation; check constellation assumptions."
+  }
+]

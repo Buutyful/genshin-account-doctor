@@ -74,4 +74,55 @@ The inherited roster and remaining extracted guide snapshots are dated 23 Septem
 
 **Then:** offline experiments and publication, calibrated estimates only in covered regions, and an artifact/build handoff. Current artifact inventory, weapon ownership, talent levels and actual clear capability remain unknown in the first prototype.
 
-UI direction: ivory clinic stationery, deep teal navigation, mint accents, warm gold detail, game portraits and an original adult anime doctor mascot. Diagnosis language should be helpful and actionable without presenting an invented numerical “account health” score.
+UI direction: flat parchment clinic stationery, charcoal navigation with star details, saturated crimson actions, aged gold and fate pink accents, game portraits and an original adult anime doctor mascot. The palette takes inspiration from The Witcher 3, with no CSS gradients. Diagnosis language should be helpful and actionable without presenting an invented numerical “account health” score.
+
+Teams is the min-maxing workspace. Use direct labels, compact controls, flat team results and full-fill selection states. Avoid slogans, decorative selection edges, nested cards and always-open reasoning. Show the allocation, rotation order, known upgrades and concrete pull impact first; keep requirements, tradeoffs and evidence available on demand. The Guide recipes & custom teams content remains a separate workflow.
+
+
+## 29 September implementation update
+
+The next account workflow is implemented in [account imports and ranking](account-imports-and-ranking.md). It adds explicit unknown build details, previewed GOOD imports, focus-constrained recipe retrieval and conditional role-rating priors. The allocator now uses a 256-candidate pool with driver diversity. These supersede the initial 128-candidate and readiness-only descriptions above. Recipe association remains a retrieval signal, not a damage proxy. The source-backed rating snapshot and the validated synthetic benchmark channel remain separate; the latter has no published rows yet.
+
+## 30 September UI update
+
+The clinic uses a compact sidebar inspired by Paimon.moe, with grouped navigation, short labels, a desktop collapse control and a mobile tab bar. The checkup guides users through adding characters, finding teams and reviewing builds. Starting a personal roster clears demo search filters. The planner shows the account plan before optional character searches. Ranking controls, source links and detailed evidence remain available in expandable sections; actionable recipe cautions and the general-preparation label stay visible. The recommendation pipeline and data provenance are unchanged.
+
+
+## 30 September planner integration
+
+[Team planner integration](team-planner-integration.md) adds product-authored mechanical contracts, custom compositions, session team locks, deterministic manual rotation sheets and a live-version Abyss/Stygian adapter. Joint encounter assignment preserves shared identities and user matchup preferences. Current-cycle claims require a valid fresh pack; the provider returned HTTP 403 during live verification. Full equipment-derived simulation, validated reference benchmarks and Theater allocation remain unimplemented. This supersedes the earlier statement that mode selection only controls team count.
+
+## 1 October account-aware builder
+
+The [account-aware implementation report](account-aware-builder-implementation.md) supersedes the recipe-only generation and current client workflow described above. The main planner now searches owned role configurations through conditional interaction rules, retains complete guide/custom seeds, assesses build/rotation assumptions, and reassigns the account after scoped feedback. Configuration identity includes roles, builds, rotation and mechanics revision, separately from composition identity. The initial mechanics set has 19 profiles across 15 characters; unknown roles and application/energy coverage remain explicit. Search is exact inside disclosed diversified pools and checked against an independent small-pool baseline.
+
+Reviewed encounter publications require exact bundled hashes and effective validity. Real 1 October browser access passed, but generic provider dates and the incomplete Abyss lineup cannot establish a current pack. A fresh Stygian review agrees on boss names and period labels but reveals a regional-countdown discrepancy. Stygian.moe normalization, proof/correction deduplication, contextual retrieval and grouped temporal manifests are connected. Individual attributed references can now qualify for discovery/contextual comparison independently of bulk dataset or training/evaluation use; no real pilot is bundled yet. This corrects the original overly broad source gate while preserving observed, guide and synthetic evidence as separate channels. The build, 58 domain tests and 69 browser checks passed; real live verification and the manual observed-clear pilot review remain explicit unmet acceptance gates.
+
+## 2 October client repair
+
+The planner opens with a usable general account plan. Reviewed complete examples, readiness and coherent roles determine selection; supported-check counts describe coverage only. Character focus and team alternatives are visible controls. Replacement controls identify uncovered substitutes before applying a request, and newer shaping requests supersede earlier ones without losing rejection history or Undo.
+
+Challenge preparation accepts player targets and preferences, with regional persistence and workspace restore. Stygian's real provider lineup is an attributed reference with no live-date certification. Reviewed-current assignment stays separately gated. The [client repair report](team-builder-client-repair-2026-10-02.md) records the connected behavior, 63 domain tests, 81 browser checks, real browser access and the remaining coverage limits.
+
+## 3 October account decisions
+
+The [decision workflow report](account-decisions-2026-10-03.md) supersedes the previous general-only opening and missing pull UI. Fresh endgame sessions use exact-hash reviewed regional publications inside their certified window. Optional encounter modifiers contribute bounded preference weights alongside conditional ratings, complete guide evidence and recorded builds; they cannot independently force the allocator to abandon a much stronger supported team. Explicit player matchup preferences still take precedence. Unsupported effects remain unknown, and element presence alone cannot establish a reaction affected by competing elements.
+
+Primary planning assigns all account teams together. Alternatives reject complete composition allocations and search with investment/sustain objectives while preserving locks, exclusions, gear and shared Traveler identities. Unreviewed mixed core ownership stays exploratory. Known upgrades are projected onto a cloned account and followed by full regeneration; unknown EM, artifacts, gear and readiness are never fabricated.
+
+The primary Who to pull workflow compares every unowned wish character at C0 against the full baseline and build-first plan. It ranks marginal account improvements, matches teams by encounter/driver/member overlap, and reports support destinations, replacements, partner requirements, build tasks and encounter changes. A guide's unestablished constellation assumption cannot establish C0 pull priority. Banner availability uses a separate official-source/region/date gate.
+
+Current challenge publications are checked through 10 October; the source's disputed November reset is not guessed. Published hashes, date bases and rating review remain inspectable. The 24-profile/20-character mechanics set, guide coverage, observed-clear listings and empty synthetic-performance channel remain distinct. The production build, 90 domain tests and 96 browser checks pass; no DPS, success probability or clear-time prediction is asserted.
+
+
+## 4 October structure and pull cache
+
+Team results use a main column with a selected-plan heading, three labelled complete-plan choices and one horizontal lineup per assigned opponent. Game mode, challenge/server controls and preferences live in a settings rail, collapsed above results on smaller screens. Details expose build requirements, rotations and full opponent names. Guide recipes and custom teams retain their content and controls.
+
+Pull priorities has its own entry in Account navigation. Completed C0 studies are stored in IndexedDB with their original full-account evaluations and BigInt identities. A deterministic SHA-256 key covers the account, actual builds/equipment, planning inputs, generated configurations, baseline allocation and all recommendation publications, including the unowned characters' conditional ratings and recipe/kit evidence. Source freshness and evaluation revisions invalidate previous results; banner availability is still evaluated separately. There is no periodic cache timeout or automatic recalculation for an unchanged study. Four recent studies are retained to bound storage. An interrupted, incomplete, damaged or older-format study is never presented as completed cached advice. Storage failure leaves live comparisons usable.
+
+## 6 October recorded-clear retrieval
+
+The [recorded-clear implementation report](recorded-clear-finder-2026-10-06.md) adds 914 attributed, complete public Stygian.moe listings with exact snapshot provenance. Clear finder and the Recorded clears planner tab match whole observed compositions against the saved roster and listed investment, then assign all source-version bosses together. Team locks, exclusions, composition-distinct alternatives, finite physical weapon copies and shared Traveler identity apply to the full plan. Recorded times and source cost remain properties of submitted runs.
+
+Public source moderation is a separate evidence level from independent proof/build review. Missing investment, reduced-cost metadata, unverified buff contexts and sparse archive coverage remain explicit. No simulator, synthetic score, learned model, success probability or predicted account clear time is introduced. Source archive labels cannot override regional challenge verification. Bounded search, snapshot freshness, normalization/exclusion audit and original source attribution are inspectable in the product and exports.

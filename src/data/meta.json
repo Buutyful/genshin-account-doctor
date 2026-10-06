@@ -1,0 +1,1024 @@
+{
+  "version": 1,
+  "id": "prydwen-overall-7.1-2026-10-03",
+  "source": "https://www.prydwen.gg/genshin-impact/tier-list",
+  "publisher": "Prydwen",
+  "updatedAt": "2026-10-01",
+  "checkedAt": "2026-10-03",
+  "expiresAt": "2026-10-15",
+  "patch": "7.1",
+  "scope": "overall",
+  "notes": "Ordinal character ratings, conditional on role, constellation, partners and execution. Not team DPS or a current Stygian encounter pack. Local expiry is a 14-day review policy, not a publisher guarantee.",
+  "entries": [
+    {
+      "id": "mavuika",
+      "role": "carry",
+      "tier": 0,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "nefer",
+      "role": "carry",
+      "tier": 0,
+      "constellation": 0,
+      "partners": [
+        "lauma"
+      ]
+    },
+    {
+      "id": "sandrone",
+      "role": "carry",
+      "tier": 0,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "vesna",
+      "role": "carry",
+      "tier": 0,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "wriothesley",
+      "role": "carry",
+      "tier": 0,
+      "constellation": 1,
+      "partners": []
+    },
+    {
+      "id": "mizuki",
+      "role": "carry",
+      "tier": 0,
+      "constellation": 2,
+      "partners": []
+    },
+    {
+      "id": "zibai",
+      "role": "carry",
+      "tier": 0,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "columbina",
+      "role": "damage",
+      "tier": 0,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "ineffa",
+      "role": "damage",
+      "tier": 0,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "linnea",
+      "role": "damage",
+      "tier": 0,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "odette",
+      "role": "damage",
+      "tier": 0,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "yaemiko",
+      "role": "damage",
+      "tier": 0,
+      "constellation": 1,
+      "partners": []
+    },
+    {
+      "id": "chevreuse",
+      "role": "support",
+      "tier": 0,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "iansan",
+      "role": "support",
+      "tier": 0,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "lauma",
+      "role": "support",
+      "tier": 0,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "nicole",
+      "role": "support",
+      "tier": 0,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "sucrose",
+      "role": "support",
+      "tier": 0,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "cyno",
+      "role": "carry",
+      "tier": 0.5,
+      "constellation": 1,
+      "partners": [
+        "odette"
+      ]
+    },
+    {
+      "id": "flins",
+      "role": "carry",
+      "tier": 0.5,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "skirk",
+      "role": "carry",
+      "tier": 0.5,
+      "constellation": 0,
+      "partners": [
+        "escoffier"
+      ]
+    },
+    {
+      "id": "travelercryo",
+      "role": "carry",
+      "tier": 0.5,
+      "constellation": 4,
+      "partners": []
+    },
+    {
+      "id": "varka",
+      "role": "carry",
+      "tier": 0.5,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "durin",
+      "role": "damage",
+      "tier": 0.5,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "escoffier",
+      "role": "damage",
+      "tier": 0.5,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "fischl",
+      "role": "damage",
+      "tier": 0.5,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "travelercryo",
+      "role": "damage",
+      "tier": 0.5,
+      "constellation": 4,
+      "partners": []
+    },
+    {
+      "id": "alyosha",
+      "role": "support",
+      "tier": 0.5,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "bennett",
+      "role": "support",
+      "tier": 0.5,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "citlali",
+      "role": "support",
+      "tier": 0.5,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "faruzan",
+      "role": "support",
+      "tier": 0.5,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "illuga",
+      "role": "support",
+      "tier": 0.5,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "mona",
+      "role": "support",
+      "tier": 0.5,
+      "constellation": 2,
+      "partners": []
+    },
+    {
+      "id": "prune",
+      "role": "support",
+      "tier": 0.5,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "vodyanitsa",
+      "role": "support",
+      "tier": 0.5,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "arlecchino",
+      "role": "carry",
+      "tier": 1,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "kinich",
+      "role": "carry",
+      "tier": 1,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "klee",
+      "role": "carry",
+      "tier": 1,
+      "constellation": 1,
+      "partners": []
+    },
+    {
+      "id": "lohen",
+      "role": "carry",
+      "tier": 1,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "mualani",
+      "role": "carry",
+      "tier": 1,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "varesa",
+      "role": "carry",
+      "tier": 1,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "albedo",
+      "role": "damage",
+      "tier": 1,
+      "constellation": 1,
+      "partners": []
+    },
+    {
+      "id": "emilie",
+      "role": "damage",
+      "tier": 1,
+      "constellation": 1,
+      "partners": []
+    },
+    {
+      "id": "furina",
+      "role": "damage",
+      "tier": 1,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "mavuika",
+      "role": "damage",
+      "tier": 1,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "ororon",
+      "role": "damage",
+      "tier": 1,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "aino",
+      "role": "support",
+      "tier": 1,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "beidou",
+      "role": "support",
+      "tier": 1,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "nahida",
+      "role": "support",
+      "tier": 1,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "qiqi",
+      "role": "support",
+      "tier": 1,
+      "constellation": 2,
+      "partners": []
+    },
+    {
+      "id": "xilonen",
+      "role": "support",
+      "tier": 1,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "clorinde",
+      "role": "carry",
+      "tier": 1.5,
+      "constellation": 1,
+      "partners": []
+    },
+    {
+      "id": "columbina",
+      "role": "carry",
+      "tier": 1.5,
+      "constellation": 0,
+      "partners": [
+        "lauma"
+      ]
+    },
+    {
+      "id": "gaming",
+      "role": "carry",
+      "tier": 1.5,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "hutao",
+      "role": "carry",
+      "tier": 1.5,
+      "constellation": 1,
+      "partners": []
+    },
+    {
+      "id": "lyney",
+      "role": "carry",
+      "tier": 1.5,
+      "constellation": 1,
+      "partners": []
+    },
+    {
+      "id": "navia",
+      "role": "carry",
+      "tier": 1.5,
+      "constellation": 1,
+      "partners": []
+    },
+    {
+      "id": "neuvillette",
+      "role": "carry",
+      "tier": 1.5,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "venti",
+      "role": "carry",
+      "tier": 1.5,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "chiori",
+      "role": "damage",
+      "tier": 1.5,
+      "constellation": 1,
+      "partners": []
+    },
+    {
+      "id": "venti",
+      "role": "damage",
+      "tier": 1.5,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "xiangling",
+      "role": "damage",
+      "tier": 1.5,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "xingqiu",
+      "role": "damage",
+      "tier": 1.5,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "yelan",
+      "role": "damage",
+      "tier": 1.5,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "alyosha",
+      "role": "support",
+      "tier": 1.5,
+      "constellation": 2,
+      "partners": []
+    },
+    {
+      "id": "diona",
+      "role": "support",
+      "tier": 1.5,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "gorou",
+      "role": "support",
+      "tier": 1.5,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "illuga",
+      "role": "support",
+      "tier": 1.5,
+      "constellation": 2,
+      "partners": []
+    },
+    {
+      "id": "jahoda",
+      "role": "support",
+      "tier": 1.5,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "kazuha",
+      "role": "support",
+      "tier": 1.5,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "nilou",
+      "role": "support",
+      "tier": 1.5,
+      "constellation": 1,
+      "partners": []
+    },
+    {
+      "id": "prune",
+      "role": "support",
+      "tier": 1.5,
+      "constellation": 2,
+      "partners": []
+    },
+    {
+      "id": "shenhe",
+      "role": "support",
+      "tier": 1.5,
+      "constellation": 1,
+      "partners": []
+    },
+    {
+      "id": "travelerpyro",
+      "role": "support",
+      "tier": 1.5,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "zhongli",
+      "role": "support",
+      "tier": 1.5,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "itto",
+      "role": "carry",
+      "tier": 2,
+      "constellation": 1,
+      "partners": []
+    },
+    {
+      "id": "chasca",
+      "role": "carry",
+      "tier": 2,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "ifa",
+      "role": "carry",
+      "tier": 2,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "ayaka",
+      "role": "carry",
+      "tier": 2,
+      "constellation": 1,
+      "partners": [
+        "escoffier"
+      ]
+    },
+    {
+      "id": "noelle",
+      "role": "carry",
+      "tier": 2,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "raiden",
+      "role": "carry",
+      "tier": 2,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "razor",
+      "role": "carry",
+      "tier": 2,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "wanderer",
+      "role": "carry",
+      "tier": 2,
+      "constellation": 1,
+      "partners": []
+    },
+    {
+      "id": "xiao",
+      "role": "carry",
+      "tier": 2,
+      "constellation": 1,
+      "partners": []
+    },
+    {
+      "id": "kuki",
+      "role": "damage",
+      "tier": 2,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "raiden",
+      "role": "damage",
+      "tier": 2,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "rosaria",
+      "role": "damage",
+      "tier": 2,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "kokomi",
+      "role": "damage",
+      "tier": 2,
+      "constellation": 1,
+      "partners": []
+    },
+    {
+      "id": "charlotte",
+      "role": "support",
+      "tier": 2,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "jean",
+      "role": "support",
+      "tier": 2,
+      "constellation": 2,
+      "partners": []
+    },
+    {
+      "id": "kachina",
+      "role": "support",
+      "tier": 2,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "sara",
+      "role": "support",
+      "tier": 2,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "kuki",
+      "role": "support",
+      "tier": 2,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "lanyan",
+      "role": "support",
+      "tier": 2,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "xianyun",
+      "role": "support",
+      "tier": 2,
+      "constellation": 1,
+      "partners": []
+    },
+    {
+      "id": "alhaitham",
+      "role": "carry",
+      "tier": 3,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "diluc",
+      "role": "carry",
+      "tier": 3,
+      "constellation": 2,
+      "partners": []
+    },
+    {
+      "id": "ganyu",
+      "role": "carry",
+      "tier": 3,
+      "constellation": 1,
+      "partners": []
+    },
+    {
+      "id": "ningguang",
+      "role": "carry",
+      "tier": 3,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "sethos",
+      "role": "carry",
+      "tier": 3,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "yanfei",
+      "role": "carry",
+      "tier": 3,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "yoimiya",
+      "role": "carry",
+      "tier": 3,
+      "constellation": 1,
+      "partners": []
+    },
+    {
+      "id": "barbara",
+      "role": "damage",
+      "tier": 3,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "kaeya",
+      "role": "damage",
+      "tier": 3,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "thoma",
+      "role": "damage",
+      "tier": 3,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "baizhu",
+      "role": "support",
+      "tier": 3,
+      "constellation": 1,
+      "partners": []
+    },
+    {
+      "id": "candace",
+      "role": "support",
+      "tier": 3,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "chongyun",
+      "role": "support",
+      "tier": 3,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "collei",
+      "role": "support",
+      "tier": 3,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "dahlia",
+      "role": "support",
+      "tier": 3,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "dehya",
+      "role": "support",
+      "tier": 3,
+      "constellation": 2,
+      "partners": []
+    },
+    {
+      "id": "kirara",
+      "role": "support",
+      "tier": 3,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "layla",
+      "role": "support",
+      "tier": 3,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "lynette",
+      "role": "support",
+      "tier": 3,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "kokomi",
+      "role": "support",
+      "tier": 3,
+      "constellation": 1,
+      "partners": []
+    },
+    {
+      "id": "sigewinne",
+      "role": "support",
+      "tier": 3,
+      "constellation": 1,
+      "partners": []
+    },
+    {
+      "id": "traveleranemo",
+      "role": "support",
+      "tier": 3,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "travelerdendro",
+      "role": "support",
+      "tier": 3,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "yaoyao",
+      "role": "support",
+      "tier": 3,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "dehya",
+      "role": "carry",
+      "tier": 4,
+      "constellation": 2,
+      "partners": []
+    },
+    {
+      "id": "dori",
+      "role": "carry",
+      "tier": 4,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "eula",
+      "role": "carry",
+      "tier": 4,
+      "constellation": 1,
+      "partners": []
+    },
+    {
+      "id": "freminet",
+      "role": "carry",
+      "tier": 4,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "ayato",
+      "role": "carry",
+      "tier": 4,
+      "constellation": 1,
+      "partners": []
+    },
+    {
+      "id": "kaveh",
+      "role": "carry",
+      "tier": 4,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "keqing",
+      "role": "carry",
+      "tier": 4,
+      "constellation": 2,
+      "partners": []
+    },
+    {
+      "id": "lisa",
+      "role": "carry",
+      "tier": 4,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "heizou",
+      "role": "carry",
+      "tier": 4,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "tartaglia",
+      "role": "carry",
+      "tier": 4,
+      "constellation": 1,
+      "partners": []
+    },
+    {
+      "id": "tighnari",
+      "role": "carry",
+      "tier": 4,
+      "constellation": 2,
+      "partners": []
+    },
+    {
+      "id": "amber",
+      "role": "support",
+      "tier": 4,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "barbara",
+      "role": "support",
+      "tier": 4,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "lisa",
+      "role": "support",
+      "tier": 4,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "mika",
+      "role": "support",
+      "tier": 4,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "sayu",
+      "role": "support",
+      "tier": 4,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "thoma",
+      "role": "support",
+      "tier": 4,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "travelergeo",
+      "role": "support",
+      "tier": 4,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "yunjin",
+      "role": "support",
+      "tier": 4,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "aloy",
+      "role": "carry",
+      "tier": 5,
+      "constellation": 0,
+      "partners": []
+    },
+    {
+      "id": "amber",
+      "role": "carry",
+      "tier": 5,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "travelerhydro",
+      "role": "carry",
+      "tier": 5,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "xinyan",
+      "role": "carry",
+      "tier": 5,
+      "constellation": 6,
+      "partners": []
+    },
+    {
+      "id": "travelerelectro",
+      "role": "support",
+      "tier": 5,
+      "constellation": 6,
+      "partners": []
+    }
+  ],
+  "sourceCapture": {
+    "sha256": "480b09782472ec8fe2f5751e57a6f190b3d663237d9199d1488e16745bfe46f5",
+    "kind": "web-reader-text",
+    "checkedAt": "2026-10-03",
+    "note": "Direct HTML request blocked; the rendered public Overall tier list was read using the web reader. Ordinal ratings, not measured team damage."
+  }
+}

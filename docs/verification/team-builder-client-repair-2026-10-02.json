@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-10-02T10:54:37.049Z",
+  "origin": "http://127.0.0.1:4184/doctor/",
+  "initial": [
+    "Mavuika Melt",
+    "Nahida Hyperbloom"
+  ],
+  "targeted": [
+    {
+      "title": "Nahida Hyperbloom",
+      "compositionId": "kuki|nahida|xingqiu|yelan",
+      "matchedPreference": "Your preference: Hydro"
+    },
+    {
+      "title": "Mavuika Melt",
+      "compositionId": "bennett|citlali|kazuha|mavuika",
+      "matchedPreference": "Your preference: Pyro"
+    }
+  ],
+  "reference": [
+    "Boss 1Secret Source Automaton: Overseer Device - Obliterator PanoplyPyroHydroElectroCryoDendroAnemoGeohealingshieldgroupingbow",
+    "Boss 2Battle-Hardened Domovoy Sculptor: Gale HewingPyroHydroElectroCryoDendroAnemoGeohealingshieldgroupingbow",
+    "Boss 3Guardian Blade of Drifting Snow: Endless ReverberationPyroHydroElectroCryoDendroAnemoGeohealingshieldgroupingbow"
+  ],
+  "stygian": [
+    "Mavuika Melt",
+    "Nahida Hyperbloom",
+    "Neuvillette Hypercarry"
+  ],
+  "overflow": false,
+  "errors": []
+}

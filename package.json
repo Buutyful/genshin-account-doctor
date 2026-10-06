@@ -9,7 +9,10 @@
     "preview": "vite preview --host 127.0.0.1 --port 4174",
     "test": "vitest run",
     "test:app": "playwright test -c playwright.config.ts",
-    "knowledge:build": "node scripts/build-knowledge.mjs"
+    "pages:verify": "node scripts/verify-pages.mjs",
+    "knowledge:build": "node scripts/build-knowledge.mjs",
+    "clears:refresh": "node scripts/refresh-clear-archive.mjs",
+    "clears:verify": "node scripts/verify-clear-archive.mjs"
   },
   "engines": {
     "node": ">=22"

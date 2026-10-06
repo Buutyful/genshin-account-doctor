@@ -1,0 +1,21 @@
+{
+  "verifiedAt": "2026-10-06T13:10:34.870Z",
+  "sourceCheckedAt": "2026-10-05T11:19:07.642Z",
+  "scope": "Production client, real bundled source records and an explicitly constructed matching account. This verifies matching and layout, not in-game outcomes.",
+  "records": [
+    "4f61bddb-25d4-46a5-9331-ebe5baaeddf2",
+    "722b63e5-e780-44eb-a080-5026741c9543",
+    "4ce1885a-04ae-4410-827f-b9b596201a69"
+  ],
+  "investmentFilter": "investment",
+  "mobile": {
+    "width": 390,
+    "scrollWidth": 390
+  },
+  "errors": [],
+  "screenshots": [
+    "output/clear-finder-three-bosses-desktop.png",
+    "output/clear-finder-three-bosses-mobile.png"
+  ],
+  "partialAlternativesShown": false
+}

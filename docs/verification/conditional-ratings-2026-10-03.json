@@ -1,0 +1,25 @@
+{
+  "source": "https://www.prydwen.gg/genshin-impact/tier-list",
+  "capturedAt": "2026-10-03",
+  "sourceHash": "480b09782472ec8fe2f5751e57a6f190b3d663237d9199d1488e16745bfe46f5",
+  "captureKind": "web-reader-text",
+  "entries": 142,
+  "changedRows": [
+    {
+      "id": "travelercryo",
+      "role": "carry",
+      "tier": 0.5,
+      "constellation": 4,
+      "partners": []
+    },
+    {
+      "id": "travelercryo",
+      "role": "damage",
+      "tier": 0.5,
+      "constellation": 4,
+      "partners": []
+    }
+  ],
+  "removedRows": [],
+  "scope": "Full Overall list, role, constellation and named partner conditions. Execution conditions remain explicit in rating-conditions.json."
+}

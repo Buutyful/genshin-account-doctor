@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "id": "pending",
+  "patch": "7.1",
+  "generatedAt": "2026-09-29",
+  "profileId": "pilot-c0-accessible-r1-l90-v1",
+  "profileLabel": "Research reference: all C0, level 90, base talents 8, permanent R1 weapons, standardized artifacts. Not your equipment.",
+  "engine": {
+    "revision": "",
+    "binarySha256": ""
+  },
+  "rows": []
+}

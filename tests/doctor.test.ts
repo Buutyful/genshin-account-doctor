@@ -26,7 +26,7 @@ describe('Account Doctor evidence and planning', () => {
     expect(new Set(teams.flatMap(t => t.members.map(accountIdentity))).size).toBe(12);
   });
   it('does not greedily consume a support needed for a complete account plan', () => {
-    const team = (id: string, members: string[], score: number): Candidate => ({ id, members, score, mask: teamMask(members), name: id, roles: [], reviewed: true, why: '', caution: '', sources: [], missing: [] });
+    const team = (id: string, members: string[], score: number): Candidate => ({ id, members, score, mask: teamMask(members), name: id, roles: [], reviewed: true, why: '', caution: '', sources: [], missing: [], anchor: members[0], ranking: 'unrated', metaTier: null, retrieval: 0, assumptions: [], unsupported: [] });
     const a = team('greedy', ['mavuika', 'citlali', 'xingqiu', 'bennett'], 100);
     const b = team('first', ['mavuika', 'citlali', 'xilonen', 'bennett'], 90);
     const c = team('second', ['nahida', 'kuki', 'xingqiu', 'yelan'], 80);
@@ -74,7 +74,7 @@ describe('Account Doctor evidence and planning', () => {
 describe('Account Doctor persistence boundary', () => {
   it('round-trips readiness and modes, and migrates old rosters without inventing readiness', () => {
     expect(parseAccount(JSON.parse(JSON.stringify(demoAccount)))).toEqual(demoAccount);
-    expect(parseAccount({ version: 2, owned: ['bennett', 'bennett'], scenario: 'boss', constellations: { bennett: 6 } })).toEqual({ version: 1, owned: ['bennett'], readiness: {}, mode: 'abyss', demo: false });
+    expect(parseAccount({ version: 2, owned: ['bennett', 'bennett'], scenario: 'boss', constellations: { bennett: 6 }, weaponTargets: { bennett: 'signature' } })).toEqual({ version: 1, owned: ['bennett'], readiness: {}, constellations: { bennett: 6 }, mode: 'abyss', demo: false });
   });
   it('rejects malformed imports and unknown character IDs', () => {
     for (const value of [null, [], {}, { version: 1, owned: ['invalid'] }, { version: '1', owned: [] }, { version: 1, owned: ['constructor'] }, { ...demoAccount, mode: 'bad' }, { ...demoAccount, readiness: { mavuika: 'yes' } }, { ...demoAccount, readiness: [] }]) expect(() => parseAccount(value)).toThrow();

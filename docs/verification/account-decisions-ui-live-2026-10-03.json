@@ -1,0 +1,147 @@
+{
+  "checkedAt": "2026-10-03T19:53:25.522Z",
+  "browsers": [
+    {
+      "browser": "chromium",
+      "abyss": {
+        "publication": "abyss-review-2026-10-03-europe",
+        "activity": "verified-current",
+        "teams": 2,
+        "stages": [
+          3,
+          3
+        ]
+      },
+      "stygian": {
+        "publication": "stygian-review-2026-10-03-europe",
+        "activity": "verified-current",
+        "teams": 3
+      },
+      "shortlist": "Sucrose\nSave\nNo account upgrade established\nChasca\nSave\nNo account upgrade established\nArataki Itto\nSave\nNo account upgrade established",
+      "mobileFits": true,
+      "errors": [],
+      "sourceResponses": [
+        {
+          "url": "http://127.0.0.1:4184/doctor/challenges/abyss-review-2026-10-03-europe.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/manifest.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/tower.json",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:4184/doctor/challenges/stygian-review-2026-10-03-europe.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/manifest.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/leyline.json",
+          "status": 200
+        }
+      ],
+      "simulationRequests": []
+    },
+    {
+      "browser": "firefox",
+      "abyss": {
+        "publication": "abyss-review-2026-10-03-europe",
+        "activity": "verified-current",
+        "teams": 2,
+        "stages": [
+          3,
+          3
+        ]
+      },
+      "stygian": {
+        "publication": "stygian-review-2026-10-03-europe",
+        "activity": "verified-current",
+        "teams": 3
+      },
+      "shortlist": "Sucrose\nSave\nNo account upgrade established\nChasca\nSave\nNo account upgrade established\nArataki Itto\nSave\nNo account upgrade established",
+      "mobileFits": true,
+      "errors": [],
+      "sourceResponses": [
+        {
+          "url": "http://127.0.0.1:4184/doctor/challenges/abyss-review-2026-10-03-europe.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/manifest.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/tower.json",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:4184/doctor/challenges/stygian-review-2026-10-03-europe.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/manifest.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/leyline.json",
+          "status": 200
+        }
+      ],
+      "simulationRequests": []
+    },
+    {
+      "browser": "webkit",
+      "abyss": {
+        "publication": "abyss-review-2026-10-03-europe",
+        "activity": "verified-current",
+        "teams": 2,
+        "stages": [
+          3,
+          3
+        ]
+      },
+      "stygian": {
+        "publication": "stygian-review-2026-10-03-europe",
+        "activity": "verified-current",
+        "teams": 3
+      },
+      "shortlist": "Sucrose\nSave\nNo account upgrade established\nChasca\nSave\nNo account upgrade established\nArataki Itto\nSave\nNo account upgrade established",
+      "mobileFits": true,
+      "errors": [],
+      "sourceResponses": [
+        {
+          "url": "http://127.0.0.1:4184/doctor/challenges/abyss-review-2026-10-03-europe.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/manifest.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/tower.json",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:4184/doctor/challenges/stygian-review-2026-10-03-europe.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/manifest.json",
+          "status": 200
+        },
+        {
+          "url": "https://static.nanoka.cc/gi/7.1/leyline.json",
+          "status": 200
+        }
+      ],
+      "simulationRequests": []
+    }
+  ],
+  "evidenceBoundary": "Live client and source delivery verification, not DPS or clear-performance validation."
+}

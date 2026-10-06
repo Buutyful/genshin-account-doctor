@@ -1,0 +1,645 @@
+{
+  "fixture": true,
+  "scope": "Captured response-shape regression only; generic dates do not establish live regional cycle.",
+  "capturedAt": "2026-10-01T10:30:51.368Z",
+  "provenance": [
+    {
+      "url": "https://static.nanoka.cc/manifest.json",
+      "status": 200,
+      "sha256": "fb4b056c9c0cf674887a112b7d5e4fcaf719dd1364aa49512c4328a0f0155e82",
+      "bytes": 18937,
+      "cors": "*",
+      "liveVersion": "7.1"
+    },
+    {
+      "url": "https://static.nanoka.cc/gi/7.1/tower.json",
+      "status": 200,
+      "sha256": "97aa9f2a60a3abdb5cb143409fb18192dfd32f502581ffe4540823d579817da9",
+      "bytes": 12239,
+      "cors": "*",
+      "cycles": 26,
+      "withExplicitLiveDates": 0,
+      "genericDateCandidates": [
+        {
+          "id": "123",
+          "begin": "2026-09-16 04:00:00",
+          "end": "2026-10-16 03:59:59"
+        }
+      ]
+    },
+    {
+      "url": "https://static.nanoka.cc/gi/7.1/en/tower/123.json",
+      "status": 200,
+      "sha256": "17dbaad2879a133c61aa19e4721725f29c7c8c6e19d12af95a2d7eb704e3cece",
+      "bytes": 10633,
+      "cors": "*",
+      "keys": [
+        "open",
+        "close",
+        "leyline",
+        "floor"
+      ],
+      "floor12": {
+        "chambers": [
+          "1",
+          "2",
+          "3"
+        ],
+        "names": []
+      }
+    },
+    {
+      "url": "https://static.nanoka.cc/gi/7.1/leyline.json",
+      "status": 200,
+      "sha256": "f39a56d5d973444947665da48992d60b66d867581ac3a3c014b1f4cfa7206f0c",
+      "bytes": 2459,
+      "cors": "*",
+      "cycles": 12,
+      "withExplicitLiveDates": 0,
+      "genericDateCandidates": [
+        {
+          "id": "5269012",
+          "begin": "2026-09-30 10:00:00",
+          "end": "2026-11-11 09:59:59"
+        }
+      ]
+    },
+    {
+      "url": "https://static.nanoka.cc/gi/7.1/en/leyline/5269012.json",
+      "status": 200,
+      "sha256": "b3a2a42feb9e4c5e761c8e6250f3a5467bb8ea04c144a85e1e4218ab9ae98a72",
+      "bytes": 48684,
+      "cors": "*",
+      "keys": [
+        "id",
+        "name",
+        "begin_time",
+        "end_time",
+        "level"
+      ],
+      "difficulty6": {
+        "keys": [
+          "monster_level",
+          "difficulty_config",
+          "level_config"
+        ],
+        "bosses": [
+          {
+            "variantId": "1001063",
+            "name": "Secret Source Automaton: Overseer Device - Obliterator Panoply",
+            "mechanicKeys": [
+              "monster_buff_name_list",
+              "monster_buff_desc_list",
+              "monster_buff_detail_list",
+              "recommend_list"
+            ]
+          },
+          {
+            "variantId": "1012061",
+            "name": "Battle-Hardened Domovoy Sculptor: Gale Hewing",
+            "mechanicKeys": [
+              "monster_buff_name_list",
+              "monster_buff_desc_list",
+              "monster_buff_detail_list",
+              "recommend_list"
+            ]
+          },
+          {
+            "variantId": "1012063",
+            "name": "Guardian Blade of Drifting Snow: Endless Reverberation",
+            "mechanicKeys": [
+              "monster_buff_name_list",
+              "monster_buff_desc_list",
+              "monster_buff_detail_list",
+              "recommend_list"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "towerIndex": {
+    "100": {
+      "begin": "2024-10-16 04:00:00",
+      "end": "2024-11-16 03:59:59",
+      "icon": "UI_TowerBlessing_87",
+      "en": "Rugged Moon",
+      "desc": "After a character uses an Elemental Skill, said character's <color=#F39000>DEF increases by 60%</color> for 9s.",
+      "ko": "강견의 달",
+      "zh": "刚坚之月",
+      "ja": "剛堅の月"
+    },
+    "101": {
+      "begin": "2024-11-16 04:00:00",
+      "end": "2024-12-16 03:59:59",
+      "icon": "UI_TowerBlessing_88",
+      "en": "Vigorous Moon",
+      "desc": "After the current active character's Charged Attack hits an opponent, said character's <color=#F39000>ATK increases by 20%</color> for 8s. Max 4 stacks, each stack has an independent duration.",
+      "ko": "주경의 달",
+      "zh": "遒劲之月",
+      "ja": "勇健の月"
+    },
+    "102": {
+      "begin": "2024-12-16 04:00:00",
+      "end": "2025-01-16 03:59:59",
+      "icon": "UI_TowerBlessing_89",
+      "en": "Shield-Piercing Moon",
+      "desc": "All party members' <color=#F39000>Shield Strength is increased by 20%</color>. While the active character is protected by a Shield, when they deal DMG to opponents, their attacks will <color=#F39000>unleash a shockwave</color> at the opponents' position that deals True DMG. This can trigger once every 5s.",
+      "ko": "공순의 달",
+      "zh": "攻盾之月",
+      "ja": "攻盾の月"
+    },
+    "103": {
+      "begin": "2025-01-16 04:00:00",
+      "end": "2025-02-16 03:59:59",
+      "icon": "UI_TowerBlessing_90",
+      "en": "Scorching Moon",
+      "desc": "After a party member triggers a Pyro-related reaction, a <color=#F39000>shockwave</color> will be unleashed at the character's position, dealing True DMG to nearby opponents. This effect can be triggered once every 3s.",
+      "ko": "치열의 달",
+      "zh": "炽烈之月",
+      "ja": "熾烈の月"
+    },
+    "104": {
+      "begin": "2025-02-16 04:00:00",
+      "end": "2025-03-16 03:59:59",
+      "icon": "UI_TowerBlessing_91",
+      "en": "Stirring Moon",
+      "desc": "When a character receives healing, a <color=#F39000>shockwave</color> will be unleashed at the character's position, dealing True DMG to nearby opponents. This effect can be triggered once every 3s.",
+      "ko": "진돈의 달",
+      "zh": "振顿之月",
+      "ja": "鼓舞の月"
+    },
+    "105": {
+      "begin": "2025-03-16 04:00:00",
+      "end": "2025-04-16 03:59:59",
+      "icon": "UI_TowerBlessing_92",
+      "en": "Plunging Moon",
+      "desc": "When a character's Plunging Attacks hit opponents, a <color=#F39000>shockwave</color> will be unleashed at the character's position, dealing True DMG to nearby opponents. This effect can be triggered once every 3s.",
+      "ko": "굉추의 달",
+      "zh": "轰坠之月",
+      "ja": "轟墜の月"
+    },
+    "106": {
+      "begin": "2025-04-16 04:00:00",
+      "end": "2025-05-16 03:59:59",
+      "icon": "UI_TowerBlessing_93",
+      "en": "Dreadfrost Moon",
+      "desc": "When a character triggers Cryo-related reactions, <color=#F39000>a shockwave will be released</color> at the opponent's position, dealing True DMG. This effect can be triggered once every 4s.",
+      "ko": "한속의 달",
+      "zh": "寒粟之月",
+      "ja": "漫寒の月"
+    },
+    "107": {
+      "begin": "2025-05-16 04:00:00",
+      "end": "2025-06-16 03:59:59",
+      "icon": "UI_TowerBlessing_94",
+      "en": "Interwoven Moon",
+      "desc": "When a character's Elemental Skill hits an opponent, it will be counted (1 count can be triggered every 0.9s). When the count reaches 3, a <color=#F39000>shockwave will be unleashed</color> at the hit opponent's location, dealing True DMG and resetting the count.",
+      "ko": "다서의 달",
+      "zh": "多绪之月",
+      "ja": "織の月"
+    },
+    "108": {
+      "begin": "2025-06-16 04:00:00",
+      "end": "2025-07-16 03:59:59",
+      "icon": "UI_TowerBlessing_95",
+      "en": "Ice-Cloven Moon",
+      "desc": "When a character deals Cryo DMG to an opponent, it will be counted. When the count reaches 4, a <color=#F39000>shockwave will be unleashed</color> at the opponent's location, dealing True DMG and resetting the count. 1 such shockwave can be triggered every 4s.",
+      "ko": "참빙의 달",
+      "zh": "斩冰之月",
+      "ja": "斬氷の月"
+    },
+    "109": {
+      "begin": "2025-07-16 04:00:00",
+      "end": "2025-08-16 03:59:59",
+      "icon": "UI_TowerBlessing_93",
+      "en": "Bitterfreeze Moon",
+      "desc": "When a character triggers Cryo-related reactions, <color=#F39000>a shockwave will be released</color> at the opponent's position, dealing True DMG to nearby opponents. This effect can be triggered once every 2.5s.",
+      "ko": "광동의 달",
+      "zh": "狂冻之月",
+      "ja": "狂凍の月"
+    },
+    "110": {
+      "begin": "2025-08-16 04:00:00",
+      "end": "2025-09-16 03:59:59",
+      "icon": "UI_TowerBlessing_96",
+      "en": "Wavering Moon",
+      "desc": "When a character triggers Hydro-related reactions (including Lunar-Charged), <color=#F39000>a shockwave will be released</color> at the opponent's position, dealing True DMG. This effect can be triggered once every 3s.",
+      "ko": "병도의 달",
+      "zh": "迸涛之月",
+      "ja": "奔流の月"
+    },
+    "111": {
+      "begin": "2025-09-16 04:00:00",
+      "end": "2025-10-16 03:59:59",
+      "icon": "UI_TowerBlessing_97",
+      "en": "Surging Moon",
+      "desc": "When a character triggers Hydro-related reactions, <color=#F39000>a shockwave will be released</color> at the opponent's position, dealing True DMG. This effect can be triggered once every 2s.",
+      "ko": "병랑의 달",
+      "zh": "迸浪之月",
+      "ja": "荒波の月"
+    },
+    "112": {
+      "begin": "2025-10-16 04:00:00",
+      "end": "2025-11-16 03:59:59",
+      "icon": "UI_TowerBlessing_98",
+      "en": "Abundant Moon",
+      "desc": "When a character triggers Dendro-related reactions, <color=#F39000>a shockwave will be released</color> at the opponent's position, dealing True DMG. This effect can be triggered once every 3s.",
+      "ko": "만무의 달",
+      "zh": "蔓茂之月",
+      "ja": "蔓延の月"
+    },
+    "113": {
+      "begin": "2025-11-16 04:00:00",
+      "end": "2025-12-16 03:59:59",
+      "icon": "UI_TowerBlessing_99",
+      "en": "Oathbound Moon",
+      "desc": "When the active character's Bond of Life value increases or decreases, <color=#F39000>a shockwave will be unleashed</color>, dealing True DMG to nearby opponents.",
+      "ko": "정계의 달",
+      "zh": "定契之月",
+      "ja": "誓約の月"
+    },
+    "114": {
+      "begin": "2025-12-16 04:00:00",
+      "end": "2026-01-16 03:59:59",
+      "icon": "UI_TowerBlessing_100",
+      "en": "Whirlwind Moon",
+      "desc": "When the active character triggers Swirl on an opponent, a <color=#F39000>shockwave will be unleashed</color> at the opponent's position, dealing True DMG. This effect can be triggered once every 2s.",
+      "ko": "분표의 달",
+      "zh": "奔飙之月",
+      "ja": "疾駆の月"
+    },
+    "115": {
+      "begin": "2026-01-16 04:00:00",
+      "end": "2026-02-16 03:59:59",
+      "icon": "UI_TowerBlessing_101",
+      "en": "Surgestrike Moon",
+      "desc": "When a character triggers a Lunar reaction (Lunar-Bloom, Lunar-Charged, or Lunar-Crystallize) on an opponent, <color=#F39000>a shockwave will be unleashed</color> at the opponent's position, dealing True DMG. This effect can be triggered once every 3s.",
+      "ko": "병격의 달",
+      "zh": "迸击之月",
+      "ja": "迸発の月"
+    },
+    "116": {
+      "begin": "2026-02-16 04:00:00",
+      "end": "2026-03-16 03:59:59",
+      "icon": "UI_TowerBlessing_102",
+      "en": "Stonehold Moon",
+      "desc": "When a character deals Lunar-Crystallize DMG to an opponent, <color=#F39000>a shockwave will be unleashed</color> at the opponent's position, dealing True DMG. This effect can be triggered once every 3s.",
+      "ko": "암고의 달",
+      "zh": "岩固之月",
+      "ja": "岩固の月"
+    },
+    "117": {
+      "begin": "2026-03-16 04:00:00",
+      "end": "2026-04-16 03:59:59",
+      "icon": "UI_TowerBlessing_100",
+      "en": "Windlash Moon",
+      "desc": "When a character triggers a Swirl reaction on an opponent, they gain 1 stack of Windlash, and when the stack count reaches 4, <color=#F39000>a shockwave is unleashed</color> at the opponent's position, dealing True DMG and consuming all stacks of Windlash at the same time. Up to 1 stack of Windlash can be gained every 0.1s. A shockwave can be unleashed this way every 6s.",
+      "ko": "풍려의 달",
+      "zh": "风厉之月",
+      "ja": "烈風の月"
+    },
+    "118": {
+      "begin": "2026-04-16 04:00:00",
+      "end": "2026-05-16 03:59:59",
+      "icon": "UI_TowerBlessing_102",
+      "en": "Rumbling Moon",
+      "desc": "When Moondrift Harmony is triggered, <color=#F39000>a shockwave is unleashed</color> at the character's position, dealing True DMG to opponents. This effect can be triggered once every 4s.",
+      "ko": "암주의 달",
+      "zh": "岩奏之月",
+      "ja": "岩奏の月"
+    },
+    "119": {
+      "begin": "2026-05-16 04:00:00",
+      "end": "2026-06-16 03:59:59",
+      "icon": "UI_TowerBlessing_103",
+      "en": "Shield-Shattering Moon",
+      "desc": "While the active character is protected by a Shield, when they deal DMG to opponents, their attacks will <color=#F39000>unleash a shockwave</color> at the opponent's position that deals True DMG. This can trigger once every 3s.",
+      "ko": "철순의 달",
+      "zh": "彻盾之月",
+      "ja": "堅盾の月"
+    },
+    "120": {
+      "begin": "2026-06-16 04:00:00",
+      "end": "2026-07-16 03:59:59",
+      "icon": "UI_TowerBlessing_104",
+      "en": "Frost-Surging Moon",
+      "desc": "When an off-field character triggers Cryo-related reactions to opponents, <color=#F39000>a shockwave will be released</color> at the opponent's position, dealing True DMG. This effect can be triggered once every 3.5s.",
+      "ko": "상병의 달",
+      "zh": "霜迸之月",
+      "ja": "霜迸の月"
+    },
+    "121": {
+      "begin": "2026-07-16 04:00:00",
+      "end": "2026-08-16 03:59:59",
+      "icon": "UI_TowerBlessing_105",
+      "en": "Ice-Surging Moon",
+      "desc": "When the active character deals Cryo DMG to opponents with Charged Attacks, their attacks will <color=#F39000>unleash a shockwave</color> at the opponent's position that deals True DMG. This can trigger once every 3s.",
+      "ko": "빙병의 달",
+      "zh": "冰迸之月",
+      "ja": "氷迸の月"
+    },
+    "122": {
+      "begin": "2026-08-16 04:00:00",
+      "end": "2026-09-16 03:59:59",
+      "icon": "UI_TowerBlessing_106",
+      "en": "Luster-Piercing Moon",
+      "desc": "While the active character is inside a Polestar Field, when they deal DMG to opponents, their attacks will <color=#F39000>unleash a shockwave</color> at the opponent's position that deals True DMG. This can trigger once every 4s.",
+      "ko": "공휘의 달",
+      "zh": "攻辉之月",
+      "ja": "攻輝の月"
+    },
+    "123": {
+      "begin": "2026-09-16 04:00:00",
+      "end": "2026-10-16 03:59:59",
+      "icon": "UI_TowerBlessing_107",
+      "en": "Cascading Moon",
+      "desc": "When a character deals Swirl or Stellar Swirl DMG to an opponent, <color=#F39000>a shockwave will be unleashed</color> at the opponent's position, dealing True DMG. This effect can be triggered once every 4s.",
+      "ko": "휘권의 달",
+      "zh": "辉卷之月",
+      "ja": "輝巻の月"
+    },
+    "124": {
+      "begin": "2026-10-16 04:00:00",
+      "end": "2026-11-16 03:59:59",
+      "icon": "UI_TowerBlessing_107",
+      "en": "Stardread Moon",
+      "desc": "When a character triggers a Superconduct, Stellar-Conduct, Cryo Swirl, Stellar Swirl, Frozen, or Shatter reaction on an opponent, or deals Stellar-Conduct or Stellar Swirl DMG to an opponent, <color=#F39000>a shockwave will be unleashed</color> at the opponent's position, dealing True DMG. This effect can be triggered once every 2s.",
+      "ko": "해성의 달",
+      "zh": "骇星之月",
+      "ja": "恐星の月"
+    },
+    "99": {
+      "begin": "2024-09-16 04:00:00",
+      "end": "2024-10-16 03:59:59",
+      "icon": "UI_TowerBlessing_86",
+      "en": "Contending Moon",
+      "desc": "After the active character uses an Elemental Skill, <color=#F39000>Normal Attack and Elemental Skill DMG is increased by 40%</color> for 12s. For characters in <color=#F39000>Nightsoul's Blessing</color>, this effect is enhanced: <color=#F39000>Normal Attack and Elemental Skill DMG is increased by 80%</color>.",
+      "ko": "각쟁의 달",
+      "zh": "角争之月",
+      "ja": "格闘の月"
+    }
+  },
+  "leylineIndex": {
+    "5269001": {
+      "begin": "2025-06-25 10:00:00",
+      "end": "2025-08-06 09:59:59",
+      "en": "Incursion Repeller",
+      "ko": "어둠 퇴치",
+      "zh": "驱侵之役",
+      "ja": "侵略の戦い"
+    },
+    "5269002": {
+      "begin": "2025-08-06 10:00:00",
+      "end": "2025-09-17 09:59:59",
+      "en": "Savage Onslaught",
+      "ko": "격렬한 전투",
+      "zh": "劲烈之役",
+      "ja": "激烈な戦い"
+    },
+    "5269003": {
+      "begin": "2025-09-17 10:00:00",
+      "end": "2025-10-29 09:59:59",
+      "en": "Terrorshock Blitz",
+      "ko": "융단 폭격",
+      "zh": "骇轰之役",
+      "ja": "驚天の戦い"
+    },
+    "5269004": {
+      "begin": "2025-10-29 10:00:00",
+      "end": "2025-12-10 09:59:59",
+      "en": "Sweeping Assault",
+      "ko": "거센 공세",
+      "zh": "迅悍之役",
+      "ja": "勇猛な戦い"
+    },
+    "5269005": {
+      "begin": "2025-12-10 10:00:00",
+      "end": "2026-01-21 09:59:59",
+      "en": "Tremorfall Trial",
+      "ko": "낙하 공세",
+      "zh": "坠震之役",
+      "ja": "激震の戦い"
+    },
+    "5269006": {
+      "begin": "2026-01-21 10:00:00",
+      "end": "2026-03-04 09:59:59",
+      "en": "Blightpurge Battle",
+      "ko": "악몽 퇴치",
+      "zh": "除晦之役",
+      "ja": "厄除けの戦い"
+    },
+    "5269007": {
+      "begin": "2026-03-04 10:00:00",
+      "end": "2026-04-15 09:59:59",
+      "en": "Crush and Obliterate",
+      "ko": "파멸 공세",
+      "zh": "摧枯之役",
+      "ja": "殲滅の戦い"
+    },
+    "5269008": {
+      "begin": "2026-04-15 10:00:00",
+      "end": "2026-05-27 09:59:59",
+      "en": "Battle of Shattered Jade",
+      "ko": "분쇄 공세",
+      "zh": "断玉之役",
+      "ja": "砕玉の戦い"
+    },
+    "5269009": {
+      "begin": "2026-05-27 10:00:00",
+      "end": "2026-07-08 09:59:59",
+      "en": "Battle of the Howling Cyclone",
+      "ko": "폭풍 공세",
+      "zh": "啸卷之役",
+      "ja": "烈風の戦い"
+    },
+    "5269010": {
+      "begin": "2026-07-08 10:00:00",
+      "end": "2026-08-19 09:59:59",
+      "en": "Savage Tremors",
+      "ko": "혹한 공세",
+      "zh": "栗烈之役",
+      "ja": "慄烈の戦い"
+    },
+    "5269011": {
+      "begin": "2026-08-19 10:00:00",
+      "end": "2026-09-30 09:59:59",
+      "en": "Battle of the Starburst",
+      "ko": "별빛 공세",
+      "zh": "星芒之役",
+      "ja": "星芒の戦い"
+    },
+    "5269012": {
+      "begin": "2026-09-30 10:00:00",
+      "end": "2026-11-11 09:59:59",
+      "en": "Luminous Battlefront",
+      "ko": "휘광 공세",
+      "zh": "烁煌之役",
+      "ja": "輝星の戦い"
+    }
+  },
+  "towerDetail": {
+    "open": "2026-09-16 04:00:00",
+    "close": "2026-10-16 03:59:59",
+    "leyline": {
+      "icon": "UI_TowerBlessing_107",
+      "name": "Cascading Moon",
+      "desc": "When a character deals Swirl or Stellar Swirl DMG to an opponent, <color=#F39000>a shockwave will be unleashed</color> at the opponent's position, dealing True DMG. This effect can be triggered once every 4s."
+    },
+    "floor": {
+      "12": {
+        "buff": [],
+        "room": {
+          "1": {
+            "level": 95,
+            "cond": [
+              [
+                2,
+                180
+              ],
+              [
+                2,
+                300
+              ],
+              [
+                2,
+                420
+              ]
+            ],
+            "type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+            "first": [],
+            "second": []
+          },
+          "2": {
+            "level": 98,
+            "cond": [
+              [
+                2,
+                180
+              ],
+              [
+                2,
+                300
+              ],
+              [
+                2,
+                420
+              ]
+            ],
+            "type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+            "first": [],
+            "second": []
+          },
+          "3": {
+            "level": 100,
+            "cond": [
+              [
+                2,
+                180
+              ],
+              [
+                2,
+                300
+              ],
+              [
+                2,
+                420
+              ]
+            ],
+            "type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+            "first": [],
+            "second": []
+          }
+        },
+        "hp_ability": "LevelEntity_Monster_HpUp_Stage12_New2",
+        "first_half_buff": "Characters' Swirl DMG increased by 200% and Stellar Swirl DMG increased by 75%.",
+        "second_half_buff": "Characters' Electro-Charged DMG increased by 200% and Lunar-Charged DMG increased by 75%."
+      }
+    }
+  },
+  "leylineDetail": {
+    "id": 5269012,
+    "begin_time": "2026-09-30 10:00:00",
+    "end_time": "2026-11-11 09:59:59",
+    "level": {
+      "101206": {
+        "monster_level": 109,
+        "difficulty_config": {
+          "level": 6,
+          "name": "Dire",
+          "desc_list": [
+            "<color=#FF5E41>A powerful opponent has re-emerged from the Ley Lines, and the battle is sure to be very difficult</color>",
+            "Affected by the Ley Line Disturbance, <color=#FFD780FF>characters cannot be deployed multiple times</color>",
+            "You have reached the final defensive line of the Domain. The level of disturbance here is at its highest, interfering with even the Exalted Ones and rendering their Eminent Boons ineffective. After completing the current challenge in Single-Player Mode, characters in your party will be granted Eminence or Enduring Eminence based on your performance.",
+            "During the Disturbance Outbreak, you can complete battles to claim special rewards"
+          ]
+        },
+        "level_config": {
+          "1012061": {
+            "name": "Battle-Hardened Domovoy Sculptor: Gale Hewing",
+            "desc": "An ice sculptor with a body honed through countless trials, capable of shaping Prime Ice by wielding Anemo energy as hammer and chisel.\\nTwisted by Ley Line currents even more appalling than his own artistic taste, the sculptor has succumbed to a frenzy of irrepressible inspiration. He now seeks to carve flesh and bone with howling gales and seal souls within unbreakable Prime Ice, eager to turn every intruder before him into the latest masterpiece in this exhibition of calamity.",
+            "icon": "UI_MonsterIcon_Karzelek_Tsereteli_01",
+            "monster_buff_name_list": [
+              "Big-Mouthed Jack Frost",
+              "Creative Frenzy"
+            ],
+            "monster_buff_desc_list": [
+              "When battle begins, the Nemesis will attempt to create a Prime Ice sculpture. Once completed, it will transform into a Big-Mouthed Jack Frost that continuously launches snowballs.\\nInflict <color=#FFD780FF>Radiance: Stellar Glimmer</color> on the Nemesis while it is creating the sculpture to turn the ice sculpture into a harmless animal statue instead.",
+              "Due to the effects of the Ley Line disturbance, the Nemesis will <color=#FFD780FF>start the battle with greatly increased All Elemental RES and Physical RES</color> and will create Prime Ice sculptures more frequently.\\nAfter an ice sculpture is transformed into a small animal statue, it will explode following a brief delay, dealing damage to the Nemesis and <color=#FFD780FF>reducing its All Elemental RES and Physical RES, while further reducing its Anemo RES</color>. This effect can <color=#FFD780FF>stack up to 3 times</color>."
+            ],
+            "monster_buff_detail_list": [
+              "When battle begins, the Nemesis will harness Anemo energy to create a Prime Ice sculpture. After a short delay, the sculpture will transform into a Big-Mouthed Jack Frost that continuously launches snowballs.\\nInflict <color=#FFD780FF>Radiance: Stellar Glimmer</color> on the Nemesis while it is creating the sculpture to interrupt the process and turn the ice sculpture into a harmless animal statue instead.",
+              "Due to the effects of the Ley Line disturbance, the Nemesis will <color=#FFD780FF>start the battle with greatly increased All Elemental RES and Physical RES</color> and will create Prime Ice sculptures more frequently.\\nAfter an ice sculpture is transformed into a small animal statue, it will explode following a brief delay, dealing damage to the Nemesis and <color=#FFD780FF>reducing its All Elemental RES and Physical RES, while further reducing its Anemo RES</color>. This effect can <color=#FFD780FF>stack up to 3 times</color>."
+            ],
+            "recommend_list": [
+              "Stellar Glimmer characters <Color=#FFFFFF40> | </Color>{SPRITE_PRESET#11005} characters"
+            ]
+          },
+          "1001063": {
+            "name": "Secret Source Automaton: Overseer Device - Obliterator Panoply",
+            "desc": "A domination mechanism from the ancient ruins.\\nIn the distant past, a once-mighty ancient race used this mechanism to oversee the operation of their cities. Even now, long after the fall of their civilization, it still retains immense authority.\\nIn the depths of the chaotic Ley Lines, the core energy module that deteriorated over the lengthening years has been restored, indeed, even \"overclocked\" to a dangerous degree. This machine is now unchained by its original specifications, capable of freeing itself from the planet's shackles and using its horrific \"Obliterator Panoply\"...",
+            "icon": "UI_MonsterIcon_DragonCollar",
+            "monster_buff_name_list": [
+              "Preemptive Sweeper Mode",
+              "Forced Counterstrike Mode",
+              "Damage-Resistant Structure"
+            ],
+            "monster_buff_desc_list": [
+              "Will immediately enter Sweeper Mode when combat starts: <color=#FFD780FF>All RES is greatly increased</color>, and it will perform rotating attacks while generating Flow Momentum. It will lose Flow Momentum after taking <color=#99FFFFFF>Cryo DMG</color>. Below a certain Flow Momentum value, it will temporarily stop rotating and attacking, and its <color=#FFD780FF>All RES will be greatly decreased</color>.",
+              "If an active character enters and maintains the <color=#FFD780FF>Nightsoul's Blessing</color> state for a time, this opponent will enter Forced Counterstrike Mode and switch to attacking with powerful tracking rays. At this time, its <color=#FFD780FF>All RES will be greatly decreased</color>.",
+              "Affected by the Ley Line disturbance, this great foe has its All RES further increased, and it loses less Flow Momentum when struck by <color=#99FFFFFF>Cryo DMG</color>. When in Counterstrike Mode, it will launch even more powerful tracking ray attacks, and it will lose less RES."
+            ],
+            "monster_buff_detail_list": [
+              "Will immediately enter Sweeper Mode when combat starts: <color=#FFD780FF>All Elemental and Physical RES is greatly increased</color>, and it will generate Flow Momentum while performing attacks. The higher its Flow Momentum, the faster it will rotate and the more DMG it will deal.\\nIt will lose Flow Momentum after taking <color=#99FFFFFF>Cryo DMG</color>. Below a certain Flow Momentum value, it will stop rotating and attacking, and its <color=#FFD780FF>All Elemental and Physical RES will be greatly decreased</color>, with its <color=#99FFFFFF>Cryo RES</color> <color=#FFD780FF>decreasing still more</color>.\\nEach time it enters Sweeper Mode, it will produce additional Elemental Orbs the first time its rotating attacks are stopped.",
+              "If an active character enters and maintains the <color=#FFD780FF>Nightsoul's Blessing</color> state for a time, this opponent will enter Forced Counterstrike Mode and switch to attacking with powerful tracking rays. At this time, its <color=#FFD780FF>All Elemental and Physical RES will be decreased</color>.\\nIn this state, after it takes a certain number of <color=#99FFFFFF>Cryo DMG</color> instances, it will cease attacking altogether and its <color=#FFD780FF> All Elemental and Physical RES will be further decreased</color>.",
+              "Affected by the Ley Line disturbance, this great foe has its All RES further increased, and it loses less Flow Momentum when struck by <color=#99FFFFFF>Cryo DMG</color>. It will also lose less RES when in Forced Counterstrike Mode."
+            ],
+            "recommend_list": [
+              "{SPRITE_PRESET#11001} characters"
+            ]
+          },
+          "1012063": {
+            "name": "Guardian Blade of Drifting Snow: Endless Reverberation",
+            "desc": "An ancient Snegovik held in high esteem by her clan, she was once entrusted with the lifelong duty of protecting her people.\\nWarped by the turbulent flood within the Ley Lines, the hollow delusion she once called \"protection\" has been stripped down to a pure instinct for slaughter. Concealed within the shadow of the Ice Coffin, she lies in wait, ready at any moment to become an elusive, razor-sharp blade of ice and tear apart any living thing that ventures near.",
+            "icon": "UI_MonsterIcon_Snegurochka_Contessa_02",
+            "monster_buff_name_list": [
+              "Ice Coffin: Twinned Crystal Lattice",
+              "Ice Coffin: Warped Crystal Lattice"
+            ],
+            "monster_buff_desc_list": [
+              "When its HP falls below a certain threshold, the Nemesis will create a <color=#FFD780FF>Cryo Ward</color> to protect itself.\\nWhile the ward is active, the Nemesis will attack with icy storms. If the ward is not destroyed, the Nemesis restores a portion of its HP. If the ward is destroyed, the Nemesis takes backlash DMG. Due to the Ley Line disturbance, its <color=#FFD780FF>Cryo Ward will be more durable</color>. A short time after the ward is broken for the first time, the Nemesis will <color=#FFD780FF>create another Cryo Ward</color>.",
+              "While the <color=#FFD780FF>Cryo Ward is active</color>, if the Nemesis is affected by <color=#FFD780FF>Radiance: Stellar Glimmer</color>, <color=#FFD780FF>the Cryo Ward will transform into a shield that absorbs DMG.</color> Once the shield is destroyed, the Nemesis will take a large amount of backlash DMG."
+            ],
+            "monster_buff_detail_list": [
+              "During battle, when the Nemesis's HP falls below a certain threshold, it will encase itself in an Ice Coffin and gain a <color=#FFD780FF>Cryo Ward</color> to protect itself.\\nWhile the Ice Coffin is active, the Nemesis will continuously unleash icy storms around itself. If the Ice Coffin is not destroyed, the Nemesis restores a portion of its HP and creates ice swords to launch a counterattack. However, if the Ice Coffin sustaining its life is destroyed, it enters a weakened state for a period of time and takes backlash DMG. Due to the Ley Line disturbance, <color=#FFD780FF>the Ice Coffin will be more durable</color>. A short time after it is destroyed for the first time, the Nemesis will <color=#FFD780FF>encase itself in another Ice Coffin</color>.",
+              "While the <color=#FFD780FF>Ice Coffin is active</color>, if the Nemesis is affected by <color=#FFD780FF>Radiance: Stellar Glimmer</color>, <color=#FFD780FF>the Ice Coffin's Cryo Ward will transform into a shield that absorbs DMG</color>. Once the shield is destroyed, the Nemesis will take a large amount of backlash DMG."
+            ],
+            "recommend_list": [
+              "Stellar Glimmer characters <Color=#FFFFFF40> | </Color>{SPRITE_PRESET#11003} characters"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

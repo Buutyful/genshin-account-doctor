@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "ruleRevision": "pilot-role-rules-v1",
+  "reviewedAt": "2026-09-30",
+  "accessCheckedAt": "2026-10-01T10:30:51.368Z",
+  "scope": "Pilot role facts and conditional checks; guide access is not certification of full current-patch rotations.",
+  "sources": [
+    {
+      "url": "https://keqingmains.com/q/nahida-quickguide/",
+      "status": 200,
+      "sha256": "ed18f8f56e27163cf15380e47f53c605627fa2cce4e8e3ac72c066c05eee3975",
+      "title": "Nahida Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/shinobu-quickguide/",
+      "status": 200,
+      "sha256": "0f8884f49fa35fe2e443e45d1833697ce3af4797b850c1a4fb4de4e694b557b4",
+      "title": "Kuki Shinobu Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/raiden-quickguide/",
+      "status": 200,
+      "sha256": "555f27b0ed96eebda47fc63941770bed6cac2258d5a19b62e017223e90640338",
+      "title": "Raiden Shogun Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/xingqiu-quickguide/",
+      "status": 200,
+      "sha256": "86d598b286dc89ec0f7cba3066efba2643d48cd0263d0c25217435fbffd4e953",
+      "title": "Xingqiu Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/yelan-quickguide/",
+      "status": 200,
+      "sha256": "6eb6c9899aa16733469eea82dc913216f8445c49cc0404538fd3df1d2167c716",
+      "title": "Yelan Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/barbara-quickguide/",
+      "status": 200,
+      "sha256": "4eca8a13650ae5c6e70d0e5789384218f7bac0072cd3b338f8dbbb3ee6266531",
+      "title": "Barbara Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/sucrose-quickguide/",
+      "status": 200,
+      "sha256": "1e80079d5e4dca9aaabcd6a9346936f3a4832c2d1c044c06bd89d2936c718620",
+      "title": "Sucrose Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/fischl-quickguide/",
+      "status": 200,
+      "sha256": "7ccac90a3c1a85171c037f357995ade55b277fa9729ea111b72b265017e650b1",
+      "title": "Fischl Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/beidou-quickguide/",
+      "status": 200,
+      "sha256": "6da167f34f9b02d4724cd35aafe8fc016623767d33f0c9024481bf05979d8e9d",
+      "title": "Beidou Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/neuvillette-quickguide/",
+      "status": 200,
+      "sha256": "00d01fecf0e0661f5a6eb95ded4ac19a344dd055132bb014de8369c0097f5d38",
+      "title": "Neuvillette Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/furina-quickguide/",
+      "status": 200,
+      "sha256": "1a85cb8a856a51be0b086fcdde712a0d4edff22941f9ddbc8a5a4d15a69bba99",
+      "title": "Furina Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/bennett-quickguide/",
+      "status": 200,
+      "sha256": "dfd4e30f55b1f358e00dc9311c8b354d72259dc9242ca2b754c5359bb43c9786",
+      "title": "Bennett Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/xiangling-quickguide/",
+      "status": 200,
+      "sha256": "63dfa45ac1d82748b3b5ad1cf84da278229e914534977b8215c4a2a848b3fe67",
+      "title": "Xiangling Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/kazuha-quickguide/",
+      "status": 200,
+      "sha256": "cf1d24c729fff13ff42e67e70846ed54641ee7ebf14f64d073569ef77934eb98",
+      "title": "Kazuha Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/zhongli-quickguide/",
+      "status": 200,
+      "sha256": "41050e0b8452a8a1af211e215313ab5f8ecbc9f51ea69879d370968e7da8c488",
+      "title": "Zhongli Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/nilou-quickguide/",
+      "status": 200,
+      "sha256": "523d8910a43c670722f34d715e3b5d76a3a4d68d394da48b0e7bd223f047645e",
+      "title": "Nilou Quick Guide - KQM"
+    },
+    {
+      "url": "https://keqingmains.com/q/chevreuse-quickguide/",
+      "status": 200,
+      "sha256": "eab011b9328de92c5dfa58661837ac57639365d92997ec882f9e087270daac27",
+      "title": "Chevreuse Quick Guide - KQM"
+    }
+  ]
+}
