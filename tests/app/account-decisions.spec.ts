@@ -1,3 +1,4 @@
+import { openPlanningSettings } from './planner-controls';
 import { expect, test } from '@playwright/test';
 import type { Page } from '@playwright/test';
 
@@ -23,6 +24,7 @@ async function downloadJson(page: Page, action: () => Promise<unknown>) {
 test('fresh planning uses the reviewed current lineup during provider failure in all regions and both modes', async ({ page }) => {
   const errors: string[] = []; page.on('pageerror', e => errors.push(e.message));
   const builder = await open(page);
+  await openPlanningSettings(builder);
   await expect(builder.getByRole('button', { name: 'Current challenge', exact: true })).toHaveAttribute('aria-pressed', 'true');
   await expect(builder.locator('[data-current-cycle="true"]')).toBeVisible();
   for (const region of ['Europe', 'America', 'Asia']) {
@@ -48,7 +50,7 @@ test('fresh planning uses the reviewed current lineup during provider failure in
 
 test('recommended and two alternatives are complete distinct allocations with readable rotation and build details', async ({ page }, testInfo) => {
   const builder = await open(page, undefined, true);
-  await expect(page.getByRole('heading', { name: 'Teams', exact: true })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Team planner', exact: true })).toBeVisible();
   await expect(page.locator('#main .checkup-journey')).toHaveCount(0);
   await expect(page.locator('#main')).not.toContainText('Better together');
   await expect(page.locator('#main')).not.toContainText('THE TEAM CLINIC');
@@ -59,11 +61,11 @@ test('recommended and two alternatives are complete distinct allocations with re
     return { shadow: s.boxShadow, edges: [s.borderTopWidth, s.borderRightWidth, s.borderBottomWidth, s.borderLeftWidth] };
   });
   expect(sidebarSelection).toEqual({ shadow: 'none', edges: ['0px', '0px', '0px', '0px'] });
-  const tabSelection = await page.getByRole('tab', { name: 'Team plans', exact: true }).evaluate(button => {
+  const tabSelection = await page.getByRole('tab', { name: 'Account plans', exact: true }).evaluate(button => {
     const s = getComputedStyle(button);
     return { edge: s.borderBottomWidth, decoration: s.textDecorationLine };
   });
-  expect(tabSelection).toEqual({ edge: '0px', decoration: 'none' });
+  expect(tabSelection).toEqual({ edge: '1px', decoration: 'none' });
   const choices = builder.getByLabel('Complete account plans');
   await expect(choices.locator('button')).toHaveCount(3);
   const before = await builder.locator('.configuration-card').evaluateAll(rows => rows.map(r => r.getAttribute('data-composition-id')).sort());
@@ -74,7 +76,7 @@ test('recommended and two alternatives are complete distinct allocations with re
   await choices.getByRole('button', { name: 'Recommended', exact: false }).click();
   expect(await builder.locator('.configuration-card').evaluateAll(rows => rows.map(r => r.getAttribute('data-composition-id')).sort())).toEqual(before);
   await expect(builder.locator('.rotation-preview')).toHaveCount(2);
-  await builder.locator('.configuration-card').first().getByText('Build & rotation', { exact: true }).click();
+  await builder.locator('.configuration-card').first().getByRole('button', { name: 'View details', exact: true }).click();
   await expect(builder.locator('.configuration-card').first().getByRole('heading', { name: 'Build requirements', exact: true })).toBeVisible();
   await page.screenshot({ path: testInfo.outputPath('team-plans-desktop.png'), fullPage: true });
   await page.getByLabel('Game mode', { exact: true }).selectOption('stygian');
@@ -141,6 +143,7 @@ test('expired source review falls back to general advice without a current-cycle
   await page.goto('/doctor/');
   await page.getByRole('button', { name: 'Team planner', exact: true }).click();
   const builder = page.getByRole('region', { name: 'Account-aware builder' });
+  await openPlanningSettings(builder);
   await expect(builder.getByText('No verified live challenge is available', { exact: false })).toBeVisible();
   await expect(builder.locator('.configuration-card')).toHaveCount(2);
   const report = await downloadJson(page, () => builder.getByRole('button', { name: 'Export plan', exact: true }).click());
@@ -207,7 +210,7 @@ test('mobile results appear before expanded settings and Stygian rows identify t
   await page.setViewportSize({ width: 390, height: 844 });
   const builder = await open(page);
   await expect(builder.locator('.builder-settings')).not.toHaveAttribute('open', '');
-  await expect(builder.getByRole('heading', { name: 'Recommended plan', exact: true })).toBeVisible();
+  await expect(builder.getByLabel('Complete account plans').getByRole('button', { name: 'Recommended', exact: true })).toHaveAttribute('aria-pressed', 'true');
   await expect(builder.getByLabel('Game mode', { exact: true })).not.toBeVisible();
   await builder.locator('.builder-settings > summary').click();
   await builder.getByLabel('Game mode', { exact: true }).selectOption('stygian');
@@ -231,6 +234,7 @@ test('team viewer inspects recorded builds and rotation steps without changing t
   await expect(team.locator('.viewer-inspector')).toContainText('Unknown');
   await team.getByRole('button', { name: 'Close build inspection' }).click();
   await expect(team.locator('.viewer-inspector')).toBeHidden();
+  await team.getByRole('button', { name: 'View details', exact: true }).click();
   await team.locator('.viewer-rotation button').first().focus();
   await page.keyboard.press('Enter');
   await expect(team.locator('.viewer-inspector')).toBeVisible();

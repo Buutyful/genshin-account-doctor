@@ -1,0 +1,290 @@
+/* Layout measured against the selected 1536 × 1024 Parchment Clinic reference. */
+@font-face { font-family: 'Clinic Sans'; src: url('/fonts/roboto-latin.woff2') format('woff2'); font-style: normal; font-weight: 100 900; font-display: swap; }
+.reference-surface { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: -1; }
+.doctor-app .workspace { position: relative; isolation: isolate; min-height: 100vh; }
+.doctor-app .paper-surface { display: none; }
+.clinic-reference .paper-surface { display: block; }
+.doctor-app .sidebar { isolation: isolate; }
+.reference-portrait, .reference-glyph { display: none; }
+.viewer-caption { display: contents; }
+.viewer-role, .element-mark { display: none; }
+.planner-rail { min-width: 0; }
+.configuration-details[hidden], .viewer-rotation[hidden] { display: none !important; }
+.clinic-reference {
+  --ink: #252723;
+  --muted: #626776;
+  --line: #dbccae;
+  --paper: #fcf9f480;
+  --surface: #fcf9f480;
+  --soft: #efe8d9;
+  --workspace-bg: #f9f6ed;
+  --crimson: #ae363f;
+  --serif: 'Times New Roman', Times, serif;
+  --sidebar: 210px;
+  background: var(--workspace-bg);
+  color: var(--ink);
+  font-family: 'Clinic Sans', Arial, sans-serif;
+}
+.doctor-app .sidebar { padding: 22px 11px 0; background: #272925; font-family: 'Clinic Sans', Arial, sans-serif; --serif: 'Times New Roman', Times, serif; }
+.doctor-app .sidebar::before { display: none; }
+.doctor-app .brand { padding: 0 10px 25px; gap: 10px; font-size: 31px; line-height: .89; letter-spacing: -.5px; color: #dfcb98; background-image: var(--reference-art); background-repeat: no-repeat; background-size: 1536px 1024px; background-position: -11px -22px; }
+.doctor-app .brand > span { visibility: hidden; }
+.doctor-app .brand-symbol { width: 42px; height: 54px; }
+.doctor-app .brand-symbol svg { width: 42px; height: 54px; fill: currentColor; stroke-width: .6; }
+.doctor-app .brand small { letter-spacing: 6px; font-size: 10px; margin-top: 12px; }
+.doctor-app .sidebar nav { gap: 3px; }
+.doctor-app .nav-group-label { padding: 8px 12px 10px; font-size: 17px; }
+.doctor-app .nav-group-label.explore-label { margin-top: 20px; }
+.doctor-app .sidebar nav button { min-height: 44px; padding: 5px 11px; border-radius: 5px; font-size: 16px; font-weight: 400; gap: 15px; }
+.clinic-reference .nav-icon { position: relative; width: 30px; height: 30px; }
+.clinic-reference .nav-icon .reference-glyph { width: 24px; height: 25px; }
+.clinic-reference .nav-icon:has(.reference-glyph) > svg { display: none; }
+.clinic-reference .reference-glyph { display: block; width: 100%; height: 100%; background-image: var(--reference-art); background-repeat: no-repeat; }
+.clinic-reference .sidebar nav small { display: none; }
+.doctor-app .sidebar nav button.active { font-weight: 400; }
+.doctor-app .sidebar-bottom { padding: 0; }
+.doctor-app .doctor-avatar { height: 295px; margin: 0 -11px; background-image: var(--reference-art); background-size: 731.428571% 347.118644%; background-position: 0% 92.866941%; }
+.doctor-app .doctor-avatar img { visibility: hidden; }
+.doctor-app .sidebar-doctor > div:last-child { height: 52px; padding: 8px 8px; text-align: left; border-top: 1px solid #bdac7b; }
+.doctor-app .sidebar-doctor strong { display: flex; align-items: center; gap: 12px; font-size: 18px; }
+.doctor-app .sidebar-doctor strong::before { content: '✦'; color: #dfcb98; font-size: 23px; }
+.doctor-app .sidebar-doctor span, .doctor-app .sidebar-footer { display: none; }
+.clinic-reference .topbar { height: 40px; margin: 12px 14px 0 18px; padding: 0 0 0 15px; border: 0; border-radius: 5px; background: #e9dfc9a6; }
+.clinic-reference .topbar-start { min-width: 0; gap: 0; }
+.clinic-reference .sidebar-toggle { position: fixed; left: 175px; top: 108px; opacity: 0; width: 28px; height: 24px; z-index: 30; color: #dfcb98; }
+.clinic-reference .sidebar-toggle:focus-visible, .clinic-reference .sidebar-toggle:hover { opacity: 1; background: var(--night); }
+.clinic-reference:has(.sidebar:hover) .sidebar-toggle { opacity: 1; }
+.reference-account-label { display: flex; align-items: center; gap: 6px; font-size: 15px; white-space: nowrap; }
+.reference-account-label > svg { margin-right: 3px; }
+.reference-account-label > svg { fill: #9a8252; stroke: #fcf9ef; }
+.reference-account-label > strong { font-weight: 500; }
+.reference-account-label > span { color: #625d53; }
+.clinic-reference .header-actions { gap: 29px; }
+.clinic-reference .local-status { gap: 9px; color: #444944; font-size: 14px; }
+.clinic-reference .local-status > svg { color: white; background: #489369; border-radius: 50%; padding: 3px; width: 20px; height: 20px; }
+.clinic-reference .header-actions > .button { position: relative; height: 40px; font-size: 17px; font-weight: 500; padding: 0 17px; border-radius: 5px; }
+.clinic-reference .header-actions > .button::before { content: ''; position: absolute; left: -17px; height: 22px; border-left: 1px solid #bcb098; }
+.clinic-reference .header-actions > .button > svg { width: 18px; height: 18px; stroke-width: 2.5; }
+#main[data-page="teams"] { max-width: none; padding: 10px 14px 0 18px; margin: 0; background: transparent; }
+#main[data-page="teams"] .page-intro { position: relative; height: 107px; padding-left: 10px; margin: 0; align-items: flex-start; }
+#main[data-page="teams"] .page-intro h1 { font-size: 64px; letter-spacing: -1.5px; line-height: 1.07; margin: 0; }
+#main[data-page="teams"] .page-intro > div:first-child { transform: translateY(-3px); }
+#main[data-page="teams"] .page-subtitle { font-family: var(--serif); color: #353832; font-size: 23px; margin-top: 0; line-height: 1.5; letter-spacing: .3px; }
+.planner-mode-header { position: absolute; right: 4px; top: 18px; display: flex; align-items: center; gap: 17px; }
+.planner-mode-switch { display: flex; align-items: center; gap: 14px; font-size: 14px; }
+.planner-mode-switch > div { display: flex; border: 1px solid #d5c9b6; border-radius: 5px; padding: 3px; }
+.planner-mode-switch button { height: 38px; min-width: 106px; padding: 0 14px; font-size: 14px; border-radius: 4px; }
+.planner-mode-switch button[aria-pressed="true"] { background: var(--crimson); color: #fffaf2; font-weight: 500; }
+.planner-context { display: flex; align-items: center; gap: 14px; border-left: 1px solid #ddd2bc; padding-left: 24px; }
+.planner-context > svg { width: 37px; height: 37px; border-radius: 50%; color: #a18c56; fill: #a18c56; stroke: var(--paper); }
+.planner-context > strong { font-family: var(--serif); font-size: 21px; letter-spacing: -.5px; }
+#main[data-page="teams"] .planner-tabs { display: flex; gap: 0; padding-left: 10px; margin: 0; height: 44px; align-items: stretch; }
+#main[data-page="teams"] .planner-tabs button { position: relative; width: 181px; padding: 0 20px; border: 1px solid #e8deca; border-right: 0; border-radius: 0; font-size: 16px; font-weight: 400; background: #f5f1e950; color: #2c2d2c; }
+#main[data-page="teams"] .planner-tabs button:nth-child(2) { border-right: 0; }
+#main[data-page="teams"] .planner-tabs button:last-child { width: 169px; border-left: 0; }
+#main[data-page="teams"] .planner-tabs button:last-child::before { content: ''; position: absolute; left: 0; top: 9px; height: 23px; border-left: 1px solid var(--line); }
+#main[data-page="teams"] .planner-tabs button:first-child { border-radius: 5px 0 0 0; }
+#main[data-page="teams"] .planner-tabs button:last-child { border-right: 1px solid var(--line); border-radius: 0 5px 0 0; }
+#main[data-page="teams"] .planner-tabs button[aria-selected="true"] { font-family: var(--serif); font-size: 18px; font-weight: 700; border-color: var(--crimson); background: var(--crimson); }
+#main[data-page="teams"] .account-builder { margin: 0; }
+#main[data-page="teams"] .builder-workspace { display: grid; grid-template-columns: minmax(0, 1fr) 307px; gap: 13px; align-items: start; }
+#main[data-page="teams"] .builder-results { border: 1px solid var(--line); border-radius: 0 0 5px 5px; padding: 12px 10px 18px; }
+#main[data-page="teams"] .plan-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 14px; margin-bottom: 16px; }
+#main[data-page="teams"] .plan-selector { min-width: 0; }
+#main[data-page="teams"] .account-plan-options { display: flex; width: 458px; max-width: 100%; gap: 0; border: 1px solid var(--line); border-radius: 5px; }
+#main[data-page="teams"] .account-plan-options button { position: relative; display: block; flex: 1; min-height: 38px; height: 38px; padding: 0 18px; border: 0; border-radius: 4px; white-space: nowrap; font-size: 14px; font-weight: 400; color: #333947; background: transparent; }
+#main[data-page="teams"] .account-plan-options button:first-child { flex: 0 0 163px; }
+#main[data-page="teams"] .account-plan-options button + button::before { content: ''; position: absolute; left: 0; top: 10px; height: 18px; border-left: 1px solid var(--line); }
+#main[data-page="teams"] .account-plan-options button[aria-pressed="true"] { background: var(--crimson); color: #fffaf2; font-weight: 500; }
+#main[data-page="teams"] .account-plan-options button[aria-pressed="true"]::before { display: none; }
+#main[data-page="teams"] .builder-plan-heading { display: block; margin: 0; padding-right: 6px; white-space: nowrap; font-size: 14px; color: #2e323d; }
+#main[data-page="teams"] .builder-plan-heading strong { margin: 0; color: #17243b; }
+#main[data-page="teams"] .configuration-grid { display: grid; grid-template-columns: 1fr; gap: 15px; margin: 0; }
+#main[data-page="teams"] .configuration-card { position: relative; display: block; border: 1px solid var(--line); border-radius: 5px; padding: 16px 14px 16px 16px; background: var(--paper); }
+#main[data-page="teams"] .configuration-heading { position: relative; display: flex; align-items: flex-start; gap: 18px; padding: 0 0 0 63px; min-height: 44px; }
+#main[data-page="teams"] .team-assignment { display: contents; }
+#main[data-page="teams"] .team-assignment::before { content: ''; position: absolute; z-index: 2; top: -17px; left: -3px; width: 55px; height: 75px; background: #fffaf1; clip-path: polygon(0 0,100% 0,100% 85%,50% 100%,0 85%); }
+#main[data-page="teams"] .team-number { position: absolute; z-index: 3; left: 0; top: -17px; display: flex; flex-direction: column; align-items: center; width: 49px; height: 68px; padding: 7px 0 0; background: #b19967; border: 0; border-radius: 0; clip-path: polygon(0 0, 100% 0, 100% 83%, 50% 100%, 0 83%); font-family: var(--serif); font-size: 31px; line-height: 1.2; color: #fffaf0; }
+#main[data-page="teams"] .team-number > svg { fill: #f3ead2; color: #f3ead2; margin-top: 1px; }
+#main[data-page="teams"] .configuration-heading h3 { font-family: var(--serif); font-size: 29px; line-height: 1.08; margin: -5px 0 0; letter-spacing: -.8px; white-space: nowrap; color: #101c26; }
+#main[data-page="teams"] .lineup-badges { display: flex; align-items: center; gap: 10px; padding-top: 0; white-space: nowrap; }
+#main[data-page="teams"] .lineup-badges > span { display: inline-flex; align-items: center; justify-content: center; gap: 9px; height: 30px; padding: 0 12px; border-radius: 13px; font-size: 13px; margin-top: -2px; }
+#main[data-page="teams"] .lineup-badges > .owned-badge { min-width: 121px; }
+.owned-badge { background: #ecebe3; color: #244432; }
+.owned-badge > svg { border-radius: 50%; color: white; background: #4c9369; padding: 3px; width: 21px; height: 21px; }
+.evidence-badge { background: #ece9ed; color: #24334a; }
+#main[data-page="teams"] .lineup-controls { display: flex; gap: 9px; margin-left: auto; margin-top: -3px; flex-shrink: 0; }
+#main[data-page="teams"] .lineup-icon-button, #main[data-page="teams"] .lineup-details-button { display: flex; align-items: center; justify-content: center; gap: 9px; height: 37px; border: 1px solid var(--line); border-radius: 4px; background: var(--paper); }
+#main[data-page="teams"] .lineup-icon-button { width: 40px; padding: 0; }
+#main[data-page="teams"] .lineup-icon-button[aria-pressed="true"] { background: var(--crimson); color: white; border-color: var(--crimson); }
+#main[data-page="teams"] .lineup-details-button { min-width: 132px; padding: 0 12px; font-size: 16px; font-weight: 500; }
+#main[data-page="teams"] .viewer-members { display: grid; grid-template-columns: 231fr 220fr 212fr 230fr; gap: 9px; }
+#main[data-page="teams"] .viewer-member { padding: 0; border-radius: 5px; }
+#main[data-page="teams"] .viewer-portrait { height: 220px; border-radius: 5px; }
+#main[data-page="teams"] .reference-portrait { display: block; position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; overflow: hidden; }
+#main[data-page="teams"] .viewer-portrait > img { object-fit: cover; }
+#main[data-page="teams"] .viewer-element, #main[data-page="teams"] .viewer-constellation, #main[data-page="teams"] .viewer-driver { display: none; }
+#main[data-page="teams"] .viewer-caption { display: flex; align-items: flex-start; gap: 10px; width: 100%; margin-top: 9px; height: 39px; }
+#main[data-page="teams"] .viewer-member:nth-child(n + 2) .viewer-caption { padding-left: 8px; }
+#main[data-page="teams"] .configuration-card:nth-child(2) .viewer-caption { padding-left: 4px; gap: 12px; }
+#main[data-page="teams"] .configuration-card:nth-child(2) .viewer-member:nth-child(n + 2) .viewer-caption { padding-left: 10px; }
+#main[data-page="teams"] .viewer-caption > span { min-width: 0; }
+#main[data-page="teams"] .element-mark { display: block; width: 30px; height: 35px; color: var(--element-ink); flex-shrink: 0; }
+#main[data-page="teams"] .viewer-name { display: block; font-family: var(--serif); font-size: 16px; margin: 0 0 2px; line-height: 1.1; min-height: 0; white-space: nowrap; }
+#main[data-page="teams"] .viewer-name > svg { display: none; }
+#main[data-page="teams"] .viewer-role { display: block; font-size: 14px; color: #616778; line-height: 1.5; }
+#main[data-page="teams"] .compact-viewer .viewer-build { display: none; }
+#main[data-page="teams"] .expanded .viewer-build { margin-top: 8px; }
+#main[data-page="teams"] .configuration-details { padding-top: 12px; margin-top: 12px; }
+#main[data-page="teams"] .configuration-details > details[open] { flex-basis: 100%; }
+#main[data-page="teams"] .team-encounter-label { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; padding: 0 0 12px; margin-bottom: 10px; border-bottom: 1px solid var(--line); font-size: 12px; }
+#main[data-page="teams"] .team-encounter-label .team-opponent { max-width: none; margin: 0; }
+#main[data-page="teams"] .planner-rail { display: flex; flex-direction: column; gap: 11px; }
+#main[data-page="teams"] .builder-settings { padding: 16px 16px 19px; border: 1px solid var(--line); border-radius: 5px; background: var(--paper); }
+#main[data-page="teams"] .builder-settings > summary { display: flex; flex-direction: row; align-items: center; gap: 12px; padding: 0 0 9px; border-bottom: 1px solid var(--line); font-family: var(--serif); font-size: 18px; color: #252723; }
+#main[data-page="teams"] .builder-settings > summary > svg:first-child { position: static; transform: none; }
+#main[data-page="teams"] .builder-settings > summary > span, #main[data-page="teams"] .builder-settings > summary > svg:last-child { display: none; }
+#main[data-page="teams"] .builder-settings-body { margin-top: 0; }
+#main[data-page="teams"] .builder-settings { line-height: 1.35; }
+#main[data-page="teams"] .builder-settings > summary { line-height: 1.3; }
+#main[data-page="teams"] .builder-settings-body > .field-label { margin: 14px 0 0; }
+#main[data-page="teams"] .builder-settings .field-label { color: #283448; font-size: 13px; line-height: 14px; }
+#main[data-page="teams"] .builder-settings select { height: 40px; margin-top: 9px; background: #fdfbfa70; font-size: 14px; color: #293141; border-color: #d6ccbc; border-radius: 6px; padding-left: 14px; padding-right: 36px; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m4 6 4 4 4-4' fill='none' stroke='%23293141' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-size: 16px; background-position: right 12px center; }
+#main[data-page="teams"] .builder-settings .builder-focus { padding: 0; margin-top: 17px; gap: 7px; }
+#main[data-page="teams"] .builder-settings .builder-focus .field-label { margin: 0; width: 100%; }
+#main[data-page="teams"] .builder-settings .builder-preferences { margin-top: 20px; padding: 10px 0 0; border-top: 1px solid #e9dfcc80; }
+#main[data-page="teams"] .active-builder-preferences:not(.has-constraints):not(:has(p)) { margin: 0; }
+#main[data-page="teams"] .builder-preferences > summary { display: flex; align-items: center; justify-content: space-between; list-style: none; padding: 4px 0; font-size: 13px; color: #283448; font-weight: 500; }
+#main[data-page="teams"] .builder-preferences > summary::-webkit-details-marker { display: none; }
+#main[data-page="teams"] .builder-preferences[open] > summary > svg { transform: rotate(90deg); }
+#main[data-page="teams"] .planner-next-steps { padding: 15px 16px 20px; border: 1px solid var(--line); border-radius: 5px; background: var(--paper); }
+#main[data-page="teams"] .planner-next-steps > h2 { display: flex; gap: 12px; align-items: center; padding-bottom: 10px; border-bottom: 1px solid var(--line); font-family: var(--serif); font-size: 19px; font-weight: 700; letter-spacing: -.3px; }
+#main[data-page="teams"] .planner-next-steps > h2 > svg { color: #927746; }
+#main[data-page="teams"] .next-build-task { display: flex; gap: 12px; margin: 13px 0 18px; }
+#main[data-page="teams"] .next-task-icon { display: grid; place-items: center; width: 45px; height: 46px; border: 1px solid var(--line); border-radius: 5px; color: #9b8453; flex-shrink: 0; }
+#main[data-page="teams"] .next-task-icon > svg { width: 30px; height: 30px; fill: #9b8453; }
+#main[data-page="teams"] .next-build-task h3 { font-family: 'Clinic Sans', Arial, sans-serif; font-size: 14px; font-weight: 500; line-height: 1.4; margin-top: 4px; }
+#main[data-page="teams"] .next-build-task p { font-size: 13px; line-height: 1.4; color: #626b7b; margin-top: 7px; }
+#main[data-page="teams"] .planner-next-steps > .button { position: relative; width: 100%; justify-content: center; min-height: 41px; height: 41px; padding: 0; font-size: 17px; font-weight: 500; border-radius: 5px; }
+#main[data-page="teams"] .planner-next-steps > .button > svg { position: absolute; right: 12px; }
+#main[data-page="teams"] .planner-evidence-link { display: flex; align-items: center; gap: 16px; padding: 10px 15px; min-height: 47px; border: 1px solid var(--line); border-radius: 5px; text-align: left; font-size: 12px; background: var(--paper); color: #283448; }
+#main[data-page="teams"] .planner-evidence-link > span { white-space: nowrap; }
+#main[data-page="teams"] .planner-evidence-link > svg:first-child { color: #7c6840; }
+#main[data-page="teams"] .planner-evidence-link small { font-size: 10px; white-space: nowrap; }
+#main[data-page="teams"] .planner-evidence-link > svg:last-child { margin-left: auto; }
+#main[data-page="teams"] .builder-alternatives { flex-basis: 100%; }
+#main[data-page="teams"] .builder-account-tools { margin-top: 20px; }
+#main[data-page="teams"] .page-footer { position: fixed; right: 20px; bottom: 20px; justify-content: flex-end; border: 0; padding: 0; margin: 0; font-size: 10px; color: #9b9b93; }
+#main[data-page="teams"] .page-footer > span:first-child { display: none; }
+.clinic-reference.sidebar-collapsed { --sidebar: 80px; }
+.clinic-reference.sidebar-collapsed .sidebar-toggle { left: 26px; top: 90px; opacity: 1; }
+.doctor-app.sidebar-collapsed .brand { background: none; }
+.doctor-app.sidebar-collapsed .brand > span { visibility: visible; }
+.doctor-app.sidebar-collapsed .doctor-avatar { background: none; }
+.doctor-app.sidebar-collapsed .doctor-avatar img { visibility: visible; }
+#main[data-page="teams"] .builder-settings > summary > svg:first-child { background-image: var(--reference-art); background-repeat: no-repeat; background-size: 5907.692307692308% 3792.592592592592%; background-position: 81.52317880794702% 22.868605817452355%; }
+#main[data-page="teams"] .builder-settings > summary > svg:first-child > path { visibility: hidden; }
+#main[data-page="teams"] .planner-next-steps > h2 > svg { background-image: var(--reference-art); background-repeat: no-repeat; background-size: 6678.260869565217% 3792.592592592592%; background-position: 81.49372108393919% 52.45737211634904%; }
+#main[data-page="teams"] .planner-next-steps > h2 > svg > path { visibility: hidden; }
+#main[data-page="teams"] .planner-context > svg { background-image: var(--reference-art); background-repeat: no-repeat; background-size: 4042.1052631578946% 2694.736842105263%; background-position: 86.31508678237651% 8.620689655172415%; }
+#main[data-page="teams"] .planner-context > svg > path { visibility: hidden; }
+#main[data-page="teams"] .next-task-icon > svg { background-image: var(--reference-art); background-repeat: no-repeat; background-size: 5120% 3413.3333333333335%; background-position: 82.40371845949535% 58.35010060362173%; }
+#main[data-page="teams"] .next-task-icon > svg > path { visibility: hidden; }
+
+@media (max-width: 1450px) {
+  #main[data-page="teams"] .page-intro h1 { font-size: 55px; }
+  .planner-mode-header { gap: 10px; }
+  .planner-mode-switch { gap: 8px; }
+  .planner-mode-switch button { min-width: 91px; padding: 0 10px; }
+  .planner-context { gap: 9px; padding-left: 14px; }
+  .planner-context > strong { font-size: 18px; }
+  #main[data-page="teams"] .builder-workspace { grid-template-columns: minmax(0, 1fr) 280px; }
+  #main[data-page="teams"] .configuration-heading { gap: 12px; flex-wrap: wrap; min-height: 52px; }
+  #main[data-page="teams"] .configuration-heading h3 { font-size: 25px; }
+  #main[data-page="teams"] .lineup-badges { gap: 5px; }
+  #main[data-page="teams"] .lineup-badges > span { font-size: 11px; padding: 0 8px; }
+  #main[data-page="teams"] .account-plan-options { width: 365px; }
+  #main[data-page="teams"] .account-plan-options button { padding: 0 9px; font-size: 12px; }
+  #main[data-page="teams"] .account-plan-options button:first-child { flex: 1; }
+  #main[data-page="teams"] .builder-plan-heading { font-size: 10px; }
+}
+@media (max-width: 1200px) {
+  #main[data-page="teams"] .page-intro { height: auto; display: block; padding-bottom: 18px; }
+  .planner-mode-header { position: static; justify-content: space-between; margin-top: 14px; }
+  #main[data-page="teams"] .builder-workspace { grid-template-columns: minmax(0, 1fr) 240px; }
+  #main[data-page="teams"] .lineup-controls { margin-top: 0; }
+  #main[data-page="teams"] .viewer-portrait { height: 180px; }
+  #main[data-page="teams"] .configuration-heading h3 { font-size: 24px; }
+  #main[data-page="teams"] .lineup-badges { margin-left: auto; }
+  #main[data-page="teams"] .lineup-controls { width: 100%; justify-content: flex-end; margin-bottom: 10px; }
+  #main[data-page="teams"] .plan-toolbar { flex-wrap: wrap; }
+}
+@media (max-width: 1099px) {
+  .clinic-reference { --sidebar: 80px; }
+  #main[data-page="teams"] .builder-workspace { display: flex; flex-direction: column; gap: 12px; }
+  #main[data-page="teams"] .planner-rail { order: -1; width: 100%; }
+  #main[data-page="teams"] .builder-results { width: 100%; }
+  #main[data-page="teams"] .builder-settings > summary > svg:last-child { display: block; position: static; margin-left: auto; }
+  #main[data-page="teams"] .builder-settings:not([open]) > summary { border: 0; padding-bottom: 0; }
+  #main[data-page="teams"] .planner-next-steps, #main[data-page="teams"] .planner-evidence-link { display: none; }
+  #main[data-page="teams"] .configuration-heading { min-height: 44px; flex-wrap: wrap; padding-bottom: 12px; }
+  #main[data-page="teams"] .lineup-controls { width: auto; margin-bottom: 0; }
+  #main[data-page="teams"] .lineup-badges { margin-left: 0; }
+  #main[data-page="teams"] .viewer-member:first-child .reference-portrait { height: calc(100% + 12px); top: -12px; }
+  #main[data-page="teams"] .page-footer { position: static; margin-top: 24px; padding-bottom: 12px; }
+}
+@media (max-width: 750px) {
+  .clinic-reference .topbar { margin: 8px 12px 0; padding-left: 10px; }
+  .reference-account-label { font-size: 12px; gap: 4px; }
+  .reference-account-label > span { display: none; }
+  .clinic-reference .header-actions { gap: 0; }
+  .clinic-reference .header-actions > .button { font-size: 12px; padding: 0 10px; }
+  .clinic-reference .local-status { display: none; }
+  .clinic-reference .header-actions > .button::before { display: none; }
+  #main[data-page="teams"] { padding: 13px 12px 0; }
+  #main[data-page="teams"] .page-intro { padding-left: 0; }
+  #main[data-page="teams"] .page-intro h1 { font-size: 40px; }
+  #main[data-page="teams"] .page-subtitle { font-size: 17px; }
+  .planner-mode-header { flex-wrap: wrap; gap: 10px; }
+  .planner-mode-switch { gap: 8px; width: 100%; }
+  .planner-mode-switch > div { flex: 1; }
+  .planner-mode-switch button { flex: 1; min-width: 0; font-size: 12px; padding: 0 7px; }
+  .planner-context { border: 0; padding-left: 0; gap: 8px; }
+  .planner-context > svg { width: 24px; height: 24px; padding: 2px; }
+  .planner-context > strong { font-size: 15px; }
+  #main[data-page="teams"] .planner-tabs { height: 41px; padding: 0; }
+  #main[data-page="teams"] .planner-tabs button { flex: 1; padding: 0 10px; font-size: 12px; }
+  #main[data-page="teams"] .planner-tabs button[aria-selected="true"] { font-size: 14px; }
+  #main[data-page="teams"] .builder-workspace { gap: 10px; }
+  #main[data-page="teams"] .builder-settings { padding: 13px; }
+  #main[data-page="teams"] .builder-settings > summary { font-size: 17px; }
+  #main[data-page="teams"] .builder-results { padding: 10px 8px; }
+  #main[data-page="teams"] .plan-toolbar { gap: 10px; margin-bottom: 12px; }
+  #main[data-page="teams"] .plan-selector, #main[data-page="teams"] .account-plan-options { width: 100%; }
+  #main[data-page="teams"] .builder-plan-heading { font-size: 11px; }
+  #main[data-page="teams"] .configuration-card { padding: 11px; }
+  #main[data-page="teams"] .configuration-heading { flex-wrap: wrap; gap: 8px; padding-left: 47px; }
+  #main[data-page="teams"] .configuration-heading h3 { font-size: 22px; white-space: normal; width: 100%; }
+  #main[data-page="teams"] .team-number { top: -11px; width: 37px; height: 64px; font-size: 24px; }
+  #main[data-page="teams"] .lineup-badges { gap: 5px; margin: 0; }
+  #main[data-page="teams"] .lineup-badges > span { height: 23px; font-size: 9px; gap: 5px; padding: 0 6px; }
+  #main[data-page="teams"] .owned-badge > svg { width: 15px; height: 15px; padding: 2px; }
+  #main[data-page="teams"] .lineup-controls { width: 100%; margin: 2px 0 10px -47px; justify-content: flex-end; gap: 6px; }
+  #main[data-page="teams"] .lineup-icon-button { width: 32px; height: 32px; }
+  #main[data-page="teams"] .lineup-details-button { min-width: 102px; height: 32px; font-size: 12px; }
+  #main[data-page="teams"] .viewer-members { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+  #main[data-page="teams"] .viewer-portrait { height: 105px; }
+  #main[data-page="teams"] .viewer-caption { gap: 3px; flex-direction: column; margin-top: 6px; }
+  #main[data-page="teams"] .element-mark { width: 18px; height: 20px; }
+  #main[data-page="teams"] .viewer-name { font-size: 12px; white-space: normal; overflow-wrap: anywhere; }
+  #main[data-page="teams"] .viewer-role { font-size: 10px; }
+  #main[data-page="teams"] .configuration-grid { gap: 12px; }
+  #main[data-page="teams"] .page-footer { position: static; margin-top: 24px; padding-bottom: 12px; }
+}
+@media (max-width: 560px) {
+  .clinic-reference, .clinic-reference.sidebar-collapsed { --sidebar: 0px; }
+  .doctor-app .sidebar { padding: 0 8px env(safe-area-inset-bottom); }
+  .doctor-app .sidebar nav button { min-height: 0; padding: 7px 2px 5px; font-size: 10px; gap: 3px; }
+  .clinic-reference .nav-icon { width: 28px; height: 26px; }
+  .clinic-reference .sidebar-toggle { display: none; }
+}

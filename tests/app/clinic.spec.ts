@@ -19,7 +19,7 @@ test('clinic loads with demo data, accessible navigation and no simulator reques
   await page.keyboard.press('Escape');
   await expect(page.getByRole('dialog')).not.toBeVisible();
   await page.getByRole('button', { name: 'Team planner', exact: true }).click();
-  await page.getByRole('tab', { name: 'Guide recipes & custom teams', exact: true }).click();
+  await page.getByRole('tab', { name: 'Guide recipes', exact: true }).click();
   await expect(page.locator('.planner-options')).not.toHaveAttribute('open');
   await expect(page.locator('.character-team-search')).not.toHaveAttribute('open');
   await page.getByRole('button', { name: 'Stygian Onslaught' }).click();
@@ -41,7 +41,7 @@ test('roster editing persists and recommends an owned Mavuika recipe', async ({ 
   }
   await page.getByLabel('Bennett readiness').selectOption('ready');
   await page.getByRole('button', { name: 'Build my team plan', exact: true }).click();
-  await page.getByRole('tab', { name: 'Guide recipes & custom teams', exact: true }).click();
+  await page.getByRole('tab', { name: 'Guide recipes', exact: true }).click();
   await expect(page.getByRole('heading', { name: 'Mavuika Melt' })).toBeVisible();
   await page.reload();
   await expect(page.getByText('You’re exploring a demo account.', { exact: false })).not.toBeVisible();
@@ -105,7 +105,7 @@ test('compact navigation stays usable when resizing from desktop to mobile', asy
   await page.getByRole('button', { name: 'Collapse sidebar' }).click();
   await expect(page.getByRole('button', { name: 'Expand sidebar' })).toHaveAttribute('aria-expanded', 'false');
   await page.getByRole('button', { name: 'Team planner', exact: true }).click();
-  await page.getByRole('tab', { name: 'Guide recipes & custom teams', exact: true }).click();
+  await page.getByRole('tab', { name: 'Guide recipes', exact: true }).click();
   await expect(page.getByRole('button', { name: 'Team planner', exact: true })).toHaveAttribute('aria-current', 'page');
   await page.setViewportSize({ width: 390, height: 844 });
   const nav = page.getByRole('navigation', { name: 'Main navigation' });
@@ -138,7 +138,7 @@ test('guided setup resets demo filters and leads to a real roster prescription',
   }
   const steps = page.getByRole('navigation', { name: 'Your checkup steps' });
   await steps.getByRole('button', { name: /Find your teams/ }).click();
-  await page.getByRole('tab', { name: 'Guide recipes & custom teams', exact: true }).click();
+  await page.getByRole('tab', { name: 'Guide recipes', exact: true }).click();
   await expect(page.getByRole('heading', { name: 'Mavuika Melt' })).toBeVisible();
   await page.locator('#guides-panel').getByRole('button', { name: 'View prescription', exact: false }).first().click();
   await expect(page.getByRole('dialog')).toBeVisible();
@@ -218,7 +218,7 @@ test('ranking controls and focused search fit mobile and keep unmeasured DPS una
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto('/doctor/');
   await page.getByRole('button', { name: 'Team planner', exact: true }).click();
-  await page.getByRole('tab', { name: 'Guide recipes & custom teams', exact: true }).click();
+  await page.getByRole('tab', { name: 'Guide recipes', exact: true }).click();
   await page.locator('.planner-options summary').click();
   await expect(page.getByLabel('Team priority').locator('option[value="benchmark"]')).toHaveJSProperty('disabled', true);
   await page.getByLabel('Team priority').selectOption('guide');

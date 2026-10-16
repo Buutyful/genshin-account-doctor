@@ -112,7 +112,7 @@ test('recorded team editing updates matching immediately and Stygian planner ope
   await page.getByLabel('Constellation', { exact: true }).selectOption('');
   await page.getByRole('button', { name: 'Save details', exact: true }).click();
   await expect(page.locator('.clear-plan-heading')).toContainText('2 / 3 bosses');
-  await page.getByRole('tab', { name: 'Team plans', exact: true }).click();
+  await page.getByRole('tab', { name: 'Account plans', exact: true }).click();
   await expect(page.getByRole('region', { name: 'Account-aware builder' })).toBeVisible();
   await page.getByRole('tab', { name: 'Recorded clears', exact: true }).click();
   await expect(page.locator('.clear-plan-heading')).toContainText('2 / 3 bosses');

@@ -1,3 +1,4 @@
+import { openPlanningSettings } from './planner-controls';
 import { expect, test } from '@playwright/test';
 import type { Page } from '@playwright/test';
 import providerShapes from '../fixtures/nanoka-response-shapes.json' with { type: 'json' };
@@ -15,10 +16,11 @@ async function openBuilder(page: Page) {
   await page.route('https://static.nanoka.cc/**', route => route.fulfill({ status: 503, body: 'Fixture provider failure' }));
   await page.goto('/doctor/');
   await page.getByRole('button', { name: 'Team planner', exact: true }).click();
-  await expect(page.getByRole('tab', { name: 'Team plans', exact: true })).toHaveAttribute('aria-selected', 'true');
+  await expect(page.getByRole('tab', { name: 'Account plans', exact: true })).toHaveAttribute('aria-selected', 'true');
   await expect(page.locator('#guides-panel')).not.toBeVisible();
   const builder = page.getByRole('region', { name: 'Account-aware builder' });
   if (!await builder.locator('.builder-settings').evaluate(el => (el as HTMLDetailsElement).open)) await builder.locator('.builder-settings > summary').click();
+  await openPlanningSettings(builder);
   await expect(builder.getByRole('button', { name: 'General', exact: true })).toHaveAttribute('aria-pressed', 'true');
   await expect(builder.locator('.configuration-card')).toHaveCount(2);
   return builder;
@@ -45,6 +47,7 @@ test('challenge setup works during provider failure, persists matchups and expor
   expect(report.practiceTargets[0].stages[2].enemies[0].name).toBe('My first-half bosses');
   await page.reload();
   await page.getByRole('button', { name: 'Team planner', exact: true }).click();
+  await openPlanningSettings(builder);
   await expect(builder.getByLabel('First half opponents')).toHaveValue('My first-half bosses');
   await expect(builder.getByRole('group', { name: 'First half team preferences', exact: true }).getByRole('button', { name: 'Hydro', exact: true })).toHaveAttribute('aria-pressed', 'true');
   await builder.getByText('Backup & restore account workspace', { exact: true }).click();
@@ -66,6 +69,7 @@ test('reference Stygian lineups are useful without being promoted to verified cu
   await page.getByRole('button', { name: 'Team planner', exact: true }).click();
   await page.getByLabel('Game mode', { exact: true }).selectOption('stygian');
   const builder = page.getByRole('region', { name: 'Account-aware builder' });
+  await openPlanningSettings(builder);
   await expect(builder.locator('.configuration-card')).toHaveCount(3);
   await builder.getByRole('button', { name: 'Custom targets', exact: true }).click();
   await expect(builder.locator('.challenge-target').first()).toContainText('Secret Source Automaton');
@@ -81,12 +85,12 @@ test('reference Stygian lineups are useful without being promoted to verified cu
 
 test('primary character focus and visible team alternatives change the account plan and undo cleanly', async ({ page }) => {
   const builder = await openBuilder(page);
-  await builder.getByText('Preferences, builds & exclusions', { exact: true }).click();
+  await openPlanningSettings(builder);
   await builder.getByLabel('Build around a character').selectOption('neuvillette');
   await builder.getByRole('button', { name: 'Build around them', exact: true }).click();
   await expect(builder.locator('.configuration-grid')).toContainText('Neuvillette');
   const before = await builder.locator('.configuration-card').first().getAttribute('data-composition-id');
-  await builder.locator('.configuration-card').first().getByText('Change this team', { exact: true }).click();
+  await builder.locator('.configuration-card').first().getByRole('button', { name: /^Swap characters in team/ }).click();
   await builder.locator('.configuration-card').first().getByRole('button', { name: 'Another team', exact: true }).click();
   await expect(builder.locator(`.configuration-card[data-composition-id="${before}"]`)).toHaveCount(0);
   await expect(builder.locator('.configuration-card')).toHaveCount(2);
@@ -104,6 +108,7 @@ test('an empty personal account shows a useful setup state instead of a broken c
   await page.goto('/doctor/');
   await page.getByRole('button', { name: 'Team planner', exact: true }).click();
   const builder = page.getByRole('region', { name: 'Account-aware builder' });
+  await openPlanningSettings(builder);
   await expect(builder.getByRole('heading', { name: 'Add at least four characters', exact: true })).toBeVisible();
   await expect(builder.getByRole('button', { name: 'General', exact: true })).toHaveAttribute('aria-pressed', 'true');
   await expect(page.getByRole('region', { name: 'Endgame challenges' })).not.toBeVisible();
@@ -113,7 +118,7 @@ test('opens with a useful account plan during feed failure and exposes whole-tea
   const builder = await openBuilder(page);
   await expect(builder.getByRole('button', { name: 'General', exact: true })).toHaveAttribute('aria-pressed', 'true');
   const card = builder.locator('.configuration-card').first();
-  await card.getByText('Build & rotation', { exact: true }).click();
+  await card.getByRole('button', { name: 'View details', exact: true }).click();
   await expect(card.getByText('proposed loop.', { exact: false })).toBeVisible();
   await card.getByText('Sources & checks', { exact: true }).click();
   await expect(card.locator('[data-state="unresolved"]')).not.toHaveCount(0);
@@ -129,7 +134,7 @@ test('skipping preserves members for other teams and undo restores the original 
   const builder = await openBuilder(page);
   const first = builder.locator('.configuration-card').first();
   const skipped = await first.getAttribute('data-composition-id');
-  await first.getByText('Change this team', { exact: true }).click();
+  await first.getByRole('button', { name: /^Swap characters in team/ }).click();
   await first.getByRole('button', { name: 'Skip this composition', exact: true }).click();
   await expect(builder.locator(`.configuration-card[data-composition-id="${skipped}"]`)).toHaveCount(0);
   await expect(builder.locator('.configuration-card')).toHaveCount(2);
@@ -140,7 +145,7 @@ test('skipping preserves members for other teams and undo restores the original 
 
 test('account exclusions persist, can be removed specifically, and workspace restore rechecks them', async ({ page }) => {
   const builder = await openBuilder(page);
-  await builder.getByText('Preferences, builds & exclusions', { exact: true }).click();
+  await openPlanningSettings(builder);
   await builder.getByLabel('Feedback scope').selectOption('account');
   await builder.getByLabel('Builder excluded character').selectOption('xingqiu');
   await builder.getByRole('button', { name: 'Apply exclusion', exact: true }).click();
@@ -164,7 +169,7 @@ test('keeps selected core for a variant or gives a specific removable conflict',
   const builder = await openBuilder(page);
   const card = builder.locator('.configuration-card').first();
   const composition = await card.getAttribute('data-composition-id');
-  await card.getByText('Change this team', { exact: true }).click();
+  await card.getByRole('button', { name: /^Swap characters in team/ }).click();
   await card.getByRole('button', { name: 'Same-core variant', exact: true }).click();
   await expect(builder.locator(`.configuration-card[data-composition-id="${composition}"]`)).toHaveCount(0);
   await expect(builder.locator('.configuration-card')).toHaveCount(2);
@@ -177,7 +182,7 @@ test('keeps selected core for a variant or gives a specific removable conflict',
   expect(report.configurations.some((r: any) => core.every((id: string) => r.config.members.includes(id)))).toBe(true);
   await builder.getByRole('button', { name: 'Undo last feedback', exact: true }).click();
   const restored = builder.locator('.configuration-card').first();
-  await restored.getByText('Change this team', { exact: true }).click();
+  await restored.getByRole('button', { name: /^Swap characters in team/ }).click();
   await restored.getByRole('button', { name: 'Lock configuration', exact: true }).click();
   await restored.getByRole('button', { name: 'Skip this composition', exact: true }).click();
   await expect(builder.getByText('Conflicting preferences', { exact: true })).toBeVisible();
@@ -205,8 +210,8 @@ test('imports evidence only through preview and keeps fixtures and unpermitted r
 test('open generation, controls and exported report fit a mobile viewport', async ({ page }, testInfo) => {
   await page.setViewportSize({ width: 390, height: 844 });
   const builder = await openBuilder(page);
-  await builder.locator('.configuration-card').first().getByText('Build & rotation', { exact: true }).click();
-  await builder.locator('.configuration-card').first().getByText('Change this team', { exact: true }).click();
+  await builder.locator('.configuration-card').first().getByRole('button', { name: 'View details', exact: true }).click();
+  await builder.locator('.configuration-card').first().getByRole('button', { name: /^Swap characters in team/ }).click();
   await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
   await builder.scrollIntoViewIfNeeded();
   await page.screenshot({ path: testInfo.outputPath('account-builder-mobile.png'), fullPage: true });
@@ -219,10 +224,10 @@ test('an imported account produces a sourced configuration absent from recipes a
   await page.getByLabel('Import roster file').setInputFiles({ name: 'pilot-account.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(account)) });
   await page.getByRole('button', { name: 'Team planner', exact: true }).click();
   const builder = page.getByRole('region', { name: 'Account-aware builder' }), card = builder.locator('.configuration-card').first();
-  await expect(card.getByText('TEAM 1', { exact: true })).toBeVisible();
+  await expect(card.locator('.team-number')).toBeVisible();
   await expect(card.getByText('Role-based team', { exact: true })).toBeVisible();
   const oldId = await card.getAttribute('data-configuration-id');
-  await card.getByText('Build & rotation', { exact: true }).click();
+  await card.getByRole('button', { name: 'View details', exact: true }).click();
   await card.getByText('Sources & checks', { exact: true }).click();
   await expect(card.getByText('Composition absent from the guide recipe set', { exact: false })).toBeVisible();
   await expect(card.locator('[data-state="contradicted"]').filter({ hasText: 'level 80' })).toHaveCount(1);
@@ -233,7 +238,7 @@ test('an imported account produces a sourced configuration absent from recipes a
   await page.getByRole('dialog').getByRole('button', { name: 'Save details', exact: true }).click();
   await page.getByRole('button', { name: 'Team planner', exact: true }).click();
   await expect(card).not.toHaveAttribute('data-configuration-id', oldId!);
-  await card.getByText('Build & rotation', { exact: true }).click();
+  await card.getByRole('button', { name: 'View details', exact: true }).click();
   await card.getByText('Sources & checks', { exact: true }).click();
   await expect(card.locator('[data-state="supported"]').filter({ hasText: 'level 90' })).toHaveCount(1);
 });
@@ -243,7 +248,7 @@ test('a requested replacement retains the other three members and a different pl
   const original = await jsonDownload(page, () => builder.getByRole('button', { name: 'Export plan', exact: true }).click());
   const firstConfig = original.configurations[0].config;
   const card = builder.locator('.configuration-card').first();
-  await card.getByText('Change this team', { exact: true }).click();
+  await card.getByRole('button', { name: /^Swap characters in team/ }).click();
   const selector = card.getByLabel('Replace teammate in configuration 1');
   const teammate = await selector.inputValue();
   await expect(selector.locator(`option[value="${teammate}"]`)).not.toBeDisabled();
@@ -254,7 +259,7 @@ test('a requested replacement retains the other three members and a different pl
   const retained = firstConfig.members.filter((id: string) => id !== teammate);
   expect(replaced.configurations.some((r: any) => retained.every((id: string) => r.config.members.includes(id)) && !r.config.members.includes(teammate))).toBe(true);
   await builder.getByRole('button', { name: 'Undo last feedback', exact: true }).click();
-  await card.getByText('Change this team', { exact: true }).click();
+  await card.getByRole('button', { name: /^Swap characters in team/ }).click();
   await card.getByRole('button', { name: 'Different playstyle', exact: true }).click();
   const alternative = await jsonDownload(page, () => builder.getByRole('button', { name: 'Export plan', exact: true }).click());
   expect(alternative.configurations.some((r: any) => r.config.playstyle !== firstConfig.playstyle && !firstConfig.core.every((id: string) => r.config.members.includes(id)))).toBe(true);
@@ -269,10 +274,11 @@ test('verified fixture assignment expires and cycle preferences stop applying to
   await page.goto('/doctor/');
   await page.getByRole('button', { name: 'Team planner', exact: true }).click();
   const builder = page.getByRole('region', { name: 'Account-aware builder' });
+  await openPlanningSettings(builder);
   await builder.getByRole('button', { name: 'Current challenge', exact: true }).click();
   await expect(builder.locator('.configuration-card')).toHaveCount(2);
   await expect(builder.locator('[data-current-cycle="true"]')).toBeVisible();
-  await builder.getByText('Preferences, builds & exclusions', { exact: true }).click();
+  await openPlanningSettings(builder);
   await builder.getByLabel('Feedback scope').selectOption('cycle');
   await builder.getByLabel('Builder excluded character').selectOption('bennett');
   await builder.getByRole('button', { name: 'Apply exclusion', exact: true }).click();

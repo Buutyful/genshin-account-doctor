@@ -21,7 +21,7 @@ test('fetches current Abyss and Stygian, applies strategy and exports assigned e
   await challengeFeed(page);
   await page.goto('/doctor/');
   await page.getByRole('button', { name: 'Team planner', exact: true }).click();
-  await page.getByRole('tab', { name: 'Guide recipes & custom teams', exact: true }).click();
+  await page.getByRole('tab', { name: 'Guide recipes', exact: true }).click();
   await page.getByText('Challenge sources & matchup strategy', { exact: true }).click();
   await expect(page.getByText('Current published cycle', { exact: false })).toBeVisible();
   await page.getByText('Opponents & matchup strategy', { exact: true }).click();
@@ -62,7 +62,7 @@ test('retains valid cached encounters on failure, rejects expired cache and reco
   await challengeFeed(page);
   await page.goto('/doctor/');
   await page.getByRole('button', { name: 'Team planner', exact: true }).click();
-  await page.getByRole('tab', { name: 'Guide recipes & custom teams', exact: true }).click();
+  await page.getByRole('tab', { name: 'Guide recipes', exact: true }).click();
   await page.getByText('Challenge sources & matchup strategy', { exact: true }).click();
   await expect(page.getByText('Current published cycle', { exact: false })).toBeVisible();
   await page.route('https://static.nanoka.cc/**', route => route.fulfill({ status: 503, body: 'Unavailable' }));
@@ -76,7 +76,7 @@ test('retains valid cached encounters on failure, rejects expired cache and reco
   });
   await page.reload();
   await page.getByRole('button', { name: 'Team planner', exact: true }).click();
-  await page.getByRole('tab', { name: 'Guide recipes & custom teams', exact: true }).click();
+  await page.getByRole('tab', { name: 'Guide recipes', exact: true }).click();
   await page.getByText('Challenge sources & matchup strategy', { exact: true }).click();
   await expect(page.getByText('Saved lineup is expired', { exact: false })).toBeVisible();
   await expect(page.getByText('Current lineup unavailable', { exact: true })).toBeVisible();
@@ -93,7 +93,7 @@ test('creates a custom team, calculates damage, locks the composition and persis
   await page.route('https://static.nanoka.cc/**', route => route.fulfill({ status: 403, body: '' }));
   await page.goto('/doctor/');
   await page.getByRole('button', { name: 'Team planner', exact: true }).click();
-  await page.getByRole('tab', { name: 'Guide recipes & custom teams', exact: true }).click();
+  await page.getByRole('tab', { name: 'Guide recipes', exact: true }).click();
   await page.getByText('Build a custom team', { exact: true }).click();
   const members = ['raiden', 'nahida', 'xingqiu', 'barbara'];
   for (let i = 0; i < members.length; i++) await page.getByLabel(`Custom team slot ${i + 1}`).selectOption(members[i]);
@@ -115,7 +115,7 @@ test('creates a custom team, calculates damage, locks the composition and persis
   await expect(page.locator('.planner-grid').first().locator('.team-card').filter({ hasText: 'Raiden Shogun' })).toHaveCount(1);
   await page.reload();
   await page.getByRole('button', { name: 'Team planner', exact: true }).click();
-  await page.getByRole('tab', { name: 'Guide recipes & custom teams', exact: true }).click();
+  await page.getByRole('tab', { name: 'Guide recipes', exact: true }).click();
   await page.getByText('Build a custom team', { exact: true }).click();
   await page.getByRole('button', { name: 'Inspect team' }).click();
   await page.getByText('Rotation damage calculator', { exact: true }).click();

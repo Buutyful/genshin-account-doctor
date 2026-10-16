@@ -1,5 +1,8 @@
-export type IconName = 'spark' | 'heart' | 'grid' | 'users' | 'graph' | 'book' | 'arrow' | 'chevron' | 'upload' | 'download' | 'search' | 'check' | 'close' | 'shield' | 'leaf' | 'target' | 'flask' | 'plus' | 'clock' | 'external' | 'menu' | 'sliders' | 'info' | 'edit' | 'lock';
+export type IconName = 'spark' | 'heart' | 'grid' | 'users' | 'graph' | 'book' | 'arrow' | 'chevron' | 'upload' | 'download' | 'search' | 'check' | 'close' | 'shield' | 'leaf' | 'target' | 'flask' | 'plus' | 'clock' | 'external' | 'menu' | 'sliders' | 'info' | 'edit' | 'lock' | 'swap' | 'settings' | 'clipboard';
 const paths: Record<IconName, string> = {
+  swap: 'M4 7h16m-4-4 4 4-4 4M20 17H4m4-4-4 4 4 4',
+  settings: 'm9 3-1 3-3 1 1 3-2 2 2 2-1 3 3 1 1 3h6l1-3 3-1-1-3 2-2-2-2 1-3-3-1-1-3H9Zm3 5a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z',
+  clipboard: 'M8 4H4v18h16V4h-4M8 2h8v5H8V2Zm0 9h8m-8 4h8m-8 4h5',
   info: 'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18ZM12 11v6m0-10v1',
   edit: 'm16 3 5 5L9 20l-6 1 1-6L16 3Zm-2 2 5 5',
   lock: 'M6 10h12v11H6V10Zm2 0V7a4 4 0 0 1 8 0v3m-4 5v2',
@@ -19,5 +22,5 @@ const paths: Record<IconName, string> = {
   flask: 'M9 3h6m-5 0v7L4 20h16l-6-10V3M7 15h10', plus: 'M12 5v14M5 12h14', clock: 'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm0 4v5l3 2', external: 'M14 3h7v7m0-7L10 14M10 3H3v18h18v-7',
 };
 export function Icon({ name, size = 20 }: { name: IconName; size?: number }) {
-  return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.65" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={paths[name]}/></svg>;
+  return <svg data-icon={name} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.65" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={paths[name]}/></svg>;
 }

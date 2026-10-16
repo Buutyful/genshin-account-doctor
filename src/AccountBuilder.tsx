@@ -18,6 +18,7 @@ import { PullPlanner } from './PullPlanner';
 import { Icon } from './Icons';
 import { TeamLineup } from './TeamLineup';
 import { TeamViewer } from './TeamViewer';
+import { referenceDemoPlan, referenceDemoSeed, referenceDemoTeam } from './reference-demo';
 import type { useChallenges } from './ChallengePlanner';
 
 function readPreferences(): Preference[] {
@@ -26,31 +27,36 @@ function readPreferences(): Preference[] {
 function readObserved(): ObservedPublication[] {
   try { const p: unknown = JSON.parse(localStorage.getItem('account-doctor-observed-v1') ?? '[]'); return Array.isArray(p) ? p.slice(0, 10).map(v => parseObservedPublication(v)) : []; } catch { return []; }
 }
-function readOptions(): BuilderWorkspace['builder'] {
-  try { const saved = localStorage.getItem('account-doctor-builder-options-v3'); const v = JSON.parse(saved ?? localStorage.getItem('account-doctor-builder-options-v2') ?? '{}'); return { allowRebuild: v.allowRebuild === true, activity: saved && ['general', 'practice', 'current'].includes(v.activity) ? v.activity : 'current' }; } catch { return { allowRebuild: false, activity: 'current' }; }
+function readOptions(demo: boolean): BuilderWorkspace['builder'] {
+  const fallback = demo ? 'general' : 'current';
+  try { const saved = localStorage.getItem('account-doctor-builder-options-v3'); const v = JSON.parse(saved ?? localStorage.getItem('account-doctor-builder-options-v2') ?? '{}'); return { allowRebuild: v.allowRebuild === true, activity: saved && ['general', 'practice', 'current'].includes(v.activity) ? v.activity : fallback }; } catch { return { allowRebuild: false, activity: fallback }; }
 }
 function download(value: unknown, name: string) {
   const blob = new Blob([JSON.stringify(value, (_key, v) => typeof v === 'bigint' ? v.toString() : v, 2)], { type: 'application/json' });
   const url = URL.createObjectURL(blob), a = document.createElement('a'); a.href = url; a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
-function ConfigurationCard({ row, index, account, onFeedback, observed, pack, replaceable }: { row: ConfigurationAssignment; index: number; account: Account; onFeedback: (action: FeedbackAction) => void; observed: ObservedPublication[]; pack?: EncounterPack; replaceable: string[] }) {
+function ConfigurationCard({ row, index, account, onFeedback, observed, pack, replaceable, locked, onToggleLock }: { row: ConfigurationAssignment; index: number; account: Account; onFeedback: (action: FeedbackAction) => void; observed: ObservedPublication[]; pack?: EncounterPack; replaceable: string[]; locked: boolean; onToggleLock: () => void }) {
   const c = row.config;
   const caution = c.seed?.caution;
   const tasks = buildTasks(account, c);
   const opponents = row.encounter ? [...new Set(row.encounter.stages.flatMap(stage => stage.enemies.map(enemy => enemy.name)))] : [];
-  const teamName = c.seed?.reviewed || c.origin === 'custom' ? c.seed?.name ?? `${byId[c.driver].name} team` : `${byId[c.driver].name} team`;
+  const teamName = referenceDemoTeam(c, account)?.name ?? (c.seed?.reviewed || c.origin === 'custom' ? c.seed?.name ?? `${byId[c.driver].name} team` : `${byId[c.driver].name} team`);
+  const evidenceLabel = c.origin === 'custom' ? 'Custom team' : c.origin === 'observed' ? 'Recorded clear' : c.origin === 'guide' ? 'Guide example' : 'Role-based team';
   const [core, setCore] = useState(c.core);
   const [replacement, setReplacement] = useState(replaceable[0] ?? c.members[3]);
+  const [detailsOpen, setDetailsOpen] = useState(false);
+  const [swapOpen, setSwapOpen] = useState(false);
   const clearMatches = reconcileClears([...publishedClears, ...observed.flatMap(p => p.records)]).map(({ record }) => ({ record, match: matchClear(record, c, account, pack) })).filter(m => m.match.discovery && m.record.members.every(m => c.members.includes(m.character)));
   return <article className="configuration-card" aria-label={`Configuration ${index + 1}`} data-configuration-id={c.id} data-composition-id={c.compositionId}>
-    <header className="configuration-heading"><div className="team-assignment"><span className="team-number">{String(index + 1).padStart(2, '0')}</span><div><span className="eyebrow">{row.encounter?.name ?? `TEAM ${index + 1}`}</span>{row.encounter && <p className="team-opponent" title={opponents.join(' · ')}>{row.encounter.stages.length === 1 ? opponents.map(name => name.split(':')[0]).join(' · ') : `${row.encounter.stages.length} chambers · same team throughout`}</p>}</div></div><h3>{teamName}</h3><span className="tag">{c.seed?.reviewed ? 'Guide team' : c.origin === 'custom' ? 'Custom team' : 'Role-based team'}</span></header>
+    {row.encounter && <div className="team-encounter-label"><span>{row.encounter.name}</span><span className="team-opponent" title={opponents.join(' · ')}>{row.encounter.stages.length === 1 ? opponents.map(name => name.split(':')[0]).join(' · ') : `${row.encounter.stages.length} chambers · same team throughout`}</span></div>}
+    <header className="configuration-heading"><div className="team-assignment"><span className="team-number">{String(index + 1).padStart(2, '0')}<Icon name="spark" size={16}/></span></div><h3>{teamName}</h3><div className="lineup-badges"><span className="owned-badge"><Icon name="check" size={18}/>All owned</span><span className="evidence-badge"><Icon name="book" size={17}/>{evidenceLabel}</span></div><div className="lineup-controls"><button type="button" className="lineup-icon-button" title={locked ? 'Unlock team' : 'Lock team'} aria-label={`${locked ? 'Unlock' : 'Lock'} team ${index + 1}`} aria-pressed={locked} onClick={onToggleLock}><Icon name="lock" size={17}/></button><button type="button" className="lineup-icon-button" title="Swap characters" aria-label={`Swap characters in team ${index + 1}`} aria-expanded={swapOpen} onClick={() => setSwapOpen(!swapOpen)}><Icon name="swap" size={18}/></button><button type="button" className="lineup-details-button" aria-expanded={detailsOpen} onClick={() => setDetailsOpen(!detailsOpen)}>{detailsOpen ? 'Hide details' : 'View details'}<Icon name="chevron" size={15}/></button></div></header>
     <div className="configuration-roster">
-    <TeamViewer configuration={c} account={account}/>
-    {tasks.some(t => t.status === 'upgrade') && <p className="build-preview"><strong>Build next</strong> {tasks.filter(t => t.status === 'upgrade').slice(0, 2).map(t => `${byId[t.character].name}: ${t.text}`).join('; ')}.</p>}
+    <TeamViewer configuration={c} account={account} expanded={detailsOpen}/>
+    {detailsOpen && tasks.some(t => t.status === 'upgrade') && <p className="build-preview"><strong>Build next</strong> {tasks.filter(t => t.status === 'upgrade').slice(0, 2).map(t => `${byId[t.character].name}: ${t.text}`).join('; ')}.</p>}
     {c.rebuilds.length > 0 && <p className="challenge-status">Planned rebuild: {c.rebuilds.map(id => byId[id].name).join(', ')} · level 90 + EM gear.</p>}
     </div>
-    <div className="configuration-details">
-    <details className="team-build-details"><summary>Build &amp; rotation</summary>
+    <div className="configuration-details" hidden={!detailsOpen && !swapOpen}>
+    <details className="team-build-details" open={detailsOpen} onToggle={e => setDetailsOpen(e.currentTarget.open)}><summary>Build &amp; rotation</summary>
       {c.seed?.rotationOutline && <p>{c.seed.rotationOutline}</p>}
       <p><strong>{c.rotation.seconds}s proposed loop.</strong> {c.rotation.assumption}</p>
       <ol>{c.rotation.steps.map(s => <li key={s.character}><strong>{byId[s.character].name} · {s.seconds}s assumed window:</strong> {s.action}</li>)}</ol>
@@ -70,7 +76,7 @@ function ConfigurationCard({ row, index, account, onFeedback, observed, pack, re
       </details>
     </details>
     {(row.encounter || row.fit.matched.length > 0) && <details className="team-matchup"><summary>Matchup fit</summary>{row.encounter && <><p>{row.encounter.stages.map(s => s.name).join(' → ')} · same team throughout.</p><p>{opponents.join(' · ')}</p></>}{row.fit.matched.length > 0 && <p className="matchup-fit">{[...new Set(row.fit.matched.map(s => s.replace(/^12-\d: /, '')))].join(' · ')}</p>}<ul>{[...row.fit.unresolved, ...row.fit.contradicted].map((s, i) => <li key={i}>{s}</li>)}</ul></details>}
-    <details className="configuration-feedback"><summary>Change this team</summary><div className="configuration-actions"><button className="button secondary small" onClick={() => onFeedback({ kind: 'skip', compositionId: c.compositionId })}>Another team</button><button className="text-button" onClick={() => onFeedback({ kind: 'lock', configurationId: c.id })}>Keep this team</button></div><fieldset><legend>Retain a character or core</legend>{c.members.map(id => <label key={id}><input type="checkbox" checked={core.includes(id)} onChange={e => setCore(old => e.target.checked ? [...old, id] : old.filter(x => x !== id))}/>{byId[id].name}</label>)}</fieldset>
+    <details className="configuration-feedback" open={swapOpen} onToggle={e => setSwapOpen(e.currentTarget.open)}><summary>Change this team</summary><div className="configuration-actions"><button className="button secondary small" onClick={() => onFeedback({ kind: 'skip', compositionId: c.compositionId })}>Another team</button><button className="text-button" onClick={() => onFeedback({ kind: 'lock', configurationId: c.id })}>Keep this team</button></div><fieldset><legend>Retain a character or core</legend>{c.members.map(id => <label key={id}><input type="checkbox" checked={core.includes(id)} onChange={e => setCore(old => e.target.checked ? [...old, id] : old.filter(x => x !== id))}/>{byId[id].name}</label>)}</fieldset>
       <div className="button-row"><button className="button secondary small" disabled={!core.length} onClick={() => onFeedback({ kind: 'keep', members: core })}>Keep selected core</button><button className="button secondary small" disabled={!core.length || core.length === 4} onClick={() => onFeedback({ kind: 'variant', core, compositionId: c.compositionId, encounterId: row.encounter?.id })}>Same-core variant</button></div>
       <label className="field-label">Replace teammate<select aria-label={`Replace teammate in configuration ${index + 1}`} value={replacement} onChange={e => setReplacement(e.target.value)}>{c.members.map(id => <option key={id} value={id} disabled={!replaceable.includes(id)}>{byId[id].name}{replaceable.includes(id) ? '' : ' · no covered replacement'}</option>)}</select></label>
       <button className="button secondary small" disabled={!replaceable.includes(replacement)} onClick={() => onFeedback({ kind: 'replace', members: c.members.filter(id => id !== replacement), character: replacement, compositionId: c.compositionId, encounterId: row.encounter?.id })}>Replace selected teammate</button>
@@ -82,9 +88,9 @@ function ConfigurationCard({ row, index, account, onFeedback, observed, pack, re
   </article>;
 }
 
-export function AccountBuilder({ account, pack, region, challenges, customTeams, locks, onRestore, onModeChange, decisionView = 'teams' }: { account: Account; pack?: EncounterPack; region: Region; challenges: ReturnType<typeof useChallenges>; customTeams: string[][]; locks: Partial<Record<Mode, string[]>>; onRestore: (workspace: BuilderWorkspace) => void; onModeChange: (mode: Mode) => void; decisionView?: 'teams' | 'pulls' }) {
+export function AccountBuilder({ account, pack, region, challenges, customTeams, locks, onRestore, onModeChange, decisionView = 'teams', onReviewCharacters, onReviewSources, onPlanningStatus, onUnlockGuideTeam }: { account: Account; pack?: EncounterPack; region: Region; challenges: ReturnType<typeof useChallenges>; customTeams: string[][]; locks: Partial<Record<Mode, string[]>>; onRestore: (workspace: BuilderWorkspace) => void; onModeChange: (mode: Mode) => void; decisionView?: 'teams' | 'pulls'; onReviewCharacters?: () => void; onReviewSources?: () => void; onPlanningStatus?: (status: string) => void; onUnlockGuideTeam?: (compositionId: string) => void }) {
   const [preferences, setPreferences] = useState(readPreferences);
-  const [options, setOptions] = useState(readOptions);
+  const [options, setOptions] = useState(() => readOptions(account.demo));
   const [observed, setObserved] = useState(readObserved);
   const [scope, setScope] = useState<Scope>('session');
   const [exclude, setExclude] = useState('');
@@ -107,7 +113,7 @@ export function AccountBuilder({ account, pack, region, challenges, customTeams,
   const active = effectivePreferences(preferences, context);
   const comfort = active.map(p => p.action).filter(a => a.kind === 'comfort').at(-1) ?? { kind: 'comfort' as const, easier: false, sustain: false, maxRebuilds: 0 };
   const generation = useMemo(() => {
-    const seeds = customTeams.map(m => customCandidate(m, account)).filter(t => !t.missing.length);
+    const seeds = [...referenceDemoSeed(account), ...customTeams.map(m => customCandidate(m, account)).filter(t => !t.missing.length)];
     // Qualified archives nominate whole configurations, never independent pairwise substitutions.
     for (const { record } of reconcileClears([...publishedClears, ...observed.flatMap(p => p.records)])) {
       const members = record.members.map(m => m.character);
@@ -120,9 +126,12 @@ export function AccountBuilder({ account, pack, region, challenges, customTeams,
   const activity = account.mode === 'general' || account.owned.length < 4 ? 'general' : options.activity;
   const currentAvailable = Boolean(pack && encounterStatus(pack) === 'current');
   const activePack = activity === 'current' && currentAvailable ? pack : undefined;
+  useEffect(() => { onPlanningStatus?.(activePack ? 'Current challenge' : activity === 'practice' ? 'Custom targets' : 'General preparation'); }, [activePack, activity, onPlanningStatus]);
   const practiceTargets = activity === 'practice' ? challenges.practiceTargets : undefined;
   const planningInput = useMemo(() => ({ context, preferences, pack: activePack, locks: locks[account.mode] ?? [], targets: practiceTargets }), [context, preferences, activePack, locks, account.mode, practiceTargets]);
-  const recommendation = useMemo(() => planConfigurations(generation.configurations, context, preferences, activePack, 48, locks[account.mode] ?? [], Date.now(), practiceTargets), [generation, context, preferences, activePack, locks, account.mode, practiceTargets]);
+  const illustration = useMemo(() => activity === 'general' && !preferences.length && !customTeams.length && !options.allowRebuild && !(locks[account.mode]?.length)
+    ? referenceDemoPlan(generation.configurations, account) : undefined, [generation, account, activity, preferences, customTeams, options.allowRebuild, locks]);
+  const recommendation = useMemo(() => illustration ?? planConfigurations(generation.configurations, context, preferences, activePack, 48, locks[account.mode] ?? [], Date.now(), practiceTargets), [illustration, generation, context, preferences, activePack, locks, account.mode, practiceTargets]);
   const planOptions = useMemo(() => recommendation ? shortlistPlans(generation.configurations, account, planningInput, recommendation) : [], [generation, account, planningInput, recommendation]);
   const result = planOptions.find(o => o.id === selectedPlan)?.plan ?? recommendation;
   const pullOptions = useMemo(() => ({ allowRebuild: options.allowRebuild, extraSeeds: generation.configurations.flatMap(c => c.seed && (c.origin === 'custom' || c.origin === 'observed') ? [c.seed] : []) }), [options.allowRebuild, generation]);
@@ -146,6 +155,12 @@ export function AccountBuilder({ account, pack, region, challenges, customTeams,
     setNotice('Preferences applied. The entire account allocation has been reassessed.');
   }
   function removePreference(id: string) { setPrevious(result?.assignments ?? []); setPreferences(old => old.filter(p => p.id !== id)); }
+  function toggleLock(row: ConfigurationAssignment) {
+    const matching = active.filter(p => p.action.kind === 'lock' && p.action.configurationId === row.config.id);
+    if (matching.length) { setPrevious(result?.assignments ?? []); setPreferences(old => old.filter(p => !matching.some(m => m.id === p.id))); }
+    else if ((locks[account.mode] ?? []).includes(row.config.compositionId)) onUnlockGuideTeam?.(row.config.compositionId);
+    else feedback({ kind: 'lock', configurationId: row.config.id });
+  }
   function availableReplacements(row: ConfigurationAssignment) {
     if (active.some(p => p.action.kind === 'lock' && p.action.configurationId === row.config.id) || (locks[account.mode] ?? []).includes(row.config.compositionId)) return [];
     const scopedActions = preferences.filter(p => preferenceApplies(p, context)).map(p => p.action);
@@ -176,27 +191,26 @@ export function AccountBuilder({ account, pack, region, challenges, customTeams,
     {result && <>
       {decisionView === 'pulls' && recommendation && <PullPlanner account={account} input={planningInput} options={pullOptions} configurations={generation.configurations} baseline={recommendation}/>}
       <div hidden={decisionView !== 'teams'}>
-      <header className="builder-result-heading"><div><h2>{selectedPlan === 'recommended' ? 'Recommended plan' : `Alternative ${planOptions.findIndex(o => o.id === selectedPlan)}`}</h2><p>{account.mode === 'general' ? 'One team' : account.mode === 'abyss' ? 'Spiral Abyss' : 'Stygian Onslaught'} · {activePack ? `${activePack.patch} · current challenge` : activity === 'practice' ? 'custom targets' : 'general matchups'}</p></div><div className="plan-header-actions"><button className="text-button" disabled={!result.complete} onClick={() => feedback({ kind: 'plan', configurationIds: result.assignments.map(a => a.config.id) })}>Another plan</button><button className="button secondary small" disabled={!result.assignments.length} onClick={exportBuilderPlan}>Export plan</button></div></header>
-      {result.assignments.length > 0 && <section className="plan-selector"><h3>Compare plans</h3><div className="account-plan-options" aria-label="Complete account plans">{planOptions.map((option, i) => {
+      <div className="plan-toolbar"><h2 className="sr-only">{selectedPlan === 'recommended' ? 'Recommended plan' : `Alternative ${planOptions.findIndex(o => o.id === selectedPlan)}`}</h2>
+      {result.assignments.length > 0 && <section className="plan-selector"><div className="account-plan-options" aria-label="Complete account plans">{planOptions.map((option, i) => {
         const metrics = planMetrics(option.plan, account);
-        return <button key={option.id} aria-pressed={option.id === selectedPlan} onClick={() => setSelectedPlan(option.id)}><strong><span className="plan-option-index">{String(i + 1).padStart(2, '0')}</span>{i === 0 ? 'Recommended' : `Alternative ${i}`}{option.id === selectedPlan && <Icon name="check" size={14}/>}</strong>{i > 0 && <span className="plan-objective">{option.label}</span>}<span className="plan-preview" aria-label={`${metrics.teams} teams`}>{option.plan.assignments.map(row => <span className="plan-preview-row" key={row.config.id}><span>{option.plan.assignments.indexOf(row) + 1}</span><TeamLineup members={row.config.members} compact/></span>)}</span><small>{metrics.upgrades > 0 ? `${metrics.upgrades} build upgrades` : metrics.unknownBuilds > 0 ? `${metrics.unknownBuilds} builds unchecked` : 'No recorded build gaps'}</small></button>;
+        return <button key={option.id} title={`${option.label} · ${metrics.teams} teams · ${metrics.upgrades} build upgrades · ${metrics.unknownBuilds} unchecked builds`} aria-pressed={option.id === selectedPlan} onClick={() => setSelectedPlan(option.id)}>{i === 0 ? 'Recommended' : `Alternative ${i}`}</button>;
       })}</div></section>}
-      <p className="builder-plan-heading"><strong>{result.assignments.length} / {account.mode === 'abyss' ? 2 : account.mode === 'stygian' ? 3 : 1} teams</strong>{account.mode !== 'general' && ' · no shared characters'}{planOptions.length < 3 && result.assignments.length > 0 && ` · ${Math.max(0, planOptions.length - 1)} alternatives`}</p>
+      <p className="builder-plan-heading"><strong>{result.assignments.length} {result.assignments.length === 1 ? 'team' : 'teams'}</strong><span> · {new Set(result.assignments.flatMap(a => a.config.members.map(accountIdentity))).size} unique characters · No overlap</span></p></div>
       {previous.length > 0 && <p role="status" className="plan-change">{explainPlanChange(previous, result.assignments)}</p>}
       {result.conflicts.length > 0 && <div className="challenge-status" role="status"><strong>Conflicting preferences</strong><ul>{result.conflicts.map(s => <li key={s}>{s}</li>)}</ul><p>Remove a preference or undo the last change.</p></div>}
-      <div className="configuration-grid">{result.assignments.map((row, i) => <ConfigurationCard key={row.config.id} row={row} index={i} account={account} onFeedback={feedback} observed={observed} pack={activePack} replaceable={availableReplacements(row)}/>)}</div>
+      <div className="configuration-grid">{result.assignments.map((row, i) => <ConfigurationCard key={row.config.id} row={row} index={i} account={account} onFeedback={feedback} observed={observed} pack={activePack} replaceable={availableReplacements(row)} locked={active.some(p => p.action.kind === 'lock' && p.action.configurationId === row.config.id) || (locks[account.mode] ?? []).includes(row.config.compositionId)} onToggleLock={() => toggleLock(row)}/>)}</div>
       {!result.assignments.length && <div className="builder-empty"><h3>{account.owned.length < 4 ? 'Add at least four characters' : 'No complete plan'}</h3><p>{account.owned.length < 4 ? 'Select your roster in Characters or import it.' : active.length ? 'Remove a preference or undo the last change.' : 'Try a custom composition in Guide recipes & custom teams.'}</p></div>}
-      <button className="text-button" aria-expanded={browse} onClick={() => setBrowse(!browse)}>{browse ? 'Hide team options' : 'Browse team options'}</button>
-      {browse && <div className="builder-alternatives">{alternatives.map(c => <article key={c.id}><h3>{c.seed?.name ?? `${byId[c.driver].name} · ${c.playstyle.replaceAll('-', ' ')}`}</h3><TeamLineup members={c.members}/><button className="button secondary small" onClick={() => feedback({ kind: 'keep', members: c.members })}>Use this composition</button></article>)}</div>}
       </div>
     </>}
-    </div><details className="builder-settings" open={setupOpen} onToggle={e => setSetupOpen(e.currentTarget.open)}><summary><strong>Plan settings</strong><span>{modeLabel} · {targetLabel}</span><Icon name="chevron" size={16}/></summary><div className="builder-settings-body"><label className="field-label">Game mode<select aria-label="Game mode" value={account.mode} onChange={e => onModeChange(e.target.value as Mode)}><option value="general">One team</option><option value="abyss">Spiral Abyss</option><option value="stygian">Stygian Onslaught</option></select></label><h3>Matchups</h3>
+    </div><aside className="planner-rail"><details className="builder-settings" open={setupOpen} onToggle={e => setSetupOpen(e.currentTarget.open)}><summary><Icon name="settings" size={25}/><strong>Planning settings</strong><span>{modeLabel} · {targetLabel}</span><Icon name="chevron" size={16}/></summary><div className="builder-settings-body"><label className="field-label">Game mode<select aria-label="Game mode" value={account.mode} onChange={e => onModeChange(e.target.value as Mode)}><option value="general">One team</option><option value="abyss">Spiral Abyss</option><option value="stygian">Stygian Onslaught</option></select></label>
+    <div className="builder-focus"><label className="field-label">Character focus<select aria-label="Build around a character" value={favorite} onChange={e => setFavorite(e.target.value)}><option value="">Any character</option>{account.owned.map(id => <option key={id} value={id}>{byId[id].name}</option>)}</select></label>{favorite && <button className="button secondary small" onClick={() => feedback({ kind: 'keep', members: [favorite] })}>Build around them</button>}</div>
+    <details className="builder-preferences"><summary><span className="preferences-title">Preferences</span><span className="sr-only">, builds &amp; exclusions</span><Icon name="chevron" size={16}/></summary>
+    <h3>Matchups</h3>
     <div className="builder-activity" role="group" aria-label="Builder activity"><button className={`button ${activity === 'general' ? 'primary' : 'secondary'} small`} aria-pressed={activity === 'general'} onClick={() => setOptions(o => ({ ...o, activity: 'general' }))}>General</button>{account.mode !== 'general' && <><button className={`button ${activity === 'current' ? 'primary' : 'secondary'} small`} aria-pressed={activity === 'current'} onClick={() => setOptions(o => ({ ...o, activity: 'current' }))}>Current challenge</button><button className={`button ${activity === 'practice' ? 'primary' : 'secondary'} small`} aria-pressed={activity === 'practice'} onClick={() => setOptions(o => ({ ...o, activity: 'practice' }))}>Custom targets</button></>}</div>
     {activity === 'practice' && <ChallengePlanner mode={account.mode} challenges={challenges} practice compact/>}
     {activity === 'current' && <ChallengePlanner mode={account.mode} challenges={challenges} compact/>}
     {activity === 'current' && !currentAvailable && <p className="challenge-status">No verified live challenge is available. Using general teams.</p>}
-    <details className="builder-preferences"><summary>Preferences, builds &amp; exclusions</summary>
-    <div className="builder-focus"><label className="field-label">Build around<select aria-label="Build around a character" value={favorite} onChange={e => setFavorite(e.target.value)}><option value="">Any owned character</option>{account.owned.map(id => <option key={id} value={id}>{byId[id].name}</option>)}</select></label><button className="button secondary small" disabled={!favorite || !account.owned.includes(favorite)} onClick={() => feedback({ kind: 'keep', members: [favorite] })}>Build around them</button></div>
     <div className="calculation-fields">
       <label className="field-label">Save changes for<select aria-label="Feedback scope" value={scope} onChange={e => setScope(e.target.value as Scope)}><option value="session">This session and mode</option><option value="cycle" disabled={!pack}>This verified cycle and server</option><option value="account">This account</option></select></label>
       <label className="field-label">Exclude character<select aria-label="Builder excluded character" value={exclude} onChange={e => setExclude(e.target.value)}><option value="">Choose a character</option>{account.owned.map(id => <option key={id} value={id}>{byId[id].name}</option>)}</select></label><button className="button secondary small" disabled={!exclude} onClick={() => feedback({ kind: 'exclude', character: exclude })}>Apply exclusion</button>
@@ -209,8 +223,12 @@ export function AccountBuilder({ account, pack, region, challenges, customTeams,
       {preferences.length > active.length && <><p>{preferences.length - active.length} inactive preference(s).</p><details><summary>Earlier requests</summary><ul>{preferences.filter(p => !active.some(a => a.id === p.id)).map(p => <li key={p.id}><span>{feedbackLabel(p.action)} · {p.scope}</span><button className="text-button" onClick={() => removePreference(p.id)} aria-label={`Remove earlier preference: ${feedbackLabel(p.action)}`}>Remove</button></li>)}</ul></details></>}
       <div className="button-row"><button className="text-button" disabled={!preferences.length} onClick={() => removePreference(preferences.at(-1)!.id)}>Undo last feedback</button><button className="text-button" disabled={!preferences.length} onClick={() => { setPrevious(result?.assignments ?? []); setPreferences([]); }}>Reset builder preferences</button></div>
     </div>
-    </div></details></div>
+    </div></details>
+    {decisionView === 'teams' && <><section className="planner-next-steps"><h2><Icon name="clipboard" size={24}/>Next steps</h2><div className="next-build-task"><span className="next-task-icon"><Icon name="spark" size={19}/></span><div><h3>Review unknown builds</h3><p>Check characters without complete build information.</p></div></div><button className="button primary" onClick={onReviewCharacters}>Open characters<Icon name="chevron" size={18}/></button></section><button className="planner-evidence-link" onClick={onReviewSources}><Icon name="book" size={21}/><span>Guide evidence <small>· Recorded clears shown separately</small></span><Icon name="chevron" size={14}/></button></>}
+    </aside></div>
     <div className="builder-account-tools"><h3>Account data</h3>
+    {decisionView === 'teams' && <><button className="text-button" aria-expanded={browse} onClick={() => setBrowse(!browse)}>{browse ? 'Hide team options' : 'Browse team options'}</button>{browse && <div className="builder-alternatives">{alternatives.map(c => <article key={c.id}><h3>{c.seed?.name ?? `${byId[c.driver].name} · ${c.playstyle.replaceAll('-', ' ')}`}</h3><TeamLineup members={c.members}/><button className="button secondary small" onClick={() => feedback({ kind: 'keep', members: c.members })}>Use this composition</button></article>)}</div>}</>}
+    {decisionView === 'teams' && result && <div className="plan-header-actions"><button className="text-button" disabled={!result.complete} onClick={() => feedback({ kind: 'plan', configurationIds: result.assignments.map(a => a.config.id) })}>Another plan</button><button className="button secondary small" disabled={!result.assignments.length} onClick={exportBuilderPlan}>Export plan</button></div>}
     <details className="builder-data"><summary>Data &amp; sources</summary>
     {planOptions.length > 1 && <details><summary>Plan tradeoffs</summary><ul>{planOptions.map(option => <li key={option.id}><strong>{option.label}:</strong> {option.reason}</li>)}</ul></details>}
     {result && <details className="builder-search-details"><summary>Search details</summary><p>{generation.coverage.enumerated} owned combinations enumerated (cap {generation.coverage.cap}{generation.coverage.truncated ? ', reached' : ', not reached'}); {generation.coverage.generated} open configurations and {generation.coverage.seeds} seeds. Joint search: {result.poolSizes.join(' / ')} candidates per team; {result.omitted} configurations omitted; {result.nodes.toLocaleString()} search nodes. Exact inside these pools, not a global optimum. Preference points combine complete guide examples, conditional role ratings, readiness, mechanics and recorded build gaps. Alternatives reassign the whole account with investment or sustain preferences.</p></details>}
